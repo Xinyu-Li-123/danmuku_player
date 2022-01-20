@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danmuku test</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    
+    <!-- <button id="refresh-danmuku-button">Refresh Danmuku</button> -->
+
+    <div class="danmuku-container" id="danmuku-container">        
+        <!-- <div class="danmuku">测试弹幕</div> -->
+    </div>
+
+    <div class="video-container">
+        <!-- <video id="b-video" 
+               controls="" 
+               preload="auto" 
+               style="width: 100%; 
+                      height: 100%; 
+                      outline: none;" 
+               src="https://1251316161.vod2.myqcloud.com/007a649dvodcq1251316161/958228475285890805717443051/KNlaKcaFdVUA.mp4"> -->
+
+        <video id="b-video" 
+            controls="" 
+            
+            preload="auto" 
+            style="width: 100%; 
+                    height: 100%; 
+                    outline: none;" 
+            src="https://1251316161.vod2.myqcloud.com/007a649dvodcq1251316161/7d5383555285890808309438826/iFi2r4Qjz8oA.mp4">
+    </div>
+
+    <div class="prompt" id="video-input">
+        <p>=================================================</p>
+        Upload video here: 
+        <input type="file" id="videoInput"> OR Enter url here:
+        <input type="text" id="videoUrlInput" placeholder="Enter url">
+        <input type="submit" id="videoUrlInputSubmit">
+    </div>
+
+    <div class="prompt" id="danmuku-input">
+        <p>=================================================</p>
+        Upload danmuku xml file here: 
+        <input type="file" id="danmukuInput">
+    </div>
+
+    
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

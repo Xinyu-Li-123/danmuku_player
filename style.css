@@ -1,0 +1,110 @@
+ /* var(--name, value) */
+ /* boilerplate python code: 
+    width2para = lambda w: print(f"width: {w}   "
+                                 f"height: {int(w/16*9)}   "
+                                 f"danmuku-container-height: {int(w/16*9/2+1)}")*/
+:root {
+    /* width:  height = 16: 9 */
+    --video-width: 900px;  
+    --video-height: 506px; 
+    /* danmuku-container-width = video-width
+       danmuku-container-height = 0.5 * video-height */
+    --danmuku-container-height: 350px;  
+    --danmuku-size: 22px;
+    --danmuku-duration: 16s;
+}
+
+
+.video-container{
+    width: var(--video-width);
+    height: var(--video-height);
+    background: black;
+    position: relative;
+    z-index: 900;
+    border-top: 20px solid black;
+    border-bottom: 20px solid black;
+
+}
+
+.b-video{
+    z-index: 900;
+}
+
+.danmuku-container{
+    width: var(--video-width);
+    height: var(--danmuku-container-height);
+    /* background: rgba(236, 229, 195, 1); */
+    margin: 15px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+}
+
+/* maybe no need for .track */
+.track{
+    height: 30px;
+    position: relative;
+    z-index: 800;
+}
+
+.prompt{
+    font-family: sans-serif; 
+    font-weight: bold; 
+    color: grey;
+    font-size: 15px;
+}
+
+.danmuku{
+    /* set 
+    -   width (width = word_length * (font_size+1)       // +1 is for the padding), 
+    -   animation-duration (speed = .danmuku_container.width / animation_duration), 
+    -   position (track i  <==>  top: i*.danmuku_containerheight//n given n tracks) 
+    -   font-size (default: 15px)
+    based on property of danmuku 
+        
+    user-adjustable properties:
+    -   font-size
+    -   oppacity
+    -   censorship
+    -   speed
+            */
+    /* color: rgb(255, 255, 255); */
+    width: auto;
+    font-size: var(--danmuku-size);
+    /* background-color: antiquewhite;  */
+    font-family: SimHei, 'Microsoft JhengHei', Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    opacity: 0.77; 
+    text-shadow: rgb(0, 0, 0) 1px 0px 1px, 
+                rgb(0, 0, 0) 0px 1px 1px, 
+                rgb(0, 0, 0) 0px -1px 1px, 
+                rgb(0, 0, 0) -1px 0px 1px;
+    z-index: 1100;
+    /* animation: scrollTo linear 8s forwards; */
+    animation: scrollTo linear forwards;
+    animation-duration: var(--danmuku-duration);
+    position: absolute;
+    /* top: 10px; */
+    animation-play-state: running;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.danmuku:hover{
+    animation-play-state: paused;
+}
+
+@keyframes scrollTo {
+    from{transform: translateX(var(--video-width))}
+    to{transform: translateX(-1300px)}
+}
+
+
