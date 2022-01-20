@@ -1,17 +1,27 @@
-### Comment
-Finally, I've completed a version that won't put danmuku somewhere I would never expected! This version can run properly, given you are willing to twist some parameters.
+# Danmuku Player
+[![license-shield](https://img.shields.io/apm/l/vim-mode)](https://github.com/Xinyu-Li-123/Routine-Exercise/blob/main/LICENSE.txt)
+## About
+This is a fun little project that aims to bring you a clear and bilibili-free experience of watching animes with danmuku (弹幕，bullet chat). It's mainly for self-entertainment and for practicing my frontend skills. Since I'm a total beginner to frontend development, there are probably tons of problems in my code, but luckily it works: the performance is acceptable and I don't have to give away my money to 叔叔 anymore!
 
-### Bugs
-To use this version, you should know the following problems:
--   you can pause the video, however one or two danmukus may not be paused
--   switch to another page for too long will make danmuku stack together
--   danmuku may occlude each other
+“番剧不能失去弹幕，就像西方不能失去耶路撒冷”. For me, danmuku is an essential part in my experience of watching animes, however, today, there really aren't much animes to watch on Bilibili if you don't pay for Bilibili Premium. I don't want to pay for a website where my favourite yuri animes are either taken down (e.g. Sakura Trick, Citrus, Slow Start...) or got the most important scenes (kissing, telling-her-how-she-feel) deleted by Bilibili! Luckily, **bilibili's api to get danmuku is still available**. That's the motivation for this project.
+
+## Bugs
+This is just an alpha version. To use this version, you should be aware of the following bugs:
+-   you can pause the video, but they won't stop simutaneously;
+-   Don't pause-and-play the video too fast, or you will find all danmukus freeze in the air (if this happens, just refresh the webpage and upload the source and danmuku file again);
+-   switching to another page for too long will make many danmukus stack together
+-   danmukus may occlude each other
 -   you have to manually
-    -   get media id of bangumi / cid of video
-    -   copy-and-paste danmuku
+    -   get the media id of anime 
+    -   get the source of anime
 besides all these problems, enjoy!
 
-### User Guide 
+## To-do List
+Besides fixing these bugs, here are some other functionality I want to implement:
+-   find an efficient way that guarantees to stop all danmukus.
+-   resizable video player window
+
+## User Guide 
 Below is the workflow to properly play a bangumi with danmuku in edge explorer:
 1.  Get Danmuku
 -   get media id of bangumi
@@ -29,30 +39,74 @@ Below is the workflow to properly play a bangumi with danmuku in edge explorer:
     
 -   set `media_id`, `ep_num` variable in `get_danmumu.py` and run it (my version of python is 3.7.9)
     this will produce a `danmuku.xml` file in the subfolder `./danmuku/`.
-
--   ~~copy-and-paste danmuku~~
     
-    - ~~copy all contents except the first line in "danmuku.xml"~~
-    
-    - ~~paste it into "script.js" like this:~~
-
-      ```javascript
-      var xml_txt = 'insert xml file content';
-      ```
-    
-      ~~note that the value of xml_txt MUST BE INCLUDED WITH SINGLE QUOTE!!!~~
-    
--   open the index.html in Microsoft Edge, upload the `danmuku.xml` and play the video
+-   open the index.html in Microsoft Edge, upload the danmuku xml file and play the video.
     
 2. Get video
-There are two ways: download the video OR find the url of the video
-either way, change the `src` attribute of the `b-video` element in index.html
+八仙过海，各显神通.
 
-### To-do List
+3. Upload Danmuku and Video
+Just open the index.html and you will know where to upload.
 
-Besides fixing these bugs, here are some other functionality I want to implement:
--   find a way that guarantees to stop all danmukus.
--   resizable video player window
+## More on Bilibili Api
+By far, bilibili still has its api open to the public. I will introduce those I use in this project.
 
-3. Tips:
--   Don't pause-and-play the video too fast, or you will freak out the danmukus and make them freeze in the air.
+Belows are some types of ids that you will come across when using bilibili api 
+-   cid / oid: the unique id that identify a video/article of bilibili
+-   media id (md): identify a bangumi
+-   season id (ss): identify a bangumi (I don't know the the diff between md and ss, probably some internal use)
+-   episode id (ep): identify an episode of a bangumi
+
+This is a list of usable api
+-   cid -> danmuku
+
+    Current danmuku: https://api.bilibili.com/x/v1/dm/list.so?oid=
+    
+    Danmuku of specific date: https://api.bilibili.com/x/v2/dm/history?type=1&oid=&date=
+-   media id -> cids of every episode of the bangumi
+   
+    https://api.bilibili.com/pgc/review/user?media_id=
+-   av number -> cid
+   
+    (**Note that bilibili stop using av number anymore on March 23, 2020. av number to bv number is an injective mapping, meaning that for every av number, there is always a corresponding bv number. To convert av number back to bv number, see [this Zhihu blog](https://www.zhihu.com/question/381784377/answer/1099438784)**)
+    
+    https://api.bilibili.com/x/player/pagelist?aid=
+-   bv numnber -> cid
+   
+    https://api.bilibili.com/x/player/pagelist?bvid=
+
+## More on the danmuku file
+Bilibili api will return an xml file that contains all danmukus of a video. Below is an example
+```xml
+<i>
+    <!-- ... -->
+    <d p="783.55800,1,25,16777215,1642178620,0,7339dd1c,965423257139019776,7">This is a friendly danmuku.</d>
+</i>
+```
+
+A `<d>` element represents a danmuku. Its text content is the content of the danmuku. The mysterious `p` attribute represents all info we needed to create this danmuku player. Below is my guess on the meaning of `p` attribute.
+```xml
+<i>
+    <!-- ... -->
+    <d p="783.55800,    // timestamp
+          1,            // type (1 is rolling danmuku, 5 is danmuku at the top of the video)
+          25,           // unknown
+          16777215,     // decimal value of rgb color
+          1642178620,   // unix time
+          0,            // unknown
+          7339dd1c,     // unknown
+          965423257139019776,       // unknown
+          7                         // unknown, maybe the batch of danmuku
+          ">This is a friendly danmuku.</d>
+</i>
+```
+I reformat each `<d>` element into a more digestable style and sort it according to its timestamp. The code is in the [`get_danmuku.py`](./get_danmuku.py) file.Below is an example of the reformatted `<d>` element.
+```xml
+<d mode="1" 
+   rgb="rgb(255, 255, 255)" 
+   timestamp="0.0">我不敢相信我看到了甚麼 這部居然出現在B站</d>
+```
+
+    
+
+
