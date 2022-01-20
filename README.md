@@ -7,7 +7,7 @@ This is a fun little project that aims to bring you a clear and bilibili-free ex
 
 Below is a screenshot of the current version.
 
-<img src="./res/demo.png" width=70%>
+<img src="./res/demo.png">
 
 ## Bugs
 This is just an alpha version. To use this version, you should be aware of the following bugs:
