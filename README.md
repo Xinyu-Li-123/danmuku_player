@@ -47,10 +47,12 @@ Below is the workflow to properly play a bangumi with danmuku in edge explorer:
 -   open the index.html in Microsoft Edge, upload the danmuku xml file and play the video.
     
 2. Get video
+3. 
 八仙过海，各显神通.
 
 3. Upload Danmuku and Video
-Just open the index.html and you will know where to upload.
+
+Just open the webpage and you will know where to upload.
 
 ## More on Bilibili Api
 By far, bilibili still has its api open to the public. I will introduce those I use in this project.
@@ -72,7 +74,7 @@ This is a list of usable api
     https://api.bilibili.com/pgc/review/user?media_id=
 -   av number -> cid
    
-    (**Note that bilibili stop using av number anymore on March 23, 2020. av number to bv number is an injective mapping, meaning that for every av number, there is always a corresponding bv number. To convert av number back to bv number, see [this Zhihu blog](https://www.zhihu.com/question/381784377/answer/1099438784)**)
+    (**Note that bilibili has stopped using av number anymore since March 23, 2020. av number to bv number is an injective mapping, meaning that for every av number, there is always a corresponding bv number. To convert av number back to bv number, see [this Zhihu blog](https://www.zhihu.com/question/381784377/answer/1099438784)**)
     
     https://api.bilibili.com/x/player/pagelist?aid=
 -   bv numnber -> cid
