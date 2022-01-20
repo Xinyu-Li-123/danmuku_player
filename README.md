@@ -1,9 +1,9 @@
 # Danmuku Player
-[![license-shield](https://img.shields.io/apm/l/vim-mode)](https://github.com/Xinyu-Li-123/Routine-Exercise/blob/main/LICENSE.txt)
+[![license-shield](https://img.shields.io/apm/l/vim-mode)](https://mit-license.org/)
 ## About
 This is a fun little project that aims to bring you a clear and bilibili-free experience of watching animes with danmuku (弹幕，bullet chat). It's mainly for self-entertainment and for practicing my frontend skills. Since I'm a total beginner to frontend development, there are probably tons of problems in my code, but luckily it works: the performance is acceptable and I don't have to give away my money to 叔叔 anymore!
 
-“番剧不能失去弹幕，就像西方不能失去耶路撒冷”. For me, danmuku is an essential part in my experience of watching animes. However, today, there really aren't many animes to watch on Bilibili if you don't pay for the Bilibili Premium. I don't want to pay for a website where my favourite yuri animes are either taken down (e.g. Sakura Trick, Citrus, Slow Start...) or got the most important love scenes deleted by Bilibili (Bloom into You)! Luckily, **Bilibili's api to get danmuku is still available. The anime may need Bilibili premium, but the danmukus are free!** That's the motivation for this project.
+“番剧不能失去弹幕，就像西方不能失去耶路撒冷”. For me, danmuku is an essential part in my experience of watching animes. However, today, there really aren't many animes to watch on Bilibili if you don't pay for the Bilibili Premium. I don't want to pay for a website where my favourite yuri animes are either taken down (e.g. Sakura Trick, Citrus, Slow Start...) or got the most important love scenes deleted by Bilibili (Bloom into You)! Luckily, some of the Bilibili api are stil usable. That's the motivation for this project.
 
 ## Bugs
 This is just an alpha version. To use this version, you should be aware of the following bugs:
