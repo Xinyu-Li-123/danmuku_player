@@ -55,7 +55,7 @@ Below is the workflow to properly play a bangumi with danmuku in edge explorer:
 Just open the webpage and you will know where to upload.
 
 ## More on Bilibili Api
-By far, bilibili still has its api open to the public. I will introduce those I use in this project.
+By far, bilibili still has its api open to the public. I will introduce those I use in this project. The source of this section is [this blog](https://www.bilibili.com/read/cv5293665?from=search&spm_id_from=333.337.0.0).
 
 Belows are some types of ids that you will come across when using bilibili api 
 -   cid / oid: the unique id that identify a video/article of bilibili
