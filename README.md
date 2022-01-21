@@ -47,8 +47,8 @@ Below is the workflow to properly play a bangumi with danmuku in edge explorer:
 -   open the index.html in Microsoft Edge, upload the danmuku xml file and play the video.
     
 2. Get video
-3. 
-八仙过海，各显神通.
+   
+   八仙过海，各显神通.
 
 3. Upload Danmuku and Video
 
@@ -65,21 +65,30 @@ Belows are some types of ids that you will come across when using bilibili api
 
 This is a list of usable api
 -   cid -> danmuku
-
-    Current danmuku: https://api.bilibili.com/x/v1/dm/list.so?oid=
+-   
+    Current danmuku (?): 
+    ```
+    https://api.bilibili.com/x/v1/dm/list.so?oid=
+    ```
     
-    Danmuku of specific date: https://api.bilibili.com/x/v2/dm/history?type=1&oid=&date=
+    Danmuku on a specific date: 
+    ```
+    https://api.bilibili.com/x/v2/dm/history?type=1&oid=&date=
+    ```
 -   media id -> cids of every episode of the bangumi
-   
+    ```
     https://api.bilibili.com/pgc/review/user?media_id=
+    ```
 -   av number -> cid
    
     (**Note that bilibili has stopped using av number anymore since March 23, 2020. av number to bv number is an injective mapping, meaning that for every av number, there is always a corresponding bv number. To convert av number back to bv number, see [this Zhihu blog](https://www.zhihu.com/question/381784377/answer/1099438784)**)
-    
+    ```
     https://api.bilibili.com/x/player/pagelist?aid=
+    ```
 -   bv numnber -> cid
-   
+    ```
     https://api.bilibili.com/x/player/pagelist?bvid=
+    ```
 
 ## More on the danmuku file
 Bilibili api will return an xml file that contains all danmukus of a video. Below is an example
