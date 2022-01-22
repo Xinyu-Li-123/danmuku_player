@@ -18,7 +18,7 @@ This is just an alpha version. To use this version, you should be aware of the f
 -   you have to manually
     -   get the media id of anime 
     -   get the source of anime
-besides all these problems, enjoy!
+    besides all these problems, enjoy!
 
 ## To-do List
 Besides fixing these bugs, here are some other functionality I want to implement:
@@ -122,6 +122,16 @@ I reformat each `<d>` element into a more digestable style and sort it according
    timestamp="0.0">我不敢相信我看到了甚麼 這部居然出現在B站</d>
 ```
 
-    
+   
 
+## Some Exciting Finding
 
+There is a powerful way to download danmuku xml file if you know the av / bv number of the video. The key is **bilibilijj**. or **jijidown** This is a website that previously allows you to download video, audio, and danmuku file on bilibili. To use this website, just add a **jj** after bilibili in the url and you will be redirected to the jijidown websitelike this:
+
+```
+https://www.bilibili.com/video/BV1ix411E7AE
+->
+https://www.bilibilijj.com/video/BV1ix411E7AE
+```
+
+What's most exciting about this website is that it allows you to download the danmuku file **even if the corresponding video is removed by bilibili**! I guess this is probably some kind of loophole, because to my best understanding, I haven't find a single way to obtain danmuku file of a removed video. 
