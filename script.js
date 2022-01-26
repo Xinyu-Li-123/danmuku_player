@@ -50,6 +50,11 @@ let danmukuInput = document.getElementById('danmukuInput');
 const danmukuReader = new FileReader();
 
 danmukuInput.addEventListener('change', function(e){
+    container.innerHTML = '';        // clear current danmuku
+    if (verbose){
+        console.log("danmuku clear");
+    }
+
     const file = e.target.files[0];
 
     danmukuReader.readAsText(file);
@@ -69,12 +74,13 @@ const videoReader = new FileReader();
 
 videoInput.addEventListener('change', function(e1){
       // The file reader gives us an ArrayBuffer:
-
+    container.innerHTML = '';        // clear current danmuku
     const file = e1.target.files[0];
     videoReader.readAsArrayBuffer(file);
 
     videoReader.onload = function(e) {
         // The file reader gives us an ArrayBuffer:
+
         let buffer = e.target.result;
         
         // We have to convert the buffer to a blob:
@@ -90,6 +96,7 @@ videoInput.addEventListener('change', function(e1){
 let urlInput = document.getElementById('videoUrlInput');
 let urlInputButton = document.getElementById('videoUrlInputSubmit');
 urlInputButton.onclick = function(e){
+    container.innerHTML = '';        // clear current danmuku
     document.getElementById('b-video').src = urlInput.value;
     urlInput.value = "";
 };
@@ -130,6 +137,7 @@ async function reload_danmuku(){
 
 async function send_danmuku(xml_txt) {
     // await sleep(5000);
+
 
 
     // get danmuku

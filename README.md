@@ -12,7 +12,6 @@ Below is a screenshot of the current version.
 ## Bugs
 This is just an alpha version. To use this version, you should be aware of the following bugs:
 -   you can pause the video, but they won't stop simutaneously;
--   Don't pause-and-play the video too fast, or you will find all danmukus freeze in the air (if this happens, just refresh the webpage and upload the source and danmuku file again);
 -   switching to another page for too long will make many danmukus stack together
 -   danmukus may occlude each other
 -   you have to manually
