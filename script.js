@@ -228,14 +228,15 @@ async function send_danmuku_from(start){
 
         let d = document.createElement("div");
 
-        if (danmuku_list[j].getAttribute('mode')==1){
-            d.className = "danmuku rolling";
-        }
-        else if (danmuku_list[j].getAttribute('mode')==5){
-            d.className = "danmuku top";
-            // d.style.translate       
-        }
+        // if (danmuku_list[j].getAttribute('mode')==1){
+        //     d.className = "danmuku rolling";
+        // }
+        // else if (danmuku_list[j].getAttribute('mode')==5){
+        //     d.className = "danmuku top";
+        //     d.style.translate       
+        // }
 
+        d.className = "danmuku rolling";
 
         d.innerText = danmuku_list[j].textContent;
         if (verbose){ 
