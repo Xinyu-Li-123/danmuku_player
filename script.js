@@ -1,4 +1,4 @@
-globalThis.verbose = true;          // debug option
+globalThis.verbose = false;          // debug option
 
 // globalThis.pauseTimes = 20;      // pause all danmuku for 10 times in case some are missed
 // globalThis.pauseDuration = 50;      // pause all danmuku for 10 times in case some are missed
