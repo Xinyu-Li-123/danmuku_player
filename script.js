@@ -1,13 +1,37 @@
-// import jquery
-let script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
-
-globalThis.verbose = false;          // debug option
+globalThis.verbose = true;          // debug option
 
 // globalThis.pauseTimes = 20;      // pause all danmuku for 10 times in case some are missed
 // globalThis.pauseDuration = 50;      // pause all danmuku for 10 times in case some are missed
+globalThis.offset = 0;
+globalThis.container = document.getElementById("danmuku-container");
+
+// get video
+globalThis.cur_video = document.getElementById("b-video");
+globalThis.interval = 0;
+
+
+
+
+document.getElementById("offset").innerText = offset;
+// e.g. let offset = 100
+//      then at video timestamp 23 play danmuku of timestamp 123
+
+document.getElementById("offset-slider").onchange = function(){
+    offset = parseFloat(this.value);
+    document.getElementById("offset").innerText = offset;
+    container.innerHTML = "";
+    // cur_danmuku_list = [];
+    
+    if (verbose){
+        console.log("set offset to: " + offset);
+    }
+
+    if (verbose){
+        console.log("clear danmuku-container, danmuku reloaded at video timestamp: " + cur_video.currentTime + " with offset: " + offset);
+    }
+    reload_danmuku();
+};
+
 
 
 // upload danmuku.xml
@@ -68,6 +92,34 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+async function reload_danmuku(){
+    // reload danmuku based on current time
+
+    // find starting danmuku (the nth danmuku should be the starting one)
+    let el = cur_video.currentTime + offset;
+
+    let m = 0;
+    let n = danmuku_schedule.length - 1;
+    while (m <= n) {
+        let k = (n + m) >> 1;
+        let cmp = el - danmuku_schedule[k];
+        if (cmp > 0) {
+            m = k + 1;
+        } else if(cmp < 0) {
+            n = k - 1;
+        } else {
+            break;
+        }
+    }
+    if (verbose){
+        console.log("current timestamp: " + cur_video.currentTime
+                    + ", jump to " + n + "th danmuku with tiimestamp: " + danmuku_list[n].getAttribute("timestamp")
+                    + ", offset = " + offset);
+    }
+    // await sleep(100);
+    // await sleep((danmuku_schedule[n]-cur_video.currentTime)*1000);
+    send_danmuku_from(n); 
+}
 
 async function send_danmuku(xml_txt) {
     // await sleep(5000);
@@ -88,10 +140,6 @@ async function send_danmuku(xml_txt) {
     for (let i=0; i<danmuku_list.length; i++){
         danmuku_schedule.push(danmuku_list[i].getAttribute('timestamp'));
     };
-    globalThis.container = document.getElementById("danmuku-container");
-
-    // get video
-    globalThis.cur_video = document.getElementById("b-video");
 
     // display video timestamp
     cur_video.ontimeupdate = function(){
@@ -117,45 +165,27 @@ async function send_danmuku(xml_txt) {
 
     // play all danmuku
     cur_video.addEventListener('play', function(){
-        cur_danmuku_list.forEach(function(d){
-            d.style.animationPlayState = "running";
-        });
+        // cur_danmuku_list.forEach(function(d){
+
+        for (let i=document.getElementById("danmuku-container").getElementsByClassName("danmuku").length-1; i>-1; i--){
+            document.getElementById("danmuku-container").getElementsByClassName("danmuku")[i].style.animationPlayState = "running";
+        }
+
+        console.log("Continue to play the video.");
     });
 
     cur_video.onseeking = function(e){
         container.innerHTML = "";
         if (verbose){
             console.log("seeking starts, clear danmuku-container");
-        }
+        }    
     };
 
-    cur_video.onseeked = async function(e){
-        if (verbose){
-            console.log("seeking finished, current timestamp: " + cur_video.currentTime);
-        }
-        // find starting danmuku (the nth danmuku should be the starting one)
-        let el = cur_video.currentTime;
-        let m = 0;
-        let n = danmuku_schedule.length - 1;
-        while (m <= n) {
-            let k = (n + m) >> 1;
-            let cmp = el - danmuku_schedule[k];
-            if (cmp > 0) {
-                m = k + 1;
-            } else if(cmp < 0) {
-                n = k - 1;
-            } else {
-                break;
-            }
-        }
+    cur_video.onseeked = function(){
+        reload_danmuku();
 
-        // await sleep(100);
-        if (verbose){
-            console.log("jump to " + n + "th danmuku with tiimestamp: " + danmuku_list[n].getAttribute("timestamp"));
-        }
-        // await sleep((danmuku_schedule[n]-cur_video.currentTime)*1000);
-        send_danmuku_from(n); 
     };
+
     await sleep(danmuku_schedule[0]*1000);
     send_danmuku_from(0);
     };
@@ -172,7 +202,7 @@ function addAnimation(body) {
 async function send_danmuku_from(start){
     globalThis.j = start;
     globalThis.cur_time = danmuku_schedule[j];
-    globalThis.cur_danmuku_list = [];
+    // globalThis.cur_danmuku_list = [];
     // if (start == 0){
     //     globalThis.last_time = 0;
     // }
@@ -186,8 +216,9 @@ async function send_danmuku_from(start){
             //     d.style.animationPlayState = "paused";
             // });
 
-            for (let i=cur_danmuku_list.length-1; i>-1; i--){
-                cur_danmuku_list[i].style.animationPlayState = "paused";
+            
+            for (let i=document.getElementById("danmuku-container").getElementsByClassName("danmuku").length-1; i>-1; i--){
+                document.getElementById("danmuku-container").getElementsByClassName("danmuku")[i].style.animationPlayState = "paused";
             }
             await sleep(200);
             continue;
@@ -196,7 +227,16 @@ async function send_danmuku_from(start){
         // mode = danmuku_list[j].getAttribute('mode');
 
         let d = document.createElement("div");
-        d.className = "danmuku";
+
+        if (danmuku_list[j].getAttribute('mode')==1){
+            d.className = "danmuku rolling";
+        }
+        else if (danmuku_list[j].getAttribute('mode')==5){
+            d.className = "danmuku top";
+            // d.style.translate       
+        }
+
+
         d.innerText = danmuku_list[j].textContent;
         if (verbose){ 
             d.innerText += "  " + Math.floor(danmuku_schedule[j]/60)%60 + ": " + Math.floor(danmuku_schedule[j])%60;
@@ -207,23 +247,36 @@ async function send_danmuku_from(start){
 
         d.style.top = Math.floor(Math.random()*10)*35 + "px";
         d.style.color = danmuku_list[j].getAttribute('rgb');
+
+        d.addEventListener("animationend", function(){
+            if (verbose){
+                console.log("danmuu deleted, content: " + d.innerText);
+            }
+            d.remove();
+        });
+
         
-        await sleep((cur_time-cur_video.currentTime)*1000);
+        cur_time_w_offset = cur_video.currentTime + offset;
+        if (cur_time_w_offset < 0){
+            cur_time_w_offset = 0;
+        }
+        await sleep((cur_time-cur_time_w_offset)*1000);
         if (verbose){
-            console.log(j + "th:　cur: " + cur_time + "  ||  video: " + cur_video.currentTime
-                          + " || gap: " + (cur_time - cur_video.currentTime));
+            console.log(j + "th:　cur: " + cur_time + " with offset: " + offset
+                          + "  ||  video: " + cur_video.currentTime
+                          + " || gap: " + (cur_time - (cur_video.currentTime + offset)));
         }     
         document.getElementById("danmuku-status").innerText= cur_time;
         container.appendChild(d);
 
 
-        cur_danmuku_list.push(d);
-        if (cur_danmuku_list.length > 600){     // clear loaded danmuku
-            for (let i=0; i<300; i++){
-                df = cur_danmuku_list.shift();  // first in first out
-                df.remove();
-            };
-        }
+        // cur_danmuku_list.push(d);
+        // if (cur_danmuku_list.length > 600){     // clear loaded danmuku
+        //     for (let i=0; i<300; i++){
+        //         df = cur_danmuku_list.shift();  // first in first out
+        //         df.remove();
+        //     };
+        // }
         // last_time = cur_time;
         j += 1;
     };

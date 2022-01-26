@@ -129,9 +129,13 @@ I reformat each `<d>` element into a more digestable style and sort it according
 There is a powerful way to download danmuku xml file if you know the av / bv number of the video. The key is **bilibilijj**. or **jijidown** This is a website that previously allows you to download video, audio, and danmuku file on bilibili. To use this website, just add a **jj** after bilibili in the url and you will be redirected to the jijidown websitelike this:
 
 ```
-https://www.bilibili.com/video/BV1ix411E7AE
+https://www.bilibili.com/video/BV1ix411E7AE			
 ->
 https://www.bilibilijj.com/video/BV1ix411E7AE
 ```
 
 What's most exciting about this website is that it allows you to download the danmuku file **even if the corresponding video is removed by bilibili**! I guess this is probably some kind of loophole, because to my best understanding, I haven't find a single way to obtain danmuku file of a removed video. 
+
+The video in the example above is *为美好的世界献上祝福！红传说* (KonoSuba: Legend of Crimson) a fantastic KonoSuba movie that is uploaded to bilibili silently on April 19, 2020, received a 9.9 rating, and removed by bilibili silently few month later. To me, it is the movie **combined with its danmuku** that makes my watching experience so fantastic, and the loss of those precious danmuku is tragic and outraging! **Danmuku is created by the users and should belong to the users!** 
+
+Luckily, I find out the BV number of this movie by accident, and it's the one in the example above. So, if you are a fan of KonoSuba like me, then please enjoy this precious treasure created jointly by **us**, by every fan of KonoSuba.

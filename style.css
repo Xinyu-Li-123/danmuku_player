@@ -83,11 +83,9 @@
                 rgb(0, 0, 0) 0px -1px 1px, 
                 rgb(0, 0, 0) -1px 0px 1px;
     z-index: 1100;
-    /* animation: scrollTo linear 8s forwards; */
-    animation: scrollTo linear forwards;
-    animation-duration: var(--danmuku-duration);
-    position: absolute;
-    /* top: 10px; */
+    position: absolute;    
+
+    /* disable danmuku selection */
     animation-play-state: running;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -102,9 +100,28 @@
     animation-play-state: paused;
 }
 
+.danmuku.rolling{
+    animation: scrollTo linear forwards;
+    animation-duration: var(--danmuku-duration);
+}
+
 @keyframes scrollTo {
     from{transform: translateX(var(--video-width))}
     to{transform: translateX(-1300px)}
 }
+
+.danmuku.top{
+    animation: scrollTo linear forwards;
+    animation-duration: var(--danmuku-duration);
+}
+
+@keyframes scrollTo {
+    from{}
+    to{}
+}
+
+
+
+
 
 

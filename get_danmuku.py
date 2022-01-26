@@ -45,6 +45,10 @@ def reformat_xml_and_save(xml_str: str, path=None):
             <d p="...> ==> <d timestamp="..." mode=" " rgb="...">
     -   sort xml by timestamp
     """
+
+
+
+
     root = ET.fromstring(xml_str)
     j = 0
     total = len(list(root.iter('d')))
@@ -76,6 +80,12 @@ def reformat_xml_and_save(xml_str: str, path=None):
 
     if path is None:
         path = "./danmuku/danmuku.xml"
+    
+    raw_path = path[:-4]+"raw.xml"
+    with open(raw_path, 'w', encoding="utf8") as file:
+        file.write(xml_str)
+        print(f"{path} is reformatted, there are {total} danmukus in total")
+
     with open(path, "wb") as file:
         file.write(ET.tostring(root, encoding='utf8'))
         print(f"{path} is reformatted, there are {total} danmukus in total")
@@ -176,13 +186,13 @@ def main():
     # md = 28228414      # manually set media id
     # ep_num = 4         # manually set episode number
     # get_danmuku_via_md(md, ep_num)
-    md = 28235244
-    ss = 34558
+    md = 1270
+    ss = 2574
     av = 170001
     bv = "1H4411F7Ud"
     ep_start = 1
-    ep_end = 12
-    folder_name = "md28235244_看不见的见子"
+    ep_end = 26
+    folder_name = "md1270_濑户的花嫁"
     
     try:
         os.mkdir("danmuku")
