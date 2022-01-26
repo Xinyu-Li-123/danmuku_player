@@ -1,0 +1,312 @@
+{
+	"videoinfo": {
+		"aid": 2355064,
+		"title": "『生肉1080P』2011年10月新番《境界线上的地平线》第一季",
+		"video_review": 58,
+		"duration": "萌萌哒,小野大辅,福山润,豪华声优阵容,三无少女赫莱森,后宫大法好,赌上一切的泡妞",
+		"lpartinfo": [
+			{
+				"cid": 3679516,
+				"page": 1,
+				"title": "境界线前的整列者们",
+				"aid": 2355064,
+				"duration": 1486,
+				"video_review": 53
+			},
+			{
+				"cid": 3679517,
+				"page": 2,
+				"title": "餐厅的清纯者",
+				"aid": 2355064,
+				"duration": 1463,
+				"video_review": 2
+			},
+			{
+				"cid": 3679518,
+				"page": 3,
+				"title": "街中的游击手",
+				"aid": 2355064,
+				"duration": 1484,
+				"video_review": 1
+			},
+			{
+				"cid": 3679519,
+				"page": 4,
+				"title": "夜天下的暗跃者",
+				"aid": 2355064,
+				"duration": 1463,
+				"video_review": 0
+			},
+			{
+				"cid": 3679520,
+				"page": 5,
+				"title": "月下的毕业者",
+				"aid": 2355064,
+				"duration": 1485,
+				"video_review": 2
+			},
+			{
+				"cid": 3679521,
+				"page": 6,
+				"title": "告白处的辩护者",
+				"aid": 2355064,
+				"duration": 1464,
+				"video_review": 0
+			},
+			{
+				"cid": 3679522,
+				"page": 7,
+				"title": "武藏的骑士",
+				"aid": 2355064,
+				"duration": 1485,
+				"video_review": 0
+			},
+			{
+				"cid": 3679523,
+				"page": 8,
+				"title": "全域的支持者",
+				"aid": 2355064,
+				"duration": 1463,
+				"video_review": 0
+			},
+			{
+				"cid": 3679524,
+				"page": 9,
+				"title": "高岭的花",
+				"aid": 2355064,
+				"duration": 1484,
+				"video_review": 0
+			},
+			{
+				"cid": 3679525,
+				"page": 10,
+				"title": "起跑线上的号角吹响",
+				"aid": 2355064,
+				"duration": 1464,
+				"video_review": 0
+			},
+			{
+				"cid": 3679526,
+				"page": 11,
+				"title": "武藏的不可能男",
+				"aid": 2355064,
+				"duration": 1484,
+				"video_review": 0
+			},
+			{
+				"cid": 3679527,
+				"page": 12,
+				"title": "平行线上的相对者",
+				"aid": 2355064,
+				"duration": 1464,
+				"video_review": 0
+			},
+			{
+				"cid": 3679528,
+				"page": 13,
+				"title": "境界线上的整列者们",
+				"aid": 2355064,
+				"duration": 1474,
+				"video_review": 0
+			}
+		],
+		"tag": "萌萌哒,小野大辅,福山润,豪华声优阵容,三无少女赫莱森,后宫大法好,赌上一切的泡妞",
+		"description": "被各国分割统治的中世纪的神州·日本，某个笨蛋为了喜欢的妹子，在欢脱的日常里开启了一段泡妞（三无少女好难攻略啊）和帮着基友讨老婆的征程！经过了“重奏统合争乱”，并把联系着人类的命运的“圣谱”作为原本历史再现，执行的各国把各式各样的迷惑与决意藏于胸口，前进开拓着未来将互相重合的中世纪世界作为舞台，学生们在学园国家间的抗争正式上演！纯爱泡妞与热血后宫番的并驾齐驱，供君享用~",
+		"tid": 32,
+		"typename": "完结动画",
+		"created": 1432364408,
+		"created_at": "2015/05/23 15:00",
+		"author": "万众独一咸鱼玖",
+		"mid": 9191861,
+		"play": 12640,
+		"coins": 7,
+		"review": 10,
+		"favorites": 311
+	},
+	"partlist": [
+		{
+			"cid": 3679516,
+			"page": 1,
+			"from": "vupload",
+			"part": "境界线前的整列者们",
+			"duration": 1486,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679517,
+			"page": 2,
+			"from": "vupload",
+			"part": "餐厅的清纯者",
+			"duration": 1463,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679518,
+			"page": 3,
+			"from": "vupload",
+			"part": "街中的游击手",
+			"duration": 1484,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679519,
+			"page": 4,
+			"from": "vupload",
+			"part": "夜天下的暗跃者",
+			"duration": 1463,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679520,
+			"page": 5,
+			"from": "vupload",
+			"part": "月下的毕业者",
+			"duration": 1485,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679521,
+			"page": 6,
+			"from": "vupload",
+			"part": "告白处的辩护者",
+			"duration": 1464,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679522,
+			"page": 7,
+			"from": "vupload",
+			"part": "武藏的骑士",
+			"duration": 1485,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679523,
+			"page": 8,
+			"from": "vupload",
+			"part": "全域的支持者",
+			"duration": 1463,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679524,
+			"page": 9,
+			"from": "vupload",
+			"part": "高岭的花",
+			"duration": 1484,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679525,
+			"page": 10,
+			"from": "vupload",
+			"part": "起跑线上的号角吹响",
+			"duration": 1464,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679526,
+			"page": 11,
+			"from": "vupload",
+			"part": "武藏的不可能男",
+			"duration": 1484,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679527,
+			"page": 12,
+			"from": "vupload",
+			"part": "平行线上的相对者",
+			"duration": 1464,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 3679528,
+			"page": 13,
+			"from": "vupload",
+			"part": "境界线上的整列者们",
+			"duration": 1474,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 0,
+				"height": 0,
+				"rotate": 0
+			}
+		}
+	],
+	"source": "bpd",
+	"page": "<!DOCTYPE html><html><head itemprop=\"video\" itemscope itemtype=\"http://schema.org/VideoObject\"><title data-vue-meta=\"true\">『生肉1080P』2011年10月新番《境界线上的地平线》第一季_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title> <meta data-vue-meta=\"true\" http-equiv=\"Content-Type\" content=\"text/html\" charset=\"utf-8\"><meta data-vue-meta=\"true\" name=\"renderer\" content=\"webkit\"><meta data-vue-meta=\"true\" http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><meta data-vue-meta=\"true\" name=\"spm_prefix\" content=\"333.788\"><meta data-vue-meta=\"true\" itemprop=\"keywords\" name=\"keywords\" content=\"『生肉1080P』2011年10月新番《境界线上的地平线》第一季,萌萌哒,小野大辅,福山润,豪华声优阵容,三无少女赫莱森,后宫大法好,赌上一切的泡妞,番剧,完结动画,哔哩哔哩,Bilibili,B站,弹幕\"><meta data-vue-meta=\"true\" itemprop=\"description\" name=\"description\" content=\"被各国分割统治的中世纪的神州·日本，某个笨蛋为了喜欢的妹子，在欢脱的日常里开启了一段泡妞（三无少女好难攻略啊）和帮着基友讨老婆的征程！经过了“重奏统合争乱”，并把联系着人类的命运的“圣谱”作为原本历史再现，执行的各国把各式各样的迷惑与决意藏于胸口，前进开拓着未来将互相重合的中世纪世界作为舞台，学生们在学园国家间的抗争正式上演！纯爱泡妞与热血后宫番的并驾齐驱，供君享用~\"><meta data-vue-meta=\"true\" itemprop=\"author\" name=\"author\" content=\"万众独一咸鱼玖\"><meta data-vue-meta=\"true\" itemprop=\"name\" name=\"title\" content=\"『生肉1080P』2011年10月新番《境界线上的地平线》第一季_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili\"><meta data-vue-meta=\"true\" itemprop=\"url\" content=\"https://www.bilibili.com/video/av2355064/\"><meta data-vue-meta=\"true\" itemprop=\"image\" content=\"http://i0.hdslb.com/bfs/archive/0adb8ad9f492d50a11f8a98bb59546843a377b9a.png\"><meta data-vue-meta=\"true\" itemprop=\"thumbnailUrl\" content=\"http://i0.hdslb.com/bfs/archive/0adb8ad9f492d50a11f8a98bb59546843a377b9a.png\"><meta data-vue-meta=\"true\" itemprop=\"uploadDate\" content=\"2015-05-23 15:00:08\"><meta data-vue-meta=\"true\" itemprop=\"datePublished\" content=\"2017-06-14 17:04:35\"><meta data-vue-meta=\"true\" itemprop=\"comment\" content=\"为最爱的境界线顶一下,福山润什么的最喜欢了~！,画质不错。。。，但是。。。没字幕啊\"><meta data-vue-meta=\"true\" itemprop=\"commentCount\" content=\"10\"><meta data-vue-meta=\"true\" property=\"og:type\" content=\"video\"><meta data-vue-meta=\"true\" property=\"og:title\" content=\"『生肉1080P』2011年10月新番《境界线上的地平线》第一季_哔哩哔哩 (゜-゜)つロ 干杯~-bilibili\"><meta data-vue-meta=\"true\" property=\"og:image\" content=\"http://i0.hdslb.com/bfs/archive/0adb8ad9f492d50a11f8a98bb59546843a377b9a.png\"><meta data-vue-meta=\"true\" property=\"og:url\" content=\"https://www.bilibili.com/video/av2355064/\"><meta data-vue-meta=\"true\" property=\"og:width\" content=\"846\"><meta data-vue-meta=\"true\" property=\"og:height\" content=\"566\"> <link data-vue-meta=\"true\" rel=\"canonical\" href=\"https://www.bilibili.com/video/av2355064/\"><script type=\"text/javascript\">!function(){for(var o=window.navigator.userAgent,i=[\"Android\",\"iPhone\",\"SymbianOS\",\"Windows Phone\",\"iPod\"],r=!0,a=0,n=i.length;a<n;a++)if(0<o.indexOf(i[a])){r=!1;break}if(!r){var e=window.location.origin.replace(\"www\",\"m\")+\"/video/\"+window.location.href.match(/av([0-9]+)/g)[0]+\".html\"+window.location.search;window.location.href=e}}(),window.spmReportData={},window.reportConfig={sample:1,scrollTracker:!0,msgObjects:\"spmReportData\",errorTracker:!0,hasAbtest:!0,abtestPlatform:4}</script><style>.ie-fix{background:#fff;position:fixed;left:0;top:0;right:0;bottom:0;width:100%;height:100%;z-index:9999999}.ie-fix .title{background:#00a1d6;text-align:center;padding:10px 0;color:#fff}</style><script>window.__INITIAL_STATE__={\"aid\":\"2355064\",\"p\":\"\",\"videoData\":{\"aid\":2355064,\"videos\":13,\"tid\":32,\"tname\":\"完结动画\",\"copyright\":2,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002F0adb8ad9f492d50a11f8a98bb59546843a377b9a.png\",\"title\":\"『生肉1080P』2011年10月新番《境界线上的地平线》第一季\",\"pubdate\":1432364408,\"ctime\":1497431075,\"desc\":\"被各国分割统治的中世纪的神州·日本，某个笨蛋为了喜欢的妹子，在欢脱的日常里开启了一段泡妞（三无少女好难攻略啊）和帮着基友讨老婆的征程！经过了“重奏统合争乱”，并把联系着人类的命运的“圣谱”作为原本历史再现，执行的各国把各式各样的迷惑与决意藏于胸口，前进开拓着未来将互相重合的中世纪世界作为舞台，学生们在学园国家间的抗争正式上演！纯爱泡妞与热血后宫番的并驾齐驱，供君享用~\",\"state\":0,\"attribute\":49152,\"duration\":19145,\"rights\":{\"bp\":0,\"elec\":0,\"download\":1,\"movie\":0,\"pay\":0,\"hd5\":0,\"no_reprint\":0,\"autoplay\":1,\"ugc_pay\":0,\"is_cooperation\":0,\"ugc_pay_preview\":0},\"owner\":{\"mid\":9191861,\"name\":\"万众独一咸鱼玖\",\"face\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Fface\\u002F911912b9a58c2e38c9a07cab38865d2812e3c2cf.jpg\"},\"stat\":{\"aid\":2355064,\"view\":\"--\",\"danmaku\":\"--\",\"reply\":10,\"favorite\":\"--\",\"coin\":\"--\",\"share\":\"--\",\"now_rank\":0,\"his_rank\":0,\"like\":\"--\",\"dislike\":0},\"dynamic\":\"\",\"cid\":3679516,\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0},\"no_cache\":true,\"pages\":[{\"cid\":3679516,\"page\":1,\"from\":\"vupload\",\"part\":\"境界线前的整列者们\",\"duration\":1486,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679517,\"page\":2,\"from\":\"vupload\",\"part\":\"餐厅的清纯者\",\"duration\":1463,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679518,\"page\":3,\"from\":\"vupload\",\"part\":\"街中的游击手\",\"duration\":1484,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679519,\"page\":4,\"from\":\"vupload\",\"part\":\"夜天下的暗跃者\",\"duration\":1463,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679520,\"page\":5,\"from\":\"vupload\",\"part\":\"月下的毕业者\",\"duration\":1485,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679521,\"page\":6,\"from\":\"vupload\",\"part\":\"告白处的辩护者\",\"duration\":1464,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679522,\"page\":7,\"from\":\"vupload\",\"part\":\"武藏的骑士\",\"duration\":1485,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679523,\"page\":8,\"from\":\"vupload\",\"part\":\"全域的支持者\",\"duration\":1463,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679524,\"page\":9,\"from\":\"vupload\",\"part\":\"高岭的花\",\"duration\":1484,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679525,\"page\":10,\"from\":\"vupload\",\"part\":\"起跑线上的号角吹响\",\"duration\":1464,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679526,\"page\":11,\"from\":\"vupload\",\"part\":\"武藏的不可能男\",\"duration\":1484,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679527,\"page\":12,\"from\":\"vupload\",\"part\":\"平行线上的相对者\",\"duration\":1464,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}},{\"cid\":3679528,\"page\":13,\"from\":\"vupload\",\"part\":\"境界线上的整列者们\",\"duration\":1474,\"vid\":\"\",\"weblink\":\"\",\"dimension\":{\"width\":0,\"height\":0,\"rotate\":0}}],\"subtitle\":{\"allow_submit\":false,\"list\":[]},\"embedPlayer\":\"EmbedPlayer(\\\"player\\\", \\\"\\u002F\\u002Fs1.hdslb.com\\u002Fbfs\\u002Fstatic\\u002Fplayer\\u002Fmain\\u002Fflash\\u002Fplay.swf\\\", \\\"cid=3679516&aid=2355064&attribute=49152\\\")\"},\"upData\":{\"mid\":\"9191861\",\"name\":\"万众独一咸鱼玖\",\"approve\":false,\"sex\":\"保密\",\"rank\":\"10000\",\"face\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Fface\\u002F911912b9a58c2e38c9a07cab38865d2812e3c2cf.jpg\",\"DisplayRank\":\"0\",\"regtime\":0,\"spacesta\":0,\"birthday\":\"\",\"place\":\"\",\"description\":\"\",\"article\":0,\"attentions\":[],\"fans\":23,\"friend\":15,\"attention\":15,\"sign\":\"\",\"level_info\":{\"current_level\":2,\"current_min\":0,\"current_exp\":0,\"next_exp\":0},\"pendant\":{\"pid\":0,\"name\":\"\",\"image\":\"\",\"expire\":0},\"nameplate\":{\"nid\":0,\"name\":\"\",\"image\":\"\",\"image_small\":\"\",\"level\":\"\",\"condition\":\"\"},\"Official\":{\"role\":0,\"title\":\"\",\"desc\":\"\"},\"official_verify\":{\"type\":-1,\"desc\":\"\"},\"vip\":{\"vipType\":1,\"dueRemark\":\"\",\"accessStatus\":0,\"vipStatus\":0,\"vipStatusWarn\":\"\",\"theme_type\":0},\"archiveCount\":2},\"staffData\":[],\"tags\":[{\"tag_id\":34329,\"tag_name\":\"萌萌哒\",\"cover\":\"\",\"head_cover\":\"\",\"content\":\"\",\"short_content\":\"\",\"type\":3,\"state\":0,\"ctime\":1436866637,\"count\":{\"view\":0,\"use\":101557,\"atten\":3396},\"is_atten\":0,\"likes\":0,\"hates\":0,\"attribute\":0,\"liked\":0,\"hated\":0,\"showDetail\":false,\"showReport\":false,\"timeOut\":null},{\"tag_id\":1885,\"tag_name\":\"小野大辅\",\"cover\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Ftag\\u002Fe873f8aefcdb9f885ae103e8a2628d15d1b6bb86.jpg\",\"head_cover\":\"\",\"content\":\"小野大辅（1978年5月4日－），日本著名男性声优，歌手。高知县出身，血型是O型。毕业于日本青二塾周日养成所，所属事务所是Mausu Promotion。2007年起，和青二事务所的神谷浩史在广播节目DearGirl~Stories~中开始合作。2008年以《南家三姐妹》保坂这个角色获得声优奖男优部门配角赏。2010年3月6日于第4回声优奖以《黑执事》赛巴斯钦这个角色获得声优奖主演男优赏。主要代表作品及角色有：古泉一树（凉宫春日的忧郁）、国崎往人（AIR）、曾吕明日太（女生爱女生）、史威恩·卡尔·巴亚（机动战士高达 SEED C.E.73 STARGAZER）、赛巴斯钦‧米卡艾利斯（黑执事）、平和岛静雄（无头骑士异闻录）、八神和麻（风之圣痕）、杰克·贝萨流士（潘朵拉之心）、绿间真太郎（影子篮球员）、夜刀神狗朗（K）。\",\"short_content\":\"\",\"type\":3,\"state\":0,\"ctime\":1436866637,\"count\":{\"view\":0,\"use\":6584,\"atten\":10078},\"is_atten\":0,\"likes\":0,\"hates\":0,\"attribute\":0,\"liked\":0,\"hated\":0,\"showDetail\":false,\"showReport\":false,\"timeOut\":null},{\"tag_id\":5911,\"tag_name\":\"福山润\",\"cover\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Ftag\\u002F6e6d00e427f1d70d61beaae8877cd50cb8d8751a.jpg\",\"head_cover\":\"\",\"content\":\"福山润（1978年11月26日－），日本著名男性声优。生于广岛县福山市，出身于大阪府高槻市。AXL ONE事务所所属。身高170cm、体重53kg、血型A型、星座是射手座。在2000－2001年的《无敌王TRI-ZENON》中初次担任主角，饰演神威章。2006年荣获日本“文化放送”最佳男声优奖。令福山润真正登上事业上第一次巅峰的角色是《CODE GEASS 》中的腹黑王子鲁路修·兰佩路基，他也凭该角色获得了第一届日本声优大赏“主演男声优奖”。2009年荣获第八届“东京アニメアワード”最佳声优奖。2009年荣获第三届日本声优大赏“海外ファン赏”。2011年、辞退长年所属的PRODUCTION baobab事务所、和森川智之共同设立AXL ONE事务所。其他代表作：阿尔贝（岩窟王）、四月一日君寻（×××HOLiC）、志水桂一（金色琴弦）、葵·托利（境界线上的地平线）、富樫勇太（中二病也要谈恋爱！）、熊猫（白熊咖啡馆）、克拉福·罗伦斯（狼与香辛料）、奴良陆生（滑头鬼之孙）、格雷尔·萨特克利夫（黑执事）、奥村雪男（青之驱魔师）。\",\"short_content\":\"\",\"type\":3,\"state\":0,\"ctime\":1436866637,\"count\":{\"view\":0,\"use\":5257,\"atten\":14463},\"is_atten\":0,\"likes\":0,\"hates\":0,\"attribute\":0,\"liked\":0,\"hated\":0,\"showDetail\":false,\"showReport\":false,\"timeOut\":null},{\"tag_id\":298065,\"tag_name\":\"豪华声优阵容\",\"cover\":\"\",\"head_cover\":\"\",\"content\":\"\",\"short_content\":\"\",\"type\":0,\"state\":0,\"ctime\":1436866637,\"count\":{\"view\":0,\"use\":43,\"atten\":4},\"is_atten\":0,\"likes\":0,\"hates\":0,\"attribute\":0,\"liked\":0,\"hated\":0,\"showDetail\":false,\"showReport\":false,\"timeOut\":null},{\"tag_id\":1205897,\"tag_name\":\"三无少女赫莱森\",\"cover\":\"\",\"head_cover\":\"\",\"content\":\"\",\"short_content\":\"\",\"type\":0,\"state\":0,\"ctime\":1436866637,\"count\":{\"view\":0,\"use\":1,\"atten\":0},\"is_atten\":0,\"likes\":0,\"hates\":0,\"attribute\":0,\"liked\":0,\"hated\":0,\"showDetail\":false,\"showReport\":false,\"timeOut\":null},{\"tag_id\":1205898,\"tag_name\":\"后宫大法好\",\"cover\":\"\",\"head_cover\":\"\",\"content\":\"\",\"short_content\":\"\",\"type\":0,\"state\":0,\"ctime\":1436866637,\"count\":{\"view\":0,\"use\":2,\"atten\":0},\"is_atten\":0,\"likes\":0,\"hates\":0,\"attribute\":0,\"liked\":0,\"hated\":0,\"showDetail\":false,\"showReport\":false,\"timeOut\":null},{\"tag_id\":1205899,\"tag_name\":\"赌上一切的泡妞\",\"cover\":\"\",\"head_cover\":\"\",\"content\":\"\",\"short_content\":\"\",\"type\":0,\"state\":0,\"ctime\":1436866637,\"count\":{\"view\":0,\"use\":1,\"atten\":0},\"is_atten\":0,\"likes\":0,\"hates\":0,\"attribute\":0,\"liked\":0,\"hated\":0,\"showDetail\":false,\"showReport\":false,\"timeOut\":null}],\"comment\":{\"count\":10,\"list\":[\"为最爱的境界线顶一下\",\"福山润什么的最喜欢了~！\",\"画质不错。。。，但是。。。没字幕啊\"]},\"related\":[{\"aid\":62371199,\"cid\":108403645,\"duration\":1639,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002F43287c7a80fd69893c8758e6eaf6db698483eae2.jpg\",\"title\":\"2019年10月新番介绍，史上最强！阵容炸裂！\",\"owner\":{\"name\":\"奋斗的生菜\",\"mid\":20402739},\"stat\":{\"danmaku\":38383,\"view\":1771151}},{\"aid\":55936562,\"cid\":97781163,\"duration\":562,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F6c8bca613a70d52d45500dea1527c2cb455b69e0.jpg\",\"title\":\"境界线上的地平线(OP、ED合集)\",\"owner\":{\"name\":\"knobbing2\",\"mid\":327054718},\"stat\":{\"danmaku\":0,\"view\":241}},{\"aid\":2696706,\"cid\":4210737,\"duration\":18961,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F84e63036ec56dcc90f0c356f9805393a26d45d0d.jpg\",\"title\":\"【合集】境界线上的地平线\",\"owner\":{\"name\":\"哔哩哔哩番剧\",\"mid\":928123},\"stat\":{\"danmaku\":153506,\"view\":6781368}},{\"aid\":6469663,\"cid\":10522483,\"duration\":17591,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F8fec1a802f9f9c78d3f06ced62f052b46453f8ce.jpg\",\"title\":\"【合集】架向星空之桥\",\"owner\":{\"name\":\"哔哩哔哩番剧\",\"mid\":928123},\"stat\":{\"danmaku\":212735,\"view\":3404371}},{\"aid\":1830404,\"cid\":2814580,\"duration\":38037,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F1cfd99fac9fc8736991254c63e7709f417af5d1b.jpg\",\"title\":\"【合集】无头骑士异闻录 第一季\",\"owner\":{\"name\":\"哔哩哔哩番剧\",\"mid\":928123},\"stat\":{\"danmaku\":847924,\"view\":12780040}},{\"aid\":175167,\"cid\":287709,\"duration\":1469,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002F78cb782eb3f2e88374aa6324d7f084b579911836.gif\",\"title\":\"【10月】境界线上的地平线 08【RH】【轻国】\",\"owner\":{\"name\":\"境界\",\"mid\":35851},\"stat\":{\"danmaku\":4052,\"view\":87996}},{\"aid\":887919,\"cid\":1290638,\"duration\":2683,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002F02611aaf06eceaad48982c78a4648249e891c061.jpg\",\"title\":\"【BD1080P】境界线上地平线I【轻国】\",\"owner\":{\"name\":\"枫叶逝去\",\"mid\":520116},\"stat\":{\"danmaku\":7057,\"view\":164838}},{\"aid\":3161783,\"cid\":4979272,\"duration\":62,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002Ff9118a2b7fc71dfc252b7594ad6e88c7d8c93667.jpg\",\"title\":\"通行道歌   境界线上的地平线\",\"owner\":{\"name\":\"乱世人棍魔\",\"mid\":10734285},\"stat\":{\"danmaku\":20,\"view\":4420}},{\"aid\":41546885,\"cid\":72961984,\"duration\":2289,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002F2b61e07e30e229c6a773451d871e197dab2e2d42.jpg\",\"title\":\"【BD1080P】境界线上的地平线SP合集【轻国】\",\"owner\":{\"name\":\"刹那的想法\",\"mid\":14753304},\"stat\":{\"danmaku\":4,\"view\":11734}},{\"aid\":2696815,\"cid\":4210767,\"duration\":18967,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F5a2e1a0cea2941bd76c1180dc74ab161f9cc2ecf.jpg\",\"title\":\"【合集】境界线上的地平线Ⅱ（第二季）\",\"owner\":{\"name\":\"哔哩哔哩番剧\",\"mid\":928123},\"stat\":{\"danmaku\":72591,\"view\":3032125}},{\"aid\":28546716,\"cid\":49409533,\"duration\":117,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fd84ec9b3beefa3b1bf6ce4c7039afd930456c956.png\",\"title\":\"几十部番剧惨遭下架......\",\"owner\":{\"name\":\"死宅咋啦\",\"mid\":34374640},\"stat\":{\"danmaku\":2432,\"view\":309974}},{\"aid\":2144964,\"cid\":3333638,\"duration\":4428,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002F4a7051177730d35c28ae7ec83d48e211f807f525.jpg\",\"title\":\"境界线上的地平线战斗剪辑\",\"owner\":{\"name\":\"中二大帝李安平\",\"mid\":2318230},\"stat\":{\"danmaku\":19,\"view\":3240}},{\"aid\":1606322,\"cid\":91898452,\"duration\":36823,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002Ff79ffec19f7923f8b6204703d1cf1a09742be4a5.jpg\",\"title\":\"【合集】记录的地平线\",\"owner\":{\"name\":\"哔哩哔哩番剧\",\"mid\":928123},\"stat\":{\"danmaku\":357086,\"view\":9725937}},{\"aid\":151492,\"cid\":2764507,\"duration\":1470,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fb6d227e92df844fa44e614ade3dedd4addd95d61.jpg\",\"title\":\"【10月】境界线上的地平线 01 【轻国】\",\"owner\":{\"name\":\"⑨搬运君\",\"mid\":49443},\"stat\":{\"danmaku\":18954,\"view\":253147}},{\"aid\":51751121,\"cid\":90596069,\"duration\":60,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F406fa8bd0b5fbe2a46e567ebb1b5e1e391d01ba9.jpg\",\"title\":\"十大B站正版旧番剧之巅！\",\"owner\":{\"name\":\"补番目录\",\"mid\":24055770},\"stat\":{\"danmaku\":41,\"view\":14922}},{\"aid\":8591918,\"cid\":14149571,\"duration\":101,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002Ff211065598f4fee990f4bc4eb126ca605b59f7ee.png\",\"title\":\"【MMD】境界线上的地平线 赫莱森出来跳舞了\",\"owner\":{\"name\":\"逍遥宿心\",\"mid\":18740931},\"stat\":{\"danmaku\":4,\"view\":254}},{\"aid\":21472686,\"cid\":35338539,\"duration\":1094,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002F5e6db3c7f9a8e46d4e463a109cac596b4283c9e8.jpg\",\"title\":\"【b站历史弹幕】魔法少女小圆 片段\",\"owner\":{\"name\":\"樱小潞露娜\",\"mid\":8274600},\"stat\":{\"danmaku\":191,\"view\":38616}},{\"aid\":1840326,\"cid\":1848100,\"duration\":4403,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002Ffe602bd9d2d797db3ac476b98f8924819880e4f7.jpg\",\"title\":\"境界线上的地平线II【1080p】\",\"owner\":{\"name\":\"Bili_883115\",\"mid\":883115},\"stat\":{\"danmaku\":8350,\"view\":134438}},{\"aid\":129171,\"cid\":215920,\"duration\":1297,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fd3ba17a398c351b6574edf65888300f26b2cddda.jpg\",\"title\":\"2011年10月新番介绍PV和CV表\",\"owner\":{\"name\":\"Sola丶空\",\"mid\":88609},\"stat\":{\"danmaku\":1574,\"view\":6594}},{\"aid\":9582574,\"cid\":15838778,\"duration\":95,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fd9e8c0d6806af6a3fcbd223b16082c504904b774.jpg\",\"title\":\"[新番预告]境界线上的地平线III   2020年 即将上映\",\"owner\":{\"name\":\"FirstBeats\",\"mid\":12407304},\"stat\":{\"danmaku\":152,\"view\":37987}},{\"aid\":31302670,\"cid\":54736584,\"duration\":171,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F11512c5407ef48f4d15b8d1e8ef27c5201144be3.jpg\",\"title\":\"『境界线上的地平线』Blu-ray BOX映像特典「完全新作特典动画」\",\"owner\":{\"name\":\"那兔_\",\"mid\":10761571},\"stat\":{\"danmaku\":37,\"view\":4180}},{\"aid\":1608327,\"cid\":3386418,\"duration\":1377,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002F06e435d335df8da1f46abd020287ea0bca013eda.jpg\",\"title\":\"【10月】四月是你的谎言 01\",\"owner\":{\"name\":\"哔哩哔哩番剧\",\"mid\":928123},\"stat\":{\"danmaku\":221902,\"view\":14024212}},{\"aid\":514307,\"cid\":770391,\"duration\":302,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002F6b850dd487db7eed94cf94bf219184716fda8b21.jpg\",\"title\":\"「境界线上的地平线II」BD第七卷 特典CD (320K)\",\"owner\":{\"name\":\"小清水亜美\",\"mid\":19653},\"stat\":{\"danmaku\":34,\"view\":3817}},{\"aid\":34363610,\"cid\":60195446,\"duration\":626,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F482c8582ac789faf39e49accc3f3d99cc76b7eca.jpg\",\"title\":\"公主连接 Re:Dive\",\"owner\":{\"name\":\"空白SAOI\",\"mid\":115068476},\"stat\":{\"danmaku\":7,\"view\":4558}},{\"aid\":501240,\"cid\":753115,\"duration\":1460,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fa923b89e6d46f92f9f4f7e26b259c4bc9970d0e2.jpg\",\"title\":\"【副音轨】境界线上的地平线II 09【轻之国度】\",\"owner\":{\"name\":\"小清水亜美\",\"mid\":19653},\"stat\":{\"danmaku\":782,\"view\":16863}},{\"aid\":196021,\"cid\":319270,\"duration\":146,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F8a91cc018c0a78fd72deeb54e8a35477ab6d7827.jpg\",\"title\":\"境界线上的地平线 (第01~13话 + 特别集) 解说動画\",\"owner\":{\"name\":\"Time-M.\",\"mid\":155431},\"stat\":{\"danmaku\":72,\"view\":13189}},{\"aid\":12972904,\"cid\":21305530,\"duration\":19016,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fae8f81e5404139b5c319ce0b59d0f90c8fe12dfb.png\",\"title\":\"【720P】境界线上的地平线 第一季【英配生肉】\",\"owner\":{\"name\":\"无所事事青叶酱\",\"mid\":12506114},\"stat\":{\"danmaku\":10,\"view\":7891}},{\"aid\":31023611,\"cid\":54156252,\"duration\":34751,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F2bf9e9880cb922192ca00b87ce9ce29c9c35937d.jpg\",\"title\":\"【1080P\\u002FBDRip】甲贺忍法帖 Basilisk 2005【POPGO】\",\"owner\":{\"name\":\"起名费劲太郎\",\"mid\":802735},\"stat\":{\"danmaku\":684,\"view\":29430}},{\"aid\":28573688,\"cid\":49464470,\"duration\":369,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fb9c942bfdafc6a0d256f55e927bc5ef763881be8.jpg\",\"title\":\"[BD1080P+]斩·赤红之瞳\\u002FAkame ga Kill! NCOP&NCED[Hi10P_×264_FLAC]\",\"owner\":{\"name\":\"红白の博麗霊夢\",\"mid\":37862130},\"stat\":{\"danmaku\":0,\"view\":445}},{\"aid\":179413,\"cid\":2804982,\"duration\":2940,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002F8b3b5156e8cdb0f378018879cf637392bc28afa5.jpg\",\"title\":\"【10月】境界线上的地平线 09【轻国】\",\"owner\":{\"name\":\"境界\",\"mid\":35851},\"stat\":{\"danmaku\":5842,\"view\":114363}},{\"aid\":23177872,\"cid\":38578096,\"duration\":468,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002Ffc69f3e7e96596e98f84b023177e65e6853be95a.jpg\",\"title\":\"[1080P+\\u002FFLAC\\u002FBDRip]机巧少女不会受伤 NCOP&NCED\",\"owner\":{\"name\":\"红白の博麗霊夢\",\"mid\":37862130},\"stat\":{\"danmaku\":1,\"view\":1937}},{\"aid\":384328,\"cid\":604325,\"duration\":1637,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fc4aefe29f5e64043726949f567e00f49a6e09451.jpg\",\"title\":\"【MAD】境界线上的地平线\",\"owner\":{\"name\":\"袁景倩\",\"mid\":525212},\"stat\":{\"danmaku\":22,\"view\":816}},{\"aid\":1078929,\"cid\":1560221,\"duration\":215,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002F4cd5db2a247969ac8458ff69d6579c5588a2fe24.jpg\",\"title\":\"【要君】境界线上的地平线__句点是终点 也是起点\",\"owner\":{\"name\":\"KANAME君\",\"mid\":1608221},\"stat\":{\"danmaku\":90,\"view\":2639}},{\"aid\":151436,\"cid\":250842,\"duration\":1469,\"pic\":\"http:\\u002F\\u002Fi1.hdslb.com\\u002Fbfs\\u002Farchive\\u002F5c9e1a9d9098d0a47f71fb1a7f774d9c9ff642c3.jpg\",\"title\":\"【生肉】境界线上的地平线 01\",\"owner\":{\"name\":\"小清水亜美\",\"mid\":19653},\"stat\":{\"danmaku\":766,\"view\":9423}},{\"aid\":31662847,\"cid\":55432343,\"duration\":311,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fdda70084e712d16880ac8c8c49b38d236e5fba7b.jpg\",\"title\":\"【Blu-ray BOX】境界线上的地平线 特典新作动画试看映像①②③【F宅\\u002F1080P+】\",\"owner\":{\"name\":\"空灵雨迹\",\"mid\":223902},\"stat\":{\"danmaku\":123,\"view\":22899}},{\"aid\":190624,\"cid\":2805166,\"duration\":1469,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002F8b3b5156e8cdb0f378018879cf637392bc28afa5.jpg\",\"title\":\"【完结】境界线上的地平线 13【异域】\",\"owner\":{\"name\":\"境界\",\"mid\":35851},\"stat\":{\"danmaku\":6701,\"view\":111476}},{\"aid\":3356703,\"cid\":10703170,\"duration\":1420,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fd173b65211d40e98fb193dac57602316e783d13f.jpg\",\"title\":\"【10月】对魔导学园35试验小队 10\",\"owner\":{\"name\":\"哔哩哔哩番剧\",\"mid\":928123},\"stat\":{\"danmaku\":26176,\"view\":1315257}},{\"aid\":60272646,\"cid\":104943779,\"duration\":632,\"pic\":\"http:\\u002F\\u002Fi2.hdslb.com\\u002Fbfs\\u002Farchive\\u002F4ff4127c2147cefbdb47182ca13a32ad4f590c3d.png\",\"title\":\"主角想当闲鱼，却成了神一般的存在，的10部动漫\",\"owner\":{\"name\":\"枫哥说动漫\",\"mid\":63573437},\"stat\":{\"danmaku\":583,\"view\":160805}},{\"aid\":31496982,\"cid\":55098755,\"duration\":186,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002F3fb28d7d56ab522d900a0dacc20374739987ca66.png\",\"title\":\"【Blu-ray BOX】境界线上的地平线 Blu-ray BOX映像特典「完全新作特典动画」【中字】\",\"owner\":{\"name\":\"夏日幻听\",\"mid\":7753700},\"stat\":{\"danmaku\":44,\"view\":7750}},{\"aid\":319185,\"cid\":500090,\"duration\":202,\"pic\":\"http:\\u002F\\u002Fi0.hdslb.com\\u002Fbfs\\u002Farchive\\u002Fa4547bf1ed594543b5751eae40f1373439054ae1.jpg\",\"title\":\"【解说】境界线上的地平线II 第０３話【商人战】\",\"owner\":{\"name\":\"Time-M.\",\"mid\":155431},\"stat\":{\"danmaku\":94,\"view\":1458}}],\"isClient\":false,\"error\":{},\"player\":\"\",\"playurl\":{},\"user\":{},\"cidMap\":{},\"insertScripts\":[\"\\u002F\\u002Fs1.hdslb.com\\u002Fbfs\\u002Fstatic\\u002Fjinkela\\u002Fvideo\\u002Fstardust-video.22c1113ff1cdaaa4f7e717054bf798662520eb58.js\"]};(function(){var s;(s=document.currentScript||document.scripts[document.scripts.length-1]).parentNode.removeChild(s);}());</script> <link rel=\"stylesheet\" href=\"//s1.hdslb.com/bfs/static/jinkela/video/css/stardust-video.0.22c1113ff1cdaaa4f7e717054bf798662520eb58.css\"></head><body><script type=\"text/javascript\">function getIEVersion(){var e=99;if(\"Microsoft Internet Explorer\"==navigator.appName){var t=navigator.userAgent;null!=new RegExp(\"MSIE ([0-9]{1,}[.0-9]{0,})\").exec(t)&&(e=parseFloat(RegExp.$1))}return e}function setSize(){var e=window.isWide,t=350,i=document.body.offsetHeight,o=document.body.offsetWidth,n=parseInt(16*(.743*i-108.7)/9),d=o-152-t,r=d<n?d:n;r<638&&(r=638),1280<r&&(r=1280);var s,l=r+t;s=window.hasBlackSide&&!window.isWide?Math.round((r-14+(e?t:0))*(9/16)+46)+96:Math.round((r+(e?t:0))*(9/16))+46;var a=\"0 \"+(o<l+152?76:0),c=document.querySelector(\".v-wrap\"),u=document.querySelector(\".l-con\"),w=document.querySelector(\"#bofqi\"),y=document.querySelector(\"#danmukuBox\"),p=document.querySelector(\"#playerWrap\");c&&(c.style.width=l+\"px\",c.style.padding=a+\"px\"),w&&(w.style.width=l-(e?0:t)+\"px\",w.style.height=s+\"px\"),u&&(u.style.width=l-t+\"px\"),e?(y&&(y.style.height=s-0+\"px\"),p&&(p.style.height=s-0+\"px\"),w&&(w.style.position=\"relative\")):(y&&(y.style.height=\"auto\"),p&&(p.style.height=\"auto\"),w&&(w.style.position=\"static\"))}getIEVersion()<=9&&(document.body.innerHTML=\"<div class='ie-fix'><div class='title'>为了保障你的账号安全和最佳预览体验，播放页已不支持IE9及以下IE版本浏览器访问，建议你使用Chrome等高级浏览器或升级到IE最新版本浏览器。</div></div>\"),window.addEventListener(\"resize\",function(){setSize()}),window.PlayerAgent={player_widewin:function(){window.scrollTo(0,55),window.isWide=!0,setSize()},player_fullwin:function(e){window.scrollTo(0,0),window.isWide=!1,setSize()},toggleBlackSide:function(e){window.hasBlackSide=e,setSize()}}</script><script type=\"text/javascript\" src=\"//s1.hdslb.com/bfs/static/player/main/video.js?v=20190822\"></script><div class=\"z-top-container has-stardust\" style=\"height:50px;box-shadow:0 1px 2px rgba(0,0,0,.1)\"></div><div id=\"video-page-app\"></div><!-- built files will be auto injected --><div id=\"app\" data-server-rendered=\"true\"><div class=\"v-wrap\"><div class=\"l-con\"><div id=\"viewbox_report\" class=\"video-info report-wrap-module report-scroll-module\"><h1 title=\"『生肉1080P』2011年10月新番《境界线上的地平线》第一季\" class=\"video-title\"><!----><span class=\"tit\">『生肉1080P』2011年10月新番《境界线上的地平线》第一季</span></h1><div class=\"video-data\"><span class=\"a-crumbs\"><a target=\"_blank\" href=\"//www.bilibili.com/anime/\">番剧</a><i class=\"van-icon-general_enter_s\"></i><a target=\"_blank\" href=\"//www.bilibili.com/v/anime/finish/\">完结动画</a></span><span>2015-05-23 15:00:08</span><!----></div><div class=\"video-data\"><span title=\"总播放数--\" class=\"view\">--播放 · </span><span title=\"历史累计弹幕数--\" class=\"dm\">--弹幕</span><!----><!----></div></div><div id=\"playerWrap\" class=\"player-wrap\"><div id=\"bofqi\"></div><div><script type=\"text/javascript\">\n        setSize()\n\n        function gqs(name) {\n          var reg = new RegExp(\"(^|&)\" + name + \"=([^&]*)(&|$)\");\n          var r = window.location.search.substr(1).match(reg);\n          if (r != null) {\n            return unescape(r[2])\n          }\n          return null\n        }\n\n        function getCookie(name) { \n          var reg = new RegExp(\"(^| )\"+name+\"=([^;]*)(;|$)\")\n          var r = document.cookie.match(reg)\n          return r ? unescape(r[2]) : null\n        } \n\n        var vd = window.__INITIAL_STATE__ && window.__INITIAL_STATE__.videoData\n        if(vd && vd.aid) {\n          if(vd.embedPlayer) {\n            var fp = gqs('p') || gqs('page') || null\n            var p = fp ? fp - 1 : 0\n            var player = {\n              aid: vd.aid,\n              cid: (vd.pages[p] && vd.pages[p].cid) || vd.pages[0].cid,\n              attribute: vd.attribute\n            }\n            EmbedPlayer(\"player\", \"//static.hdslb.com/play.swf\", \"cid=\" + player.cid + \"&aid=\" + player.aid + \"&attribute=\" + player.attribute)\n          }else if(vd.embed) {\n            document.querySelector(\"#bofqi\").innerHTML = vd.embed\n          }\n        }\n      </script></div></div><div id=\"arc_toolbar_report\" class=\"video-toolbar report-wrap-module report-scroll-module\"><div class=\"ops\"><span title=\"点赞数0\" class=\"like\"><!----><!----><!----><!----><!----><i class=\"van-icon-videodetails_like\" style=\"color:;\"></i>--\n    </span><span title=\"投硬币枚数\" class=\"coin\"><canvas width=\"34\" height=\"34\" class=\"ring-progress\" style=\"width:34px;height:34px;left:-3px;top:-3px;\"></canvas><!----><i class=\"van-icon-videodetails_throw\" style=\"color:;\"></i>\n      --\n    </span><span title=\"收藏人数\" class=\"collect\"><canvas width=\"34\" height=\"34\" class=\"ring-progress\" style=\"width:34px;height:34px;left:-3px;top:-3px;\"></canvas><!----><i class=\"van-icon-videodetails_collec\" style=\"color:;\"></i>--\n    </span><span title=\"分享\" class=\"share\"><i class=\"van-icon-videodetails_share\"></i>分享\n      <!----></span></div><div class=\"more\"><i class=\"van-icon-general_moreactions\"></i><!----></div><div class=\"appeal-text\">稿件投诉</div></div><div id=\"v_desc\" class=\"video-desc report-wrap-module report-scroll-module\"><div class=\"info open\">被各国分割统治的中世纪的神州·日本，某个笨蛋为了喜欢的妹子，在欢脱的日常里开启了一段泡妞（三无少女好难攻略啊）和帮着基友讨老婆的征程！经过了“重奏统合争乱”，并把联系着人类的命运的“圣谱”作为原本历史再现，执行的各国把各式各样的迷惑与决意藏于胸口，前进开拓着未来将互相重合的中世纪世界作为舞台，学生们在学园国家间的抗争正式上演！纯爱泡妞与热血后宫番的并驾齐驱，供君享用~</div><!----><!----></div><div id=\"v_tag\" class=\"s_tag report-wrap-module report-scroll-module\"><ul class=\"tag-area clearfix\"><li class=\"tag\"><a href=\"//search.bilibili.com/all?keyword=%E8%90%8C%E8%90%8C%E5%93%92&amp;from_source=video_tag\" target=\"_blank\">萌萌哒</a><!----><!----></li><li class=\"tag\"><a href=\"//search.bilibili.com/all?keyword=%E5%B0%8F%E9%87%8E%E5%A4%A7%E8%BE%85&amp;from_source=video_tag\" target=\"_blank\">小野大辅</a><!----><!----></li><li class=\"tag\"><a href=\"//search.bilibili.com/all?keyword=%E7%A6%8F%E5%B1%B1%E6%B6%A6&amp;from_source=video_tag\" target=\"_blank\">福山润</a><!----><!----></li><li class=\"tag\"><a href=\"//search.bilibili.com/all?keyword=%E8%B1%AA%E5%8D%8E%E5%A3%B0%E4%BC%98%E9%98%B5%E5%AE%B9&amp;from_source=video_tag\" target=\"_blank\">豪华声优阵容</a><!----><!----></li><li class=\"tag\"><a href=\"//search.bilibili.com/all?keyword=%E4%B8%89%E6%97%A0%E5%B0%91%E5%A5%B3%E8%B5%AB%E8%8E%B1%E6%A3%AE&amp;from_source=video_tag\" target=\"_blank\">三无少女赫莱森</a><!----><!----></li><li class=\"tag\"><a href=\"//search.bilibili.com/all?keyword=%E5%90%8E%E5%AE%AB%E5%A4%A7%E6%B3%95%E5%A5%BD&amp;from_source=video_tag\" target=\"_blank\">后宫大法好</a><!----><!----></li><li class=\"tag\"><a href=\"//search.bilibili.com/all?keyword=%E8%B5%8C%E4%B8%8A%E4%B8%80%E5%88%87%E7%9A%84%E6%B3%A1%E5%A6%9E&amp;from_source=video_tag\" target=\"_blank\">赌上一切的泡妞</a><!----><!----></li><!----><a class=\"btn-add\"><span class=\"one\"></span><span class=\"two\"></span></a><!----></ul></div><!----><div id=\"comment\" class=\"comment-m report-wrap-module report-scroll-module\"><div class=\"common\"><div class=\"b-head\"><span class=\"b-head-t results\"></span><span class=\"b-head-t\">评论</span></div><div class=\"comment\"></div></div></div></div><div class=\"r-con\"><div id=\"v_upinfo\" class=\"up-info report-wrap-module report-scroll-module\"><div class=\"u-face\"><a href=\"//space.bilibili.com/9191861\" target=\"_blank\" report-id=\"head\" class=\"fa\"><!----><!----><!----><!----></a></div><div class=\"u-info\"><div class=\"name\" style=\"line-height:40px;height:40px;\"><a href=\"//space.bilibili.com/9191861\" target=\"_blank\" report-id=\"name\" class=\"username\">万众独一咸鱼玖</a><a href=\"//message.bilibili.com/#whisper/mid9191861\" target=\"_blank\" class=\"message\"><i class=\"van-icon-videodetails_messag\"></i>发消息</a></div><!----></div><div class=\"btn-panel\"><!----><div class=\"default-btn follow-btn b-gz not-follow\"><span><i class=\"van-icon-general_addto_s\"></i>关注 <span>23</span></span><!----><!----></div></div></div><div id=\"danmukuBox\" class=\"danmaku-box\"><div class=\"danmaku-wrap\"></div></div><div id=\"multi_page\" class=\"multi-page report-wrap-module report-scroll-module\"><div class=\"head-con\"><h3>视频选集</h3><div class=\"range-box\"><i class=\"van-icon-general_viewlist\"></i><!----><span class=\"cur-page\">1/13</span></div></div><div class=\"cur-list\"><ul class=\"list-box\"><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li><li><!----></li></ul><!----></div></div><div id=\"slide_ad\" class=\"report-wrap-module report-scroll-module\"></div><div id=\"reco_list\" class=\"recommend-list report-wrap-module report-scroll-module\"><div class=\"rec-title\">\n    相关推荐\n\n    </div><div class=\"rec-list\"><!----><!----><!----><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av62371199/?spm_id_from=333.788.videocard.0\"><img src=\"\" alt=\"2019年10月新番介绍，史上最强！阵容炸裂！\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">27:19</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av62371199/?spm_id_from=333.788.videocard.0\" title=\"2019年10月新番介绍，史上最强！阵容炸裂！\" class=\"title\">2019年10月新番介绍，史上最强！阵容炸裂！</a><div class=\"count up\"><a href=\"//space.bilibili.com/20402739/\" target=\"_blank\">奋斗的生菜</a></div><div class=\"count\">\n        177.1万播放 · 3.8万弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av55936562/?spm_id_from=333.788.videocard.1\"><img src=\"\" alt=\"境界线上的地平线(OP、ED合集)\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">09:22</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av55936562/?spm_id_from=333.788.videocard.1\" title=\"境界线上的地平线(OP、ED合集)\" class=\"title\">境界线上的地平线(OP、ED合集)</a><div class=\"count up\"><a href=\"//space.bilibili.com/327054718/\" target=\"_blank\">knobbing2</a></div><div class=\"count\">\n        241播放 · 0弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av2696706/?spm_id_from=333.788.videocard.2\"><img src=\"\" alt=\"【合集】境界线上的地平线\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">5:16:01</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av2696706/?spm_id_from=333.788.videocard.2\" title=\"【合集】境界线上的地平线\" class=\"title\">【合集】境界线上的地平线</a><div class=\"count up\"><a href=\"//space.bilibili.com/928123/\" target=\"_blank\">哔哩哔哩番剧</a></div><div class=\"count\">\n        678.1万播放 · 15.4万弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av6469663/?spm_id_from=333.788.videocard.3\"><img src=\"\" alt=\"【合集】架向星空之桥\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">4:53:11</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av6469663/?spm_id_from=333.788.videocard.3\" title=\"【合集】架向星空之桥\" class=\"title\">【合集】架向星空之桥</a><div class=\"count up\"><a href=\"//space.bilibili.com/928123/\" target=\"_blank\">哔哩哔哩番剧</a></div><div class=\"count\">\n        340.4万播放 · 21.3万弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av1830404/?spm_id_from=333.788.videocard.4\"><img src=\"\" alt=\"【合集】无头骑士异闻录 第一季\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">10:33:57</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av1830404/?spm_id_from=333.788.videocard.4\" title=\"【合集】无头骑士异闻录 第一季\" class=\"title\">【合集】无头骑士异闻录 第一季</a><div class=\"count up\"><a href=\"//space.bilibili.com/928123/\" target=\"_blank\">哔哩哔哩番剧</a></div><div class=\"count\">\n        1278.0万播放 · 84.8万弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av175167/?spm_id_from=333.788.videocard.5\"><img src=\"\" alt=\"【10月】境界线上的地平线 08【RH】【轻国】\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">24:29</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av175167/?spm_id_from=333.788.videocard.5\" title=\"【10月】境界线上的地平线 08【RH】【轻国】\" class=\"title\">【10月】境界线上的地平线 08【RH】【轻国】</a><div class=\"count up\"><a href=\"//space.bilibili.com/35851/\" target=\"_blank\">境界</a></div><div class=\"count\">\n        8.8万播放 · 4052弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av887919/?spm_id_from=333.788.videocard.6\"><img src=\"\" alt=\"【BD1080P】境界线上地平线I【轻国】\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">44:43</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av887919/?spm_id_from=333.788.videocard.6\" title=\"【BD1080P】境界线上地平线I【轻国】\" class=\"title\">【BD1080P】境界线上地平线I【轻国】</a><div class=\"count up\"><a href=\"//space.bilibili.com/520116/\" target=\"_blank\">枫叶逝去</a></div><div class=\"count\">\n        16.5万播放 · 7057弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av3161783/?spm_id_from=333.788.videocard.7\"><img src=\"\" alt=\"通行道歌   境界线上的地平线\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">01:02</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av3161783/?spm_id_from=333.788.videocard.7\" title=\"通行道歌   境界线上的地平线\" class=\"title\">通行道歌   境界线上的地平线</a><div class=\"count up\"><a href=\"//space.bilibili.com/10734285/\" target=\"_blank\">乱世人棍魔</a></div><div class=\"count\">\n        4420播放 · 20弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av41546885/?spm_id_from=333.788.videocard.8\"><img src=\"\" alt=\"【BD1080P】境界线上的地平线SP合集【轻国】\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">38:09</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av41546885/?spm_id_from=333.788.videocard.8\" title=\"【BD1080P】境界线上的地平线SP合集【轻国】\" class=\"title\">【BD1080P】境界线上的地平线SP合集【轻国】</a><div class=\"count up\"><a href=\"//space.bilibili.com/14753304/\" target=\"_blank\">刹那的想法</a></div><div class=\"count\">\n        1.2万播放 · 4弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av2696815/?spm_id_from=333.788.videocard.9\"><img src=\"\" alt=\"【合集】境界线上的地平线Ⅱ（第二季）\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">5:16:07</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av2696815/?spm_id_from=333.788.videocard.9\" title=\"【合集】境界线上的地平线Ⅱ（第二季）\" class=\"title\">【合集】境界线上的地平线Ⅱ（第二季）</a><div class=\"count up\"><a href=\"//space.bilibili.com/928123/\" target=\"_blank\">哔哩哔哩番剧</a></div><div class=\"count\">\n        303.2万播放 · 7.3万弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av28546716/?spm_id_from=333.788.videocard.10\"><img src=\"\" alt=\"几十部番剧惨遭下架......\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">01:57</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av28546716/?spm_id_from=333.788.videocard.10\" title=\"几十部番剧惨遭下架......\" class=\"title\">几十部番剧惨遭下架......</a><div class=\"count up\"><a href=\"//space.bilibili.com/34374640/\" target=\"_blank\">死宅咋啦</a></div><div class=\"count\">\n        31.0万播放 · 2432弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av2144964/?spm_id_from=333.788.videocard.11\"><img src=\"\" alt=\"境界线上的地平线战斗剪辑\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">1:13:48</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av2144964/?spm_id_from=333.788.videocard.11\" title=\"境界线上的地平线战斗剪辑\" class=\"title\">境界线上的地平线战斗剪辑</a><div class=\"count up\"><a href=\"//space.bilibili.com/2318230/\" target=\"_blank\">中二大帝李安平</a></div><div class=\"count\">\n        3240播放 · 19弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av1606322/?spm_id_from=333.788.videocard.12\"><img src=\"\" alt=\"【合集】记录的地平线\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">10:13:43</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av1606322/?spm_id_from=333.788.videocard.12\" title=\"【合集】记录的地平线\" class=\"title\">【合集】记录的地平线</a><div class=\"count up\"><a href=\"//space.bilibili.com/928123/\" target=\"_blank\">哔哩哔哩番剧</a></div><div class=\"count\">\n        972.6万播放 · 35.7万弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av151492/?spm_id_from=333.788.videocard.13\"><img src=\"\" alt=\"【10月】境界线上的地平线 01 【轻国】\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">24:30</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av151492/?spm_id_from=333.788.videocard.13\" title=\"【10月】境界线上的地平线 01 【轻国】\" class=\"title\">【10月】境界线上的地平线 01 【轻国】</a><div class=\"count up\"><a href=\"//space.bilibili.com/49443/\" target=\"_blank\">⑨搬运君</a></div><div class=\"count\">\n        25.3万播放 · 1.9万弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av51751121/?spm_id_from=333.788.videocard.14\"><img src=\"\" alt=\"十大B站正版旧番剧之巅！\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">01:00</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av51751121/?spm_id_from=333.788.videocard.14\" title=\"十大B站正版旧番剧之巅！\" class=\"title\">十大B站正版旧番剧之巅！</a><div class=\"count up\"><a href=\"//space.bilibili.com/24055770/\" target=\"_blank\">补番目录</a></div><div class=\"count\">\n        1.5万播放 · 41弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av8591918/?spm_id_from=333.788.videocard.15\"><img src=\"\" alt=\"【MMD】境界线上的地平线 赫莱森出来跳舞了\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">01:41</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av8591918/?spm_id_from=333.788.videocard.15\" title=\"【MMD】境界线上的地平线 赫莱森出来跳舞了\" class=\"title\">【MMD】境界线上的地平线 赫莱森出来跳舞了</a><div class=\"count up\"><a href=\"//space.bilibili.com/18740931/\" target=\"_blank\">逍遥宿心</a></div><div class=\"count\">\n        254播放 · 4弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av21472686/?spm_id_from=333.788.videocard.16\"><img src=\"\" alt=\"【b站历史弹幕】魔法少女小圆 片段\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">18:14</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av21472686/?spm_id_from=333.788.videocard.16\" title=\"【b站历史弹幕】魔法少女小圆 片段\" class=\"title\">【b站历史弹幕】魔法少女小圆 片段</a><div class=\"count up\"><a href=\"//space.bilibili.com/8274600/\" target=\"_blank\">樱小潞露娜</a></div><div class=\"count\">\n        3.9万播放 · 191弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av1840326/?spm_id_from=333.788.videocard.17\"><img src=\"\" alt=\"境界线上的地平线II【1080p】\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">1:13:23</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av1840326/?spm_id_from=333.788.videocard.17\" title=\"境界线上的地平线II【1080p】\" class=\"title\">境界线上的地平线II【1080p】</a><div class=\"count up\"><a href=\"//space.bilibili.com/883115/\" target=\"_blank\">Bili_883115</a></div><div class=\"count\">\n        13.4万播放 · 8350弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av129171/?spm_id_from=333.788.videocard.18\"><img src=\"\" alt=\"2011年10月新番介绍PV和CV表\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">21:37</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av129171/?spm_id_from=333.788.videocard.18\" title=\"2011年10月新番介绍PV和CV表\" class=\"title\">2011年10月新番介绍PV和CV表</a><div class=\"count up\"><a href=\"//space.bilibili.com/88609/\" target=\"_blank\">Sola丶空</a></div><div class=\"count\">\n        6594播放 · 1574弹幕\n      </div></div></div></div><div class=\"video-page-card\"><div class=\"card-box\"><div class=\"pic-box\"><div class=\"pic\"><a href=\"/video/av9582574/?spm_id_from=333.788.videocard.19\"><img src=\"\" alt=\"[新番预告]境界线上的地平线III   2020年 即将上映\" width=\"168\" height=\"95\"></a><span class=\"mask-video\"></span><span class=\"duration\">01:35</span></div><div class=\"watch-later-video van-watchlater\"><span class=\"wl-tips\" style=\"display:none;\"></span></div></div><div class=\"info\"><a href=\"/video/av9582574/?spm_id_from=333.788.videocard.19\" title=\"[新番预告]境界线上的地平线III   2020年 即将上映\" class=\"title\">[新番预告]境界线上的地平线III   2020年 即将上映</a><div class=\"count up\"><a href=\"//space.bilibili.com/12407304/\" target=\"_blank\">FirstBeats</a></div><div class=\"count\">\n        3.8万播放 · 152弹幕\n      </div></div></div></div></div><div class=\"rec-footer\" style=\"display:;\">展开</div></div><!----><!----></div><!----><!----><!----><div class=\"float-nav\" style=\"display:none;\"><div class=\"nav-menu\"><div title=\"返回顶部\" class=\"item backup\"><i class=\"van-icon-general_pullup_s\"></i></div><div title=\"点击打开迷你播放器\" class=\"item mini\"><span>mini</span><span>OFF</span></div><a href=\"//www.bilibili.com/blackboard/help.html#%E5%B8%B8%E8%A7%81%E6%92%AD%E6%94%BE%E9%97%AE%E9%A2%98%E8%87%AA%E6%95%91%E6%96%B9%E6%B3%95\" target=\"_blank\" title=\"帮助反馈\"><div class=\"item help\"><i class=\"van-icon-floatwindow_custome\"></i></div></a></div></div><div id=\"entryOld\" class=\"guide report-wrap-module report-scroll-module\"><div class=\"feedback-btn\"><!----><a href=\"//www.bilibili.com/blackboard/activity-XDTj0LNChQ.html\" target=\"_blank\">试用<br>反馈</a></div><div class=\"old-btn\"><a>返回<br>旧版</a></div></div><div class=\"interact-dialog\" style=\"display:none;\"><div class=\"bg\"></div><div class=\"con\"><img src=\"//s1.hdslb.com/bfs/static/jinkela/video/asserts/interact-dialog.png\" class=\"pic\"><span class=\"btn\"></span></div></div></div></div><script type=\"text/javascript\" src=\"//s1.hdslb.com/bfs/seed/log/report/log-reporter.js\" crossorigin></script><script type=\"text/javascript\">var jq_url=\"//s1.hdslb.com/bfs/static/jinkela/long/js/jquery/jquery1.7.2.min.js\",header_url=\"//s1.hdslb.com/bfs/seed/jinkela/header/header.js\",comment_url=\"//static.hdslb.com/phoenix/dist/js/comment.min.js\",ad_url=\"//s1.hdslb.com/bfs/cm/st/bundle.js\",comment_css_url=\"//static.hdslb.com/phoenix/dist/css/comment.min.css\";function loadScript(e,i){var t=document.createElement(\"script\");t.type=\"text/javascript\",t.src=e,document.body.appendChild(t),t.onload=function(){i&&i()}}function loadLink(e){var i=document.createElement(\"link\");i.rel=\"stylesheet\",i.type=\"text/css\",i.href=e,document.body.appendChild(i)}if(window.__INITIAL_STATE__){var jsurl=window.__INITIAL_STATE__.insertScripts[0],isBiliPlayer=window.__INITIAL_STATE__.videoData.embedPlayer,isInit=!1;function insertScript(){isInit||(isInit=!0,window.jQuery?loadAssets():loadScript(jq_url,function(){loadAssets()}))}function loadAssets(){var e=0;loadScript(header_url,function(){2===++e&&loadScript(jsurl),setSize()}),loadScript(comment_url,function(){2===++e&&loadScript(jsurl)}),loadScript(ad_url),loadLink(comment_css_url)}if(isBiliPlayer){var timeout=setTimeout(function(){clearTimeout(timeout),insertScript(),setSize()},4e3);window.PlayerMediaLoaded=function(){insertScript(),clearTimeout(timeout),window.isWide=!!document.querySelector(\".player-mode-widescreen\"),window.PlayerMediaLoaded=null,setSize(),window.performance&&window.performance.timing&&(window.performance.timing.firstscreenfinish=window.performance.timing.playerStage3||(new Date).getTime())}}else insertScript()}else document.write('<script src=\"'+jq_url+'\"><\\/script><script src=\"'+header_url+'\"><\\/script><script>setSize()<\\/script><link rel=\"stylesheet\" href=\"'+comment_css_url+'\" type=\"text/css\"><script src=\"'+comment_url+'\"><\\/script><script src=\"'+ad_url+'\"><\\/script>')</script><script type=\"text/javascript\">!function(){try{if(parent!=self&&(parent.document.domain!=document.domain||document.referrer&&!/^http(s)?:\\/\\/[.\\w-]+\\.bilibili\\.com\\//i.test(document.referrer)))throw new Error(\"can't be iframed\")}catch(e){window.open(location.href,\"_top\")}}()</script></body></html>"
+}

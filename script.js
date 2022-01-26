@@ -1,4 +1,4 @@
-globalThis.verbose = true;          // debug option
+globalThis.verbose = false;          // debug option
 
 // globalThis.pauseTimes = 20;      // pause all danmuku for 10 times in case some are missed
 // globalThis.pauseDuration = 50;      // pause all danmuku for 10 times in case some are missed
@@ -8,7 +8,14 @@ globalThis.container = document.getElementById("danmuku-container");
 // get video
 globalThis.cur_video = document.getElementById("b-video");
 globalThis.interval = 0;
+globalThis.top_count = 0;       // number of danmuku at the top
+// globalThis.video_width = container.style.width;
+// globalThis.video_height = container.style.height;
+// console.log(video_width, video_height, 12);
 
+document.getElementById("is-verbose").onchange = function(){
+    verbose = document.getElementById("is-verbose").checked
+};
 
 
 
@@ -222,21 +229,13 @@ async function send_danmuku_from(start){
             }
             await sleep(200);
             continue;
+
         };
         cur_time = danmuku_schedule[j];
         // mode = danmuku_list[j].getAttribute('mode');
 
         let d = document.createElement("div");
 
-        // if (danmuku_list[j].getAttribute('mode')==1){
-        //     d.className = "danmuku rolling";
-        // }
-        // else if (danmuku_list[j].getAttribute('mode')==5){
-        //     d.className = "danmuku top";
-        //     d.style.translate       
-        // }
-
-        d.className = "danmuku rolling";
 
         d.innerText = danmuku_list[j].textContent;
         if (verbose){ 
@@ -246,7 +245,23 @@ async function send_danmuku_from(start){
         // d.style.top = Math.floor(Math.random()*10)*(danmuku_container_height/trackNum) + "px";
         // d.style.top = Math.floor(Math.random()*10)*35 + "px";
 
-        d.style.top = Math.floor(Math.random()*10)*35 + "px";
+        // if (danmuku_list[j].getAttribute('mode')==1){
+        //     d.className = "danmuku rolling";
+        //     d.style.top = Math.floor(Math.random()*10)*35 + "px";       // randomly placed at one row
+        // }
+        // else if (danmuku_list[j].getAttribute('mode')==5){
+        //     d.className = "danmuku top";
+        //     d.style.top = (top_count%10)*35 + "px";          // place the danmuku at top;
+            
+        //     d.style.left = (900 - 22*d.innerText.length)/2 + "px"
+        //     console.log("A top danmuku has been placed at: " + d.style.top + " ," + d.style.left + " " + container.style.width + container.style.height);
+        //     top_count += 1;
+        // }
+
+        d.className = "danmuku rolling";
+        d.style.top = Math.floor(Math.random()*10)*35 + "px";       // randomly placed at one row
+
+
         d.style.color = danmuku_list[j].getAttribute('rgb');
 
         d.addEventListener("animationend", function(){

@@ -1,0 +1,71 @@
+{
+	"aid": 970319585,
+	"videos": 1,
+	"tid": "33",
+	"tname": "连载动画",
+	"copyright": 2,
+	"pic": "http://i2.hdslb.com/bfs/archive/b372dad0a2b3dab3f1b7ae7a58a0491e0a77cd9f.jpg",
+	"title": "【10月】樱与抱月 06【独家正版】",
+	"pubdate": 1605250801,
+	"ctime": 1605245667,
+	"desc": "#06",
+	"state": 0,
+	"duration": 1446,
+	"redirect_url": "https://www.bilibili.com/bangumi/play/ep341201",
+	"rights": {
+		"bp": 0,
+		"elec": 0,
+		"download": 0,
+		"movie": 0,
+		"pay": 1,
+		"hd5": 1,
+		"no_reprint": 0,
+		"autoplay": 0,
+		"ugc_pay": 0,
+		"is_cooperation": 0,
+		"ugc_pay_preview": 0,
+		"no_background": 0
+	},
+	"owner": {
+		"mid": 928123,
+		"name": "哔哩哔哩番剧",
+		"face": "http://i1.hdslb.com/bfs/face/7a8412cbacb9fd18f40ddbbf0ad183e45afc1365.jpg"
+	},
+	"stat": {
+		"aid": 970319585,
+		"view": 1,
+		"danmaku": 3,
+		"reply": 32,
+		"favorite": 0,
+		"coin": 3,
+		"share": 0,
+		"now_rank": 0,
+		"his_rank": 0,
+		"like": 62,
+		"dislike": 0
+	},
+	"dynamic": "",
+	"cid": 255309342,
+	"dimension": {
+		"width": 1920,
+		"height": 1080,
+		"rotate": 0
+	},
+	"bvid": "BV1dp4y167xY",
+	"pagelist": [
+		{
+			"cid": 255309342,
+			"page": 1,
+			"from": "vupload",
+			"part": "06",
+			"duration": 1446,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 1920,
+				"height": 1080,
+				"rotate": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,114 @@
+{
+	"aid": 927450301,
+	"videos": 1,
+	"tid": "33",
+	"tname": "连载动画",
+	"copyright": 2,
+	"pic": "http://i0.hdslb.com/bfs/archive/7ea1725d7236febf943ee043df2b4e4fda89af28.jpg",
+	"title": "【10月】樱与抱月 02【独家正版】",
+	"pubdate": 1602831601,
+	"ctime": 1602828907,
+	"desc": "#02",
+	"state": 0,
+	"attribute": 338688,
+	"duration": 1446,
+	"redirect_url": "https://www.bilibili.com/bangumi/play/ep341197",
+	"rights": {
+		"bp": 0,
+		"elec": 0,
+		"download": 0,
+		"movie": 0,
+		"pay": 1,
+		"hd5": 1,
+		"no_reprint": 0,
+		"autoplay": 0,
+		"ugc_pay": 0,
+		"is_cooperation": 0,
+		"ugc_pay_preview": 0,
+		"no_background": 0
+	},
+	"owner": {
+		"mid": 928123,
+		"name": "哔哩哔哩番剧",
+		"face": "http://i1.hdslb.com/bfs/face/7a8412cbacb9fd18f40ddbbf0ad183e45afc1365.jpg"
+	},
+	"stat": {
+		"aid": 927450301,
+		"view": 1,
+		"danmaku": 1,
+		"reply": 43,
+		"favorite": 0,
+		"coin": 7,
+		"share": 1,
+		"now_rank": 0,
+		"his_rank": 0,
+		"like": 58,
+		"dislike": 0
+	},
+	"dynamic": "",
+	"cid": 246200231,
+	"dimension": {
+		"width": 1920,
+		"height": 1080,
+		"rotate": 0
+	},
+	"bvid": "BV1ET4y1w7zv",
+	"pagelist": [
+		{
+			"cid": 246200231,
+			"page": 1,
+			"from": "vupload",
+			"part": "02",
+			"duration": 1446,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 1920,
+				"height": 1080,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 246766484,
+			"page": 1,
+			"from": "vupload",
+			"part": "02",
+			"duration": 1446,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 1920,
+				"height": 1080,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 253195805,
+			"page": 1,
+			"from": "vupload",
+			"part": "02",
+			"duration": 1446,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 1920,
+				"height": 1080,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 253477917,
+			"page": 1,
+			"from": "vupload",
+			"part": "02",
+			"duration": 1446,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 1920,
+				"height": 1080,
+				"rotate": 0
+			}
+		}
+	]
+}

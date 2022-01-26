@@ -1,0 +1,3299 @@
+{
+	"keyword": "脑内 选项",
+	"time": 1605275668.4694076,
+	"sqlorder": "SELECT * FROM shortcut WHERE tid IN (15,32,33,34,41,83,87,88,89,90,94,110,111,112,113,120,129,145,146,147,185,186,187) and ( title LIKE \"%脑内%选项%\" OR title LIKE \"%腦內%選項%\" OR tag LIKE \"%脑内%选项%\" OR tag LIKE \"%腦內%選項%\")",
+	"result": [
+		{
+			"aid": 790766,
+			"title": "【10月】我的脑内恋碍选项 01",
+			"video_review": 188769,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1126459,
+					"page": 1,
+					"title": "我的脑内恋碍选项 01",
+					"aid": 790766,
+					"duration": null,
+					"video_review": 37206
+				},
+				{
+					"cid": 1149765,
+					"page": 1,
+					"title": "av790766",
+					"aid": 790766,
+					"duration": null,
+					"video_review": 0
+				},
+				{
+					"cid": 7773365,
+					"page": 1,
+					"title": "av790766",
+					"aid": 790766,
+					"duration": 1480,
+					"video_review": 151563
+				}
+			],
+			"tag": "TV动画,我的脑内恋碍选项",
+			"description": "~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1381344052,
+			"created_at": "2013/10/10 02:40",
+			"author": "哔哩哔哩番剧",
+			"mid": 928123,
+			"play": 6139829,
+			"coins": 8386,
+			"review": 5671,
+			"favorites": 3684,
+			"synctime": 1
+		},
+		{
+			"aid": 807742,
+			"title": "【10月】我的脑内恋碍选项 03",
+			"video_review": 94849,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1126461,
+					"page": 1,
+					"title": "我的脑内恋碍选项 03",
+					"aid": 807742,
+					"duration": null,
+					"video_review": 23611
+				},
+				{
+					"cid": 1172723,
+					"page": 1,
+					"title": "av807742",
+					"aid": 807742,
+					"duration": null,
+					"video_review": 2
+				},
+				{
+					"cid": 7773367,
+					"page": 1,
+					"title": "av807742",
+					"aid": 807742,
+					"duration": 1480,
+					"video_review": 71236
+				}
+			],
+			"tag": "我的脑内选项正在全力妨碍学园恋爱喜剧,TV动画",
+			"description": "~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1382549333,
+			"created_at": "2013/10/24 01:28",
+			"author": "哔哩哔哩番剧",
+			"mid": 928123,
+			"play": 2859461,
+			"coins": 3900,
+			"review": 875,
+			"favorites": 723,
+			"synctime": 1
+		},
+		{
+			"aid": 843642,
+			"title": "【10月】我的脑内恋碍选项 07",
+			"video_review": 91603,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1126465,
+					"page": 1,
+					"title": "我的脑内恋碍选项 07",
+					"aid": 843642,
+					"duration": null,
+					"video_review": 21356
+				},
+				{
+					"cid": 1227022,
+					"page": 1,
+					"title": "我的脑内恋碍选项 07",
+					"aid": 843642,
+					"duration": null,
+					"video_review": 0
+				},
+				{
+					"cid": 7773371,
+					"page": 1,
+					"title": "我的脑内恋碍选项 07",
+					"aid": 843642,
+					"duration": 1480,
+					"video_review": 70247
+				}
+			],
+			"tag": "我的脑内选项正在全力妨碍学园恋爱喜剧,俺の脳内选択肢が、学园ラブコメを全力で邪魔している,TV动画",
+			"description": "~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1384963297,
+			"created_at": "2013-11-21 01:37",
+			"author": "搬",
+			"mid": 928123,
+			"play": 473163,
+			"coins": 21,
+			"review": 218,
+			"favorites": 458,
+			"synctime": 1568349396.2646492
+		},
+		{
+			"aid": 869303,
+			"title": "【完结/10月】我的脑内恋碍选项 10",
+			"video_review": 87363,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1126468,
+					"page": 1,
+					"title": "我的脑内恋碍选项 10",
+					"aid": 869303,
+					"duration": null,
+					"video_review": 19085
+				},
+				{
+					"cid": 1263610,
+					"page": 1,
+					"title": "我的脑内恋碍选项 10",
+					"aid": 869303,
+					"duration": null,
+					"video_review": 0
+				},
+				{
+					"cid": 7773374,
+					"page": 1,
+					"title": "我的脑内恋碍选项 10",
+					"aid": 869303,
+					"duration": 1480,
+					"video_review": 68278
+				}
+			],
+			"tag": "我的脑内选项正在全力妨碍学园恋爱喜剧,TV动画",
+			"description": "~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1386783100,
+			"created_at": "2013/12/12 01:31",
+			"author": "哔哩哔哩番剧",
+			"mid": 928123,
+			"play": 2353064,
+			"coins": 5961,
+			"review": 2327,
+			"favorites": 1331,
+			"synctime": 1
+		},
+		{
+			"aid": 825283,
+			"title": "【10月】我的脑内恋碍选项 05",
+			"video_review": 79185,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1126463,
+					"page": 1,
+					"title": "我的脑内恋碍选项 05",
+					"aid": 825283,
+					"duration": null,
+					"video_review": 19258
+				},
+				{
+					"cid": 1200485,
+					"page": 1,
+					"title": "我的脑内恋碍选项 05",
+					"aid": 825283,
+					"duration": null,
+					"video_review": 0
+				},
+				{
+					"cid": 7773369,
+					"page": 1,
+					"title": "我的脑内恋碍选项 05",
+					"aid": 825283,
+					"duration": 1480,
+					"video_review": 59927
+				}
+			],
+			"tag": "TV动画,我的脑内选项正在全力妨碍学园恋爱喜剧",
+			"description": "~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1383759554,
+			"created_at": "2013/11/07 01:39",
+			"author": "哔哩哔哩番剧",
+			"mid": 928123,
+			"play": 2442978,
+			"coins": 2686,
+			"review": 660,
+			"favorites": 570,
+			"synctime": 1568298449.462859
+		},
+		{
+			"aid": 799019,
+			"title": "【10月】我的脑内恋碍选项 02",
+			"video_review": 78930,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1126460,
+					"page": 1,
+					"title": "我的脑内恋碍选项 02",
+					"aid": 799019,
+					"duration": null,
+					"video_review": 20404
+				},
+				{
+					"cid": 1161155,
+					"page": 1,
+					"title": "av799019",
+					"aid": 799019,
+					"duration": null,
+					"video_review": 0
+				},
+				{
+					"cid": 7773366,
+					"page": 1,
+					"title": "av799019",
+					"aid": 799019,
+					"duration": 1480,
+					"video_review": 58526
+				}
+			],
+			"tag": "TV动画,我的脑内选项正在全力妨碍学园恋爱喜剧",
+			"description": "~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1381944717,
+			"created_at": "2013/10/17 01:31",
+			"author": "哔哩哔哩番剧",
+			"mid": 928123,
+			"play": 3398254,
+			"coins": 3596,
+			"review": 1373,
+			"favorites": 1119,
+			"synctime": 1568301836.4218469
+		},
+		{
+			"aid": 852371,
+			"title": "【10月】我的脑内恋碍选项 08",
+			"video_review": 78761,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1126466,
+					"page": 1,
+					"title": "我的脑内恋碍选项 08",
+					"aid": 852371,
+					"duration": null,
+					"video_review": 19278
+				},
+				{
+					"cid": 1239394,
+					"page": 1,
+					"title": "我的脑内恋碍选项 08",
+					"aid": 852371,
+					"duration": null,
+					"video_review": 2123
+				},
+				{
+					"cid": 7773372,
+					"page": 1,
+					"title": "我的脑内恋碍选项 08",
+					"aid": 852371,
+					"duration": 1480,
+					"video_review": 57360
+				}
+			],
+			"tag": "TV动画,我的脑内选项正在全力妨碍学园恋爱喜剧",
+			"description": "~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1385573693,
+			"created_at": "2013/11/28 01:34",
+			"author": "哔哩哔哩番剧",
+			"mid": 928123,
+			"play": 2324270,
+			"coins": 3670,
+			"review": 751,
+			"favorites": 563,
+			"synctime": 1
+		},
+		{
+			"aid": 860779,
+			"title": "【10月】我的脑内恋碍选项 09",
+			"video_review": 72080,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1126467,
+					"page": 1,
+					"title": "我的脑内恋碍选项 09",
+					"aid": 860779,
+					"duration": null,
+					"video_review": 17951
+				},
+				{
+					"cid": 1251630,
+					"page": 1,
+					"title": "我的脑内恋碍选项 09",
+					"aid": 860779,
+					"duration": null,
+					"video_review": 0
+				},
+				{
+					"cid": 7773373,
+					"page": 1,
+					"title": "我的脑内恋碍选项 09",
+					"aid": 860779,
+					"duration": 1480,
+					"video_review": 54129
+				}
+			],
+			"tag": "TV动画,我的脑内选项正在全力妨碍学园恋爱喜剧",
+			"description": "~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1386178992,
+			"created_at": "2013/12/05 01:43",
+			"author": "哔哩哔哩番剧",
+			"mid": 928123,
+			"play": 2329626,
+			"coins": 2692,
+			"review": 862,
+			"favorites": 581,
+			"synctime": 1568301973.3770986
+		},
+		{
+			"aid": 816451,
+			"title": "【10月】我的脑内恋碍选项 04",
+			"video_review": 66870,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1126462,
+					"page": 1,
+					"title": "我的脑内恋碍选项 04",
+					"aid": 816451,
+					"duration": null,
+					"video_review": 17936
+				},
+				{
+					"cid": 1184869,
+					"page": 1,
+					"title": "av816451",
+					"aid": 816451,
+					"duration": null,
+					"video_review": 0
+				},
+				{
+					"cid": 7773368,
+					"page": 1,
+					"title": "av816451",
+					"aid": 816451,
+					"duration": 1480,
+					"video_review": 48934
+				}
+			],
+			"tag": "我的脑内选项正在全力妨碍学园恋爱喜剧,TV动画",
+			"description": "~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1383159798,
+			"created_at": "2013/10/31 03:03",
+			"author": "哔哩哔哩番剧",
+			"mid": 928123,
+			"play": 2681858,
+			"coins": 2847,
+			"review": 725,
+			"favorites": 633,
+			"synctime": 1568302960.320993
+		},
+		{
+			"aid": 834795,
+			"title": "【10月】我的脑内恋碍选项 06",
+			"video_review": 43775,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1126464,
+					"page": 1,
+					"title": "我的脑内恋碍选项 06",
+					"aid": 834795,
+					"duration": null,
+					"video_review": 17364
+				},
+				{
+					"cid": 1213578,
+					"page": 1,
+					"title": "我的脑内恋碍选项 06",
+					"aid": 834795,
+					"duration": null,
+					"video_review": 0
+				},
+				{
+					"cid": 7773370,
+					"page": 1,
+					"title": "我的脑内恋碍选项 06",
+					"aid": 834795,
+					"duration": 1480,
+					"video_review": 26411
+				}
+			],
+			"tag": "我的脑内选项正在全力妨碍学园恋爱喜剧,俺の脳内选択肢が、学园ラブコメを全力で邪魔している,TV动画",
+			"description": "~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1384358495,
+			"created_at": "2013-11-14 01:35",
+			"author": "搬",
+			"mid": 928123,
+			"play": 475196,
+			"coins": 20,
+			"review": 186,
+			"favorites": 415,
+			"synctime": 1568350637.9409125
+		},
+		{
+			"aid": 3471613,
+			"title": "【BD1080P】我的脑内恋碍选项 OVA/第11话【樱律】",
+			"video_review": 37525,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 5514890,
+					"page": 1,
+					"title": "av3471613",
+					"aid": 3471613,
+					"duration": null,
+					"video_review": 37525
+				}
+			],
+			"tag": "1080P,BDRIP,我选择狗带,我的脑内恋碍选项,高能",
+			"description": "BD1080P画质提升 字幕组标签：听译：斯特、CH　校对：玖珠　时间轴：DA☆ZE　后期：肥猫\r\n男主你真是个罪孽深重的变态。对此动漫感兴趣的话可以站内搜索，正片共10话，有乐视的外链可看",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1451318750,
+			"created_at": "2015-12-29 05:50",
+			"author": "万由理",
+			"mid": 7356188,
+			"play": 0,
+			"coins": 136,
+			"review": 121,
+			"favorites": 1984,
+			"synctime": 1568553755.4358387
+		},
+		{
+			"aid": 1153119,
+			"title": "【TV未放送】我的脑内恋碍选项 11【F宅】",
+			"video_review": 13323,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1681896,
+					"page": 1,
+					"title": "av1153119",
+					"aid": 1153119,
+					"duration": null,
+					"video_review": 13323
+				}
+			],
+			"tag": "我的脑内恋碍选项,顶风作案系列,牛顿已死,@西园寺世界,诚哥结局,向诚哥致敬,@论外,诚哥,TV动画",
+			"description": "ox星  可在视频左下方调节清晰度哦ki☆ra~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1401207134,
+			"created_at": "2014-05-28 12:14",
+			"author": "施主您菊花松了",
+			"mid": 19177,
+			"play": 0,
+			"coins": 602,
+			"review": 818,
+			"favorites": 2178,
+			"synctime": 1568382553.3458226
+		},
+		{
+			"aid": 1150387,
+			"title": "【生肉】我的脑内恋碍选项 11【TV未放送】",
+			"video_review": 3843,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1677650,
+					"page": 1,
+					"title": "av1150387",
+					"aid": 1150387,
+					"duration": null,
+					"video_review": 3843
+				}
+			],
+			"tag": "俺の脳内选択肢が、学园ラブコメを全力で邪魔している,SHCOOL DAYS,@西园寺世界,顶风作案,我的脑内选项正在全力妨碍学园恋爱喜剧,TV动画",
+			"description": "TV未放送第11話 「①カタオモイ☆乙女／②肩重い☆トメ／③片方ゲイ☆片方ホモ」更新画质",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1401034930,
+			"created_at": "2014-05-26 22:10",
+			"author": "八云境界",
+			"mid": 813355,
+			"play": 0,
+			"coins": 86,
+			"review": 221,
+			"favorites": 393,
+			"synctime": 1568427506.8540878
+		},
+		{
+			"aid": 1830156,
+			"title": "【OVA】我的脑内恋碍选项 [11/OVA]【BBA字幕组】",
+			"video_review": 3059,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 2814329,
+					"page": 1,
+					"title": "av1830156",
+					"aid": 1830156,
+					"duration": null,
+					"video_review": 3059
+				}
+			],
+			"tag": "我的脑内恋碍选项,居然是老物,向诚哥致敬,虐男主系列,羞耻PLAY,纱织小天使,CV笑场了,BAD END,OVA,OV",
+			"description": "极影 【BBA字幕组】【我的脑内恋碍选项】[11/OVA][GB][1280x720][MP4]",
+			"tid": 94,
+			"typename": "剧场版",
+			"created": 1419523204,
+			"created_at": "2014-12-26 00:04",
+			"author": "道道V5",
+			"mid": 2696387,
+			"play": 0,
+			"coins": 75,
+			"review": 116,
+			"favorites": 2054,
+			"synctime": 1568570716.032832
+		},
+		{
+			"aid": 11087899,
+			"title": "【合集】我的腦內戀礙選項【僅限港澳台地區】",
+			"video_review": 1652,
+			"duration": null,
+			"tag": "稲垣隆行",
+			"description": "我甘草奏的“绝对选项”是一种会突然出现脑中，不选就不消失的悲惨诅咒；通常人要是被迫做这麼变态的选择，无论如何都会有所抵抗，而我起初也不例外……",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1496720975,
+			"created_at": "2017/06/06 11:49",
+			"author": "哔哩哔哩番剧出差",
+			"mid": 11783021,
+			"play": 59023,
+			"coins": 109,
+			"review": 139,
+			"favorites": 120,
+			"synctime": 1568361842.9476874,
+			"lpartinfo": [
+				{
+					"cid": 18350112,
+					"page": 4,
+					"title": "04",
+					"aid": 11087899,
+					"duration": 1481,
+					"video_review": 88
+				},
+				{
+					"cid": 18350113,
+					"page": 7,
+					"title": "07",
+					"aid": 11087899,
+					"duration": 1481,
+					"video_review": 130
+				},
+				{
+					"cid": 18350114,
+					"page": 10,
+					"title": "10",
+					"aid": 11087899,
+					"duration": 1481,
+					"video_review": 196
+				},
+				{
+					"cid": 18350115,
+					"page": 1,
+					"title": "01",
+					"aid": 11087899,
+					"duration": 1481,
+					"video_review": 478
+				},
+				{
+					"cid": 18350116,
+					"page": 2,
+					"title": "02",
+					"aid": 11087899,
+					"duration": 1481,
+					"video_review": 151
+				},
+				{
+					"cid": 18350117,
+					"page": 6,
+					"title": "06",
+					"aid": 11087899,
+					"duration": 1481,
+					"video_review": 83
+				},
+				{
+					"cid": 18350118,
+					"page": 8,
+					"title": "08",
+					"aid": 11087899,
+					"duration": 1481,
+					"video_review": 108
+				},
+				{
+					"cid": 18350119,
+					"page": 9,
+					"title": "09",
+					"aid": 11087899,
+					"duration": 1481,
+					"video_review": 146
+				},
+				{
+					"cid": 18350120,
+					"page": 3,
+					"title": "03",
+					"aid": 11087899,
+					"duration": 1481,
+					"video_review": 143
+				},
+				{
+					"cid": 18350121,
+					"page": 5,
+					"title": "05",
+					"aid": 11087899,
+					"duration": 1481,
+					"video_review": 129
+				}
+			]
+		},
+		{
+			"aid": 2882055,
+			"title": "【TV未放送】我的脑内恋碍选项 11【F宅】【简体】",
+			"video_review": 94,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 4503135,
+					"page": 1,
+					"title": "",
+					"aid": 2882055,
+					"duration": null
+				}
+			],
+			"tag": "OVA·OAD,神作,720P,搞笑",
+			"description": "http://www.mengwubaike.com/thread-21657-1-1.html 我的脑内恋碍选项OVA说「我的脑内恋碍选项」是由春日部武创作、yukiwo(ユキヲ)负责绘制插图并且由角川Sneaker文库刊行的轻小说作品，讲述男主角受到名为“绝对选项”的诅咒，会突然在脑中出现选项，并必须做出选择，比如“①美少女从天而降”，至此开始的和金发美少女裘可拉一起展开的学园喜剧故事。",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1441642841,
+			"created_at": "2015-09-08 20:41",
+			"author": "无可挑剔的男人",
+			"mid": 9575842,
+			"play": 1932,
+			"coins": 5,
+			"review": 19,
+			"favorites": 1
+		},
+		{
+			"aid": 44853206,
+			"title": "【1080P/DVDRip/OVA】我的脑内恋碍选项【DHR动研字幕组&鲨鱼字幕组】",
+			"video_review": 88,
+			"duration": 1409,
+			"lpartinfo": [
+				{
+					"cid": 79097524,
+					"page": 1,
+					"title": "[Noucome][11(OVA)]",
+					"aid": 44853206,
+					"duration": 1409
+				}
+			],
+			"tag": "中文字幕,OVA,校园,字幕,我的脑内选项正在全力妨碍学园恋爱喜剧,裘可拉,第11话,日本动漫,TV未放送",
+			"description": "直传 已按要求进行后期处理\n电视动画《我的脑内选项、正在全力妨碍学园恋爱喜剧》改编自日本轻小说作家春日部武原作，yukiwo担任插画，刊行于角川Sneaker文库的同名轻小说。该动画讲述男主人公甘草奏受到名为“绝对选项”的诅咒，会在脑中冒出美少女游戏一样的选择选项，至此展开的故事。\n随小说原作第8卷同捆发售。\n本视频字幕由DHR字幕组提供翻译、鲨鱼字幕组简化并后期（已征得两个组的投稿允许）。",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1551589649,
+			"created_at": "2019/03/03 13:07",
+			"author": "Super丶过",
+			"mid": 84018702,
+			"play": 5933,
+			"coins": 69,
+			"review": 34,
+			"favorites": 190
+		},
+		{
+			"aid": 19315020,
+			"title": "【BD1080P/OVA】我的脑内恋碍选项【DHR动研字幕组】",
+			"video_review": 21,
+			"duration": 1447,
+			"lpartinfo": [
+				{
+					"cid": 31497179,
+					"page": 1,
+					"title": "",
+					"aid": 19315020,
+					"duration": 1447
+				}
+			],
+			"tag": "我的脑内恋碍选项,后宫,恋爱,搞笑,1080P,OVA•OAD,BDRIP",
+			"description": "字幕 : DHR动研字幕组\n动画制作：diomedéa\n男主角甘草奏在受到了名为“绝对选项”的诅咒后，会突然间在脑中出现选项，直到做出选择才会消失，如果不选择则会感到剧烈的头疼。而选项大多数都是令人比较难以启齿的事情，奏因此反复做出怪异的行为，受到了众人的白眼。直到某一天，突然从天而降，自称为神的仆人的少女，出现在他的面前。",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1518090223,
+			"created_at": "2018/02/08 19:43",
+			"author": "天使の立华奏",
+			"mid": 98960802,
+			"play": 6131,
+			"coins": 23,
+			"review": 22,
+			"favorites": 150
+		},
+		{
+			"aid": 23882486,
+			"title": "【720P】我的脑内恋碍选项OVA【BBA字幕组】",
+			"video_review": 16,
+			"duration": 1445,
+			"lpartinfo": [
+				{
+					"cid": 39950513,
+					"page": 1,
+					"title": "[BBAsub][NouCome][11][GB][X264 AAC][1280x720]",
+					"aid": 23882486,
+					"duration": 1445
+				}
+			],
+			"tag": "搞笑,日本动画,后宫,恋爱,甘草奏,裘可拉,OVA•OAD,矢岛晶子,佐土原香织,正在全力妨碍学园恋爱喜剧",
+			"description": "OVA",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1527216950,
+			"created_at": "2018/05/25 10:55",
+			"author": "酱汁菜",
+			"mid": 12404946,
+			"play": 1825,
+			"coins": 8,
+			"review": 7,
+			"favorites": 46
+		},
+		{
+			"aid": 45076199,
+			"title": "【1080P/DVDRip/OVA】我的脑内恋碍选项【生肉】",
+			"video_review": 16,
+			"duration": 1409,
+			"lpartinfo": [
+				{
+					"cid": 78940463,
+					"page": 1,
+					"title": "【1080PDVDRipOVA】我的脑内恋碍选项",
+					"aid": 45076199,
+					"duration": 1409
+				}
+			],
+			"tag": "生肉,OVA,我的脑内选项正在全力妨碍学园恋爱喜剧,恋碍选项",
+			"description": "直传 已按要求进行后期处理",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1551524729,
+			"created_at": "2019/03/02 19:05",
+			"author": "Super丶过",
+			"mid": 84018702,
+			"play": 834,
+			"coins": 8,
+			"review": 13,
+			"favorites": 12
+		},
+		{
+			"aid": 15905001,
+			"title": "【720P】我的脑内恋碍选项 第11话(OVA) 【DHR】",
+			"video_review": 4,
+			"duration": 1447,
+			"lpartinfo": [
+				{
+					"cid": 25956074,
+					"page": 1,
+					"title": "",
+					"aid": 15905001,
+					"duration": 1447
+				}
+			],
+			"tag": "早见沙织,神作,少女,恋爱,校园,搞笑,后宫,中田让治,豊永利行",
+			"description": "DHR百合组\n俺の脳内選択肢が、学園ラブコメを全力で邪魔してい（OVA）\n放源都半个多月了 既然没人投 那就我投吧o(￣ε￣*)",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1509506074,
+			"created_at": "2017/11/01 11:14",
+			"author": "萨潞法迩",
+			"mid": 76512988,
+			"play": 192,
+			"coins": 7,
+			"review": 13,
+			"favorites": 36
+		},
+		{
+			"aid": 20397209,
+			"title": "【BD720P/日语中字】我的脑内恋碍选项OVA【樱律字幕组】",
+			"video_review": 3,
+			"duration": 1447,
+			"lpartinfo": [
+				{
+					"cid": 33337357,
+					"page": 1,
+					"title": "",
+					"aid": 20397209,
+					"duration": 1447
+				}
+			],
+			"tag": "少女,后宫,搞笑,我的脑内恋碍选项,日本动画,青春,校园,裘可拉,甘草奏",
+			"description": "QQ群：439494067",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1520236974,
+			"created_at": "2018/03/05 16:02",
+			"author": "酱汁菜",
+			"mid": 12404946,
+			"play": 2882,
+			"coins": 16,
+			"review": 9,
+			"favorites": 82
+		},
+		{
+			"aid": 23433734,
+			"title": "【BD1080P】我的脑内恋碍选项 11/OVA【DHR】",
+			"video_review": 1,
+			"duration": 1447,
+			"lpartinfo": [
+				{
+					"cid": 39056319,
+					"page": 1,
+					"title": "",
+					"aid": 23433734,
+					"duration": 1447
+				}
+			],
+			"tag": "恋爱,日本动画,动漫,搞笑,OVA,校园",
+			"description": "转自http://www.kisssub.org/      \n奏终于找到自己内心深处的答案。就当他下定决心向雪乃，讴歌，裘可拉和素直四人表明自己的决意时候，四叶纸伊绪却意外地出现了。真相即将浮出水面，而有史以来最大的“混乱”也悄然降临。\n感谢DHR字幕组的提供和支持~",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1526295498,
+			"created_at": "2018/05/14 18:58",
+			"author": "奔跑的苹果酱",
+			"mid": 43960634,
+			"play": 341,
+			"coins": 0,
+			"review": 1,
+			"favorites": 14
+		},
+		{
+			"aid": 870385,
+			"title": "【720P】我的脑内恋碍选项 合集",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [],
+			"tag": "俺の脳内选択肢が、学园ラブコメを全力で邪魔している,我的脑内选项正在全力妨碍学园恋爱喜剧",
+			"description": "男主角甘草奏在受到了名为“绝对选项”的诅咒后，会突然间在脑中出现选项，直到做出选择才会消失。 男主角因此反复做出怪异的行为，受到了众人的白眼。 直到出现“①美少女从天而降”这个选项……",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1386864496,
+			"created_at": "2013-12-13 08:16",
+			"author": "初めて恋をした记忆",
+			"mid": 2092883,
+			"play": 10,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 870397,
+			"title": "【720P】我的脑内恋碍选项 合集",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [],
+			"tag": "俺の脳内选択肢が、学园ラブコメを全力で邪魔している,我的脑内选项正在全力妨碍学园恋爱喜剧",
+			"description": "SOKU “绝对选项”是一种会突然出现脑中，不选就不消失的悲惨诅咒； 通常人要是被迫做这么变态的选择，无论如何都会有所抵抗，而甘草奏起初也不例外…… 但若置之不理，头就会承受超乎想像的痛苦，那种感觉大概只能用脑浆被挖出来才足以形容。 说穿了就是，根本抵抗不了。所以，甘草奏才会被骂变态，不是没有原因的。 于是害得甘草奏整天举止怪异，被列为“五黑”（指黑名单的前五位）之一。 然而，在如此饱尝女生白眼的校园生活中，脑内突然出现了&quot;①美少女从天而降&quot;的选项——？",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1386864536,
+			"created_at": "2013-12-13 08:56",
+			"author": "初めて恋をした记忆",
+			"mid": 2092883,
+			"play": 13,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1153083,
+			"title": " 【TV未放送】我的脑内恋碍选项 11【F宅】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [],
+			"tag": "我的脑内恋碍选项",
+			"description": "ox星 可在视频左下方调节清晰度哦ki☆ra~",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1401207110,
+			"created_at": "2014-05-28 11:50",
+			"author": "施主您菊花松了",
+			"mid": 19177,
+			"play": 15,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1155447,
+			"title": "【熟肉】我的脑内恋碍选项 11【F宅】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1686412,
+					"page": 1,
+					"title": "",
+					"aid": 1155447,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项,熟肉,F宅字幕组",
+			"description": "极影 TV未放送的一集",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1401293511,
+			"created_at": "2014-05-29 11:51",
+			"author": "hermetic",
+			"mid": 2191634,
+			"play": 56,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1155696,
+			"title": "【10月】高清  TV未放送我的脑内恋碍选项11",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1686875,
+					"page": 1,
+					"title": "",
+					"aid": 1155696,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "dmnico 无意中找到的.看到没人上传.小的作死上传好了.嘤嘤嘤.全程高能...话说这算不算是顶风作案",
+			"tid": 33,
+			"typename": "连载动画",
+			"created": 1401293645,
+			"created_at": "2014-05-29 14:05",
+			"author": "进击のOOXX",
+			"mid": 2226787,
+			"play": 15,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1156543,
+			"title": "【知君】我的脑内恋碍选项11集TV为播放",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1688582,
+					"page": 1,
+					"title": "",
+					"aid": 1156543,
+					"duration": null
+				}
+			],
+			"tag": "YOOOOO!!!,选着吧",
+			"description": "度娘资源。自行下载。应该是乐视的版权 唉。看见B站没有就来投稿了。第一次。  弄了好久。",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1401294083,
+			"created_at": "2014-05-29 21:23",
+			"author": "知君",
+			"mid": 1891492,
+			"play": 23,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1171994,
+			"title": "【10月ova】我的脑内恋碍选项（TV未放送11话",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1723758,
+					"page": 1,
+					"title": "",
+					"aid": 1171994,
+					"duration": null
+				}
+			],
+			"tag": "丧心病狂",
+			"description": "自制 蔚蔚，总之找了很久也没找到那就自己做吧！",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1401897977,
+			"created_at": "2014-06-05 06:17",
+			"author": "安子蔚",
+			"mid": 3875021,
+			"play": 18,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1180728,
+			"title": "我的脑内恋碍选项第11话（TV未放送）",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1743894,
+					"page": 1,
+					"title": "",
+					"aid": 1180728,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "bbasug ··",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1402156872,
+			"created_at": "2014-06-08 01:12",
+			"author": "幼心",
+			"mid": 2187266,
+			"play": 29,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1182935,
+			"title": "【TV未放送】我的脑内恋碍选项 11【F宅】【繁体】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1748738,
+					"page": 1,
+					"title": "",
+					"aid": 1182935,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "极影 翻了一圈没看到B站有，自己再极影下了投稿，标题为原标题。依旧无节操和萌豚~",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1402157859,
+			"created_at": "2014-06-08 17:39",
+			"author": "破晓之灵",
+			"mid": 2827926,
+			"play": 51,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1188061,
+			"title": "【TV未放送】我的脑内恋碍选项 11【F宅】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1761592,
+					"page": 1,
+					"title": "",
+					"aid": 1188061,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "极影动漫 (^・ω・^ ) 第二次投稿有点小激动呢",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1402330537,
+			"created_at": "2014-06-10 15:37",
+			"author": "猛将zero",
+			"mid": 165594,
+			"play": 19,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1189022,
+			"title": "【1月】（TV未放送）【BBA字幕组】 我的脑内恋碍选项 11",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1763636,
+					"page": 1,
+					"title": "",
+					"aid": 1189022,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内选项正在全力妨碍学园恋爱喜剧,俺の脳内选択肢が、学园ラブコメを全力で邪魔している",
+			"description": "转载 试着在B站里搜了下没有就自己上传了个就是了...TV未放送的11话，说的是甘草去了GAL的世界后这样那样的事~字幕组是BBA字幕组，从极影那边转过来的什么的....似乎首播也是乐视，这应该不算侵权之类的吧→ →？",
+			"tid": 94,
+			"typename": "剧场版",
+			"created": 1402330869,
+			"created_at": "2014-06-10 21:09",
+			"author": "千古醉羊",
+			"mid": 477707,
+			"play": 16,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1192994,
+			"title": "【1月】（TV未放送）我的脑内恋碍选项 11【BBA字幕组】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 1772198,
+					"page": 1,
+					"title": "",
+					"aid": 1192994,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内选项正在全力妨碍学园恋爱喜剧,俺の脳内选択肢が、学园ラブコメを全力で邪魔している",
+			"description": "转载 试着在B站里搜了下没有就自己上传了个就是了...TV未放送的11话，说的是甘草去了GAL的世界后这样那样的事~字幕组是BBA字幕组，从极影那边转过来的什么的....似乎首播也是乐视，这应该不算侵权之类的吧→ →？",
+			"tid": 94,
+			"typename": "剧场版",
+			"created": 1402503081,
+			"created_at": "2014-06-12 11:21",
+			"author": "千古醉羊",
+			"mid": 477707,
+			"play": 19,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1730044,
+			"title": "【TV未放送】我的脑内恋碍选项 11【BBA字幕组】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 2642315,
+					"page": 1,
+					"title": "",
+					"aid": 1730044,
+					"duration": null
+				},
+				{
+					"cid": 2642560,
+					"page": 1,
+					"title": "",
+					"aid": 1730044,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "极影 注意，不是新的不是新的，还是以前那个11话，还是诚哥结局那个。还是简体字幕看的舒服些啊。",
+			"tid": 94,
+			"typename": "剧场版",
+			"created": 1416414098,
+			"created_at": "2014-11-20 21:38",
+			"author": "道道V5",
+			"mid": 2696387,
+			"play": 162,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1731495,
+			"title": "【TV未放送】我的脑内恋碍选项 11【BBA字幕组】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 2644566,
+					"page": 1,
+					"title": "",
+					"aid": 1731495,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "极影 注意，不是新的不是新的，还是诚哥结局那个。还是习惯简体字幕啊~",
+			"tid": 94,
+			"typename": "剧场版",
+			"created": 1416499997,
+			"created_at": "2014-11-21 13:17",
+			"author": "道道V5",
+			"mid": 2696387,
+			"play": 18,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1741382,
+			"title": "我的脑内恋碍选项  超清1080全集1-10",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 2659858,
+					"page": 1,
+					"title": "P1",
+					"aid": 1741382,
+					"duration": null
+				},
+				{
+					"cid": 2659859,
+					"page": 2,
+					"title": "P2",
+					"aid": 1741382,
+					"duration": null
+				},
+				{
+					"cid": 2659860,
+					"page": 3,
+					"title": "P3",
+					"aid": 1741382,
+					"duration": null
+				},
+				{
+					"cid": 2659861,
+					"page": 4,
+					"title": "P4",
+					"aid": 1741382,
+					"duration": null
+				},
+				{
+					"cid": 2659862,
+					"page": 5,
+					"title": "P5",
+					"aid": 1741382,
+					"duration": null
+				},
+				{
+					"cid": 2659863,
+					"page": 6,
+					"title": "P6",
+					"aid": 1741382,
+					"duration": null
+				},
+				{
+					"cid": 2659864,
+					"page": 7,
+					"title": "P7",
+					"aid": 1741382,
+					"duration": null
+				},
+				{
+					"cid": 2659865,
+					"page": 8,
+					"title": "P8",
+					"aid": 1741382,
+					"duration": null
+				},
+				{
+					"cid": 2659866,
+					"page": 9,
+					"title": "P9",
+					"aid": 1741382,
+					"duration": null
+				},
+				{
+					"cid": 2659867,
+					"page": 10,
+					"title": "P10",
+					"aid": 1741382,
+					"duration": null
+				}
+			],
+			"tag": "(๑ŐДŐ)B,108个赞",
+			"description": "dmxz.zerodm.net 简介什么的……我的确不会填啊。大家就先看着吧，我自己下了全集，没弹幕看着不舒服，想来看看大家吐槽。",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1416673255,
+			"created_at": "2014-11-23 20:55",
+			"author": "逗比の心",
+			"mid": 4174309,
+			"play": 29,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1787448,
+			"title": "【OVA】我的脑内恋碍选项11【BBA字幕组】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 2739242,
+					"page": 1,
+					"title": "",
+					"aid": 1787448,
+					"duration": null
+				},
+				{
+					"cid": 2739496,
+					"page": 1,
+					"title": "",
+					"aid": 1787448,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "【BBA字幕组】 【我的脑内恋碍选项】[11/OVA][GB][1280x720][MP4]",
+			"tid": 94,
+			"typename": "剧场版",
+			"created": 1418055695,
+			"created_at": "2014-12-09 21:35",
+			"author": "道道V5",
+			"mid": 2696387,
+			"play": 27,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 1809487,
+			"title": "【720P合集1-10】我的脑内恋碍选项【恶魔岛字幕组】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 2779666,
+					"page": 1,
+					"title": "01",
+					"aid": 1809487,
+					"duration": null
+				},
+				{
+					"cid": 2779667,
+					"page": 2,
+					"title": "02",
+					"aid": 1809487,
+					"duration": null
+				},
+				{
+					"cid": 2779668,
+					"page": 3,
+					"title": "03",
+					"aid": 1809487,
+					"duration": null
+				},
+				{
+					"cid": 2779669,
+					"page": 4,
+					"title": "04",
+					"aid": 1809487,
+					"duration": null
+				},
+				{
+					"cid": 2779670,
+					"page": 5,
+					"title": "05",
+					"aid": 1809487,
+					"duration": null
+				},
+				{
+					"cid": 2779671,
+					"page": 6,
+					"title": "06",
+					"aid": 1809487,
+					"duration": null
+				},
+				{
+					"cid": 2779672,
+					"page": 7,
+					"title": "07",
+					"aid": 1809487,
+					"duration": null
+				},
+				{
+					"cid": 2779673,
+					"page": 8,
+					"title": "08",
+					"aid": 1809487,
+					"duration": null
+				},
+				{
+					"cid": 2779674,
+					"page": 9,
+					"title": "09",
+					"aid": 1809487,
+					"duration": null
+				},
+				{
+					"cid": 2779675,
+					"page": 10,
+					"title": "10",
+					"aid": 1809487,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "极影 我，甘草奏的“绝对选项”是一种会突然出现脑中，不选就不消失的悲惨诅咒；通常人要是被迫做这么变态的选择，无论如何都会有所抵抗，而我起初也不例外……（PS：ED后正片）",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1418833040,
+			"created_at": "2014-12-18 17:20",
+			"author": "firekiller",
+			"mid": 4243235,
+			"play": 28,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2069793,
+			"title": "【720p】【我的脑内恋碍选项】【集合】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 3205633,
+					"page": 1,
+					"title": "01",
+					"aid": 2069793,
+					"duration": null
+				},
+				{
+					"cid": 3205634,
+					"page": 2,
+					"title": "02",
+					"aid": 2069793,
+					"duration": null
+				},
+				{
+					"cid": 3205635,
+					"page": 3,
+					"title": "03",
+					"aid": 2069793,
+					"duration": null
+				},
+				{
+					"cid": 3205636,
+					"page": 4,
+					"title": "04",
+					"aid": 2069793,
+					"duration": null
+				},
+				{
+					"cid": 3205637,
+					"page": 5,
+					"title": "05",
+					"aid": 2069793,
+					"duration": null
+				},
+				{
+					"cid": 3205638,
+					"page": 6,
+					"title": "06",
+					"aid": 2069793,
+					"duration": null
+				},
+				{
+					"cid": 3205639,
+					"page": 7,
+					"title": "07",
+					"aid": 2069793,
+					"duration": null
+				},
+				{
+					"cid": 3205640,
+					"page": 8,
+					"title": "08",
+					"aid": 2069793,
+					"duration": null
+				},
+				{
+					"cid": 3205641,
+					"page": 9,
+					"title": "09",
+					"aid": 2069793,
+					"duration": null
+				},
+				{
+					"cid": 3205642,
+					"page": 10,
+					"title": "10",
+					"aid": 2069793,
+					"duration": null
+				},
+				{
+					"cid": 3205643,
+					"page": 11,
+					"title": "OVA",
+					"aid": 2069793,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "转载 看到b站上没有这个集合,特地找的资源,正片是恶魔岛字幕组的,OVA是BBA字幕组的.",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1425312693,
+			"created_at": "2015-03-03 11:33",
+			"author": "炎之克里斯",
+			"mid": 2740305,
+			"play": 22,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2069895,
+			"title": "【我的脑内恋碍选项】01-02【720p】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 3205817,
+					"page": 1,
+					"title": "01",
+					"aid": 2069895,
+					"duration": null
+				},
+				{
+					"cid": 3205818,
+					"page": 2,
+					"title": "02",
+					"aid": 2069895,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "转载 看见没有所以传了",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1425312738,
+			"created_at": "2015-03-03 12:18",
+			"author": "炎之克里斯",
+			"mid": 2740305,
+			"play": 16,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2072475,
+			"title": "【720p】【我的脑内恋碍选项】【合集】【10话+ova】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [],
+			"tag": "我的脑内恋碍选项",
+			"description": "转载 方便手机离线党\r\n正片是恶魔岛字幕组的，OVA是BBA字幕组的",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1425398412,
+			"created_at": "2015-03-04 00:12",
+			"author": "炎之克里斯",
+			"mid": 2740305,
+			"play": 6,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2073612,
+			"title": "【720p】【我的脑内恋碍选项】【合集】【10话+ova】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 3209772,
+					"page": 1,
+					"title": "01",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3209773,
+					"page": 2,
+					"title": "02",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3209774,
+					"page": 3,
+					"title": "03",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3209775,
+					"page": 4,
+					"title": "04",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3209776,
+					"page": 5,
+					"title": "05",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3209777,
+					"page": 6,
+					"title": "06",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3209778,
+					"page": 7,
+					"title": "07",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3209779,
+					"page": 8,
+					"title": "08",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3209780,
+					"page": 9,
+					"title": "09",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3209781,
+					"page": 10,
+					"title": "10",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3209782,
+					"page": 11,
+					"title": "OVA",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211694,
+					"page": 1,
+					"title": "01",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211695,
+					"page": 2,
+					"title": "02",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211696,
+					"page": 3,
+					"title": "03",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211697,
+					"page": 4,
+					"title": "04",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211698,
+					"page": 5,
+					"title": "05",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211699,
+					"page": 6,
+					"title": "06",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211700,
+					"page": 7,
+					"title": "07",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211701,
+					"page": 8,
+					"title": "08",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211702,
+					"page": 9,
+					"title": "09",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211703,
+					"page": 10,
+					"title": "10",
+					"aid": 2073612,
+					"duration": null
+				},
+				{
+					"cid": 3211704,
+					"page": 11,
+					"title": "OVA",
+					"aid": 2073612,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "转载 方便手机离线党\r\n正片是恶魔岛字幕组的，OVA是BBA字幕组的",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1425399191,
+			"created_at": "2015-03-04 13:11",
+			"author": "炎之克里斯",
+			"mid": 2740305,
+			"play": 47,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2246566,
+			"title": "我的脑内恋碍选项",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 3498327,
+					"page": 1,
+					"title": "1",
+					"aid": 2246566,
+					"duration": null
+				},
+				{
+					"cid": 3498328,
+					"page": 2,
+					"title": "2",
+					"aid": 2246566,
+					"duration": null
+				},
+				{
+					"cid": 3498329,
+					"page": 3,
+					"title": "3",
+					"aid": 2246566,
+					"duration": null
+				},
+				{
+					"cid": 3498330,
+					"page": 4,
+					"title": "4",
+					"aid": 2246566,
+					"duration": null
+				},
+				{
+					"cid": 3498331,
+					"page": 5,
+					"title": "5",
+					"aid": 2246566,
+					"duration": null
+				},
+				{
+					"cid": 3498332,
+					"page": 6,
+					"title": "6",
+					"aid": 2246566,
+					"duration": null
+				},
+				{
+					"cid": 3498333,
+					"page": 7,
+					"title": "7",
+					"aid": 2246566,
+					"duration": null
+				},
+				{
+					"cid": 3498334,
+					"page": 8,
+					"title": "8",
+					"aid": 2246566,
+					"duration": null
+				},
+				{
+					"cid": 3498335,
+					"page": 9,
+					"title": "9",
+					"aid": 2246566,
+					"duration": null
+				},
+				{
+					"cid": 3498336,
+					"page": 10,
+					"title": "10",
+					"aid": 2246566,
+					"duration": null
+				}
+			],
+			"tag": "TV动画",
+			"description": "[DHR][NOUKOME][[BIG5][AVC_AAC].[卜卜酱]  男主角甘草奏在受到了名为“绝对选项”的诅咒后，会突然间在脑中出现选项，直到做出选择才会消失。今天在学园里也出现了“请选择①赤裸上半身大叫，②赤裸下半身大叫”这样的选项。男主角因此反复做出怪异的行为，受到了众人的白眼。直到出现“①美少女从天而降”这个选项……",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1429633072,
+			"created_at": "2015-04-22 17:52",
+			"author": "猫神33",
+			"mid": 7177027,
+			"play": 21,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2345696,
+			"title": "我的脑内恋碍选项",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 3662810,
+					"page": 1,
+					"title": "P1",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662811,
+					"page": 2,
+					"title": "P2",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662812,
+					"page": 3,
+					"title": "P3",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662813,
+					"page": 4,
+					"title": "P4",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662814,
+					"page": 5,
+					"title": "P5",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662815,
+					"page": 6,
+					"title": "P6",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662816,
+					"page": 7,
+					"title": "P7",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662817,
+					"page": 8,
+					"title": "P8",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662818,
+					"page": 9,
+					"title": "P9",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662819,
+					"page": 10,
+					"title": "P10",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662820,
+					"page": 11,
+					"title": "P11",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662891,
+					"page": 1,
+					"title": "P1",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662892,
+					"page": 2,
+					"title": "P2",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662893,
+					"page": 3,
+					"title": "P3",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662894,
+					"page": 4,
+					"title": "P4",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662895,
+					"page": 5,
+					"title": "P5",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662896,
+					"page": 6,
+					"title": "P6",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662897,
+					"page": 7,
+					"title": "P7",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662898,
+					"page": 8,
+					"title": "P8",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662899,
+					"page": 9,
+					"title": "P9",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662900,
+					"page": 10,
+					"title": "P10",
+					"aid": 2345696,
+					"duration": null
+				},
+				{
+					"cid": 3662901,
+					"page": 11,
+					"title": "P11",
+					"aid": 2345696,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项",
+			"description": "ZERO 《我的脑内恋碍选项（俺の脳内选択肢が、学园ラブコメを全力で邪魔している）》（直译：我的脑内选项正在全力妨碍学园恋爱喜剧）是由日本轻小说家春日部タケル撰写、ユキヲ负责插画、Sneaker文库刊行的轻小说。作者给这部作品的官方简称是“のうコメ”（直译：脑内喜剧）。",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1432052421,
+			"created_at": "2015-05-20 20:21",
+			"author": "烟雨洛城",
+			"mid": 9901936,
+			"play": 35,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2383347,
+			"title": "【720P】我的脑内恋碍选项",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 3727522,
+					"page": 1,
+					"title": "01",
+					"aid": 2383347,
+					"duration": null
+				},
+				{
+					"cid": 3727523,
+					"page": 2,
+					"title": "02",
+					"aid": 2383347,
+					"duration": null
+				},
+				{
+					"cid": 3727524,
+					"page": 3,
+					"title": "03",
+					"aid": 2383347,
+					"duration": null
+				},
+				{
+					"cid": 3727525,
+					"page": 4,
+					"title": "04",
+					"aid": 2383347,
+					"duration": null
+				},
+				{
+					"cid": 3727526,
+					"page": 5,
+					"title": "05",
+					"aid": 2383347,
+					"duration": null
+				},
+				{
+					"cid": 3727527,
+					"page": 6,
+					"title": "06",
+					"aid": 2383347,
+					"duration": null
+				},
+				{
+					"cid": 3727528,
+					"page": 7,
+					"title": "07",
+					"aid": 2383347,
+					"duration": null
+				},
+				{
+					"cid": 3727529,
+					"page": 8,
+					"title": "08",
+					"aid": 2383347,
+					"duration": null
+				},
+				{
+					"cid": 3727530,
+					"page": 9,
+					"title": "09",
+					"aid": 2383347,
+					"duration": null
+				},
+				{
+					"cid": 3727531,
+					"page": 10,
+					"title": "10",
+					"aid": 2383347,
+					"duration": null
+				}
+			],
+			"tag": "丰永利行,佐土原香织,720P,搞笑,萝莉老师,后宫,傲娇,萝莉,我的脑内恋碍选项",
+			"description": "自制 大家如果有什么想看的动漫可以私密我！  祝大家补番愉快！",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1433002223,
+			"created_at": "2015-05-31 10:23",
+			"author": "F·云烟",
+			"mid": 10478936,
+			"play": 22,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2433968,
+			"title": "][我的脑内恋碍选项][10][GB][X264_AAC][1280X720]",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 3809938,
+					"page": 1,
+					"title": "",
+					"aid": 2433968,
+					"duration": null
+				}
+			],
+			"tag": "合集,萌萌哒,720P,后宫,搞笑",
+			"description": "www.hltm.cc  男主角甘草奏在受到了名为“绝对选项”的诅咒后，会突然间在脑中出现选项，直到做出选择才会消失。今天在学园里也出现了“请选择①赤裸上半身大叫，②赤裸下半身大叫”这样的选项。男主角因此反复做出怪异的行为，受到了众人的白眼。直到出现“①美少女从天而降”这个选项",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1434125850,
+			"created_at": "2015-06-13 17:30",
+			"author": "wsgjz",
+			"mid": 5205323,
+			"play": 12,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2434823,
+			"title": "[720p] 我的脑内恋碍选项",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 3811153,
+					"page": 1,
+					"title": "P1",
+					"aid": 2434823,
+					"duration": null
+				},
+				{
+					"cid": 3811154,
+					"page": 2,
+					"title": "P2",
+					"aid": 2434823,
+					"duration": null
+				},
+				{
+					"cid": 3811155,
+					"page": 3,
+					"title": "P3",
+					"aid": 2434823,
+					"duration": null
+				},
+				{
+					"cid": 3811156,
+					"page": 4,
+					"title": "P4",
+					"aid": 2434823,
+					"duration": null
+				},
+				{
+					"cid": 3811157,
+					"page": 5,
+					"title": "P5",
+					"aid": 2434823,
+					"duration": null
+				},
+				{
+					"cid": 3811158,
+					"page": 6,
+					"title": "P6",
+					"aid": 2434823,
+					"duration": null
+				},
+				{
+					"cid": 3811159,
+					"page": 7,
+					"title": "P7",
+					"aid": 2434823,
+					"duration": null
+				}
+			],
+			"tag": "合集,萌萌哒,后宫,搞笑",
+			"description": "www.hltm.cc  男主角甘草奏在受到了名为“绝对选项”的诅咒后，会突然间在脑中出现选项，直到做出选择才会消失。今天在学园里也出现了“请选择①赤裸上半身大叫，②赤裸下半身大叫”这样的选项。男主角因此反复做出怪异的行为，受到了众人的白眼。直到出现“①美少女从天而降”这个选项",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1434126033,
+			"created_at": "2015-06-13 20:33",
+			"author": "wsgjz",
+			"mid": 5205323,
+			"play": 17,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2435020,
+			"title": "[720p]我的脑内恋碍选项",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 3811430,
+					"page": 1,
+					"title": "P1",
+					"aid": 2435020,
+					"duration": null
+				},
+				{
+					"cid": 3811431,
+					"page": 2,
+					"title": "P2",
+					"aid": 2435020,
+					"duration": null
+				}
+			],
+			"tag": "合集,萌萌哒,720P,后宫,搞笑",
+			"description": "www.hltm.cc  男主角甘草奏在受到了名为“绝对选项”的诅咒后，会突然间在脑中出现选项，直到做出选择才会消失。今天在学园里也出现了“请选择①赤裸上半身大叫，②赤裸下半身大叫”这样的选项。男主角因此反复做出怪异的行为，受到了众人的白眼。直到出现“①美少女从天而降”这个选项",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1434126072,
+			"created_at": "2015-06-13 21:12",
+			"author": "wsgjz",
+			"mid": 5205323,
+			"play": 14,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2632193,
+			"title": "我的脑内恋碍选项 [01][720P］",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 4108732,
+					"page": 1,
+					"title": "",
+					"aid": 2632193,
+					"duration": null
+				}
+			],
+			"tag": "TV动画,我的脑内恋碍选项",
+			"description": "卜卜酱 我的脑内恋碍选项",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1437841071,
+			"created_at": "2015-07-26 17:51",
+			"author": "葬神之地",
+			"mid": 6857504,
+			"play": 8,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 2984334,
+			"title": "【1080P/DVDRip】我的脑内恋碍选项 第一季（全10话+OVA1)",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 4676324,
+					"page": 1,
+					"title": "（笑）UP主也不知道",
+					"aid": 2984334,
+					"duration": null
+				},
+				{
+					"cid": 4676325,
+					"page": 2,
+					"title": "秘笈！用母猪笑话让我笑翻！",
+					"aid": 2984334,
+					"duration": null
+				},
+				{
+					"cid": 4676326,
+					"page": 3,
+					"title": "女孩&amp;amp;走光",
+					"aid": 2984334,
+					"duration": null
+				},
+				{
+					"cid": 4676327,
+					"page": 4,
+					"title": "太美妙 后宫思巴拉C--!",
+					"aid": 2984334,
+					"duration": null
+				},
+				{
+					"cid": 4676328,
+					"page": 5,
+					"title": "妹妹 出现！",
+					"aid": 2984334,
+					"duration": null
+				},
+				{
+					"cid": 4676329,
+					"page": 6,
+					"title": "虎虎虎！",
+					"aid": 2984334,
+					"duration": null
+				},
+				{
+					"cid": 4676330,
+					"page": 7,
+					"title": "清  萝  出  击！！！",
+					"aid": 2984334,
+					"duration": null
+				},
+				{
+					"cid": 4676331,
+					"page": 8,
+					"title": "我的白吃白喝不可能这么高明",
+					"aid": 2984334,
+					"duration": null
+				},
+				{
+					"cid": 4676332,
+					"page": 9,
+					"title": "心跳！ 全是美少女的游泳大赛",
+					"aid": 2984334,
+					"duration": null
+				},
+				{
+					"cid": 4676333,
+					"page": 10,
+					"title": "人生是选择的连续",
+					"aid": 2984334,
+					"duration": null
+				},
+				{
+					"cid": 4676334,
+					"page": 11,
+					"title": "谜一样的游戏世界（UP主自编）（笑）",
+					"aid": 2984334,
+					"duration": null
+				}
+			],
+			"tag": "求补充,TV动画,1080P,搞笑",
+			"description": "乐事网 转自乐事网，只为更多喜欢动漫的小伙伴方便观看，如涉嫌侵犯他人利益，请及时与本人联系，删除此视频！！！",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1443629698,
+			"created_at": "2015-10-01 14:58",
+			"author": "西野灬千鹤",
+			"mid": 9191888,
+			"play": 9,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 3185439,
+			"title": "【720P/DVDRip】我脑内的恋碍选项",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 5019484,
+					"page": 1,
+					"title": "P1",
+					"aid": 3185439,
+					"duration": null
+				},
+				{
+					"cid": 5019485,
+					"page": 2,
+					"title": "P2",
+					"aid": 3185439,
+					"duration": null
+				},
+				{
+					"cid": 5019486,
+					"page": 3,
+					"title": "P3",
+					"aid": 3185439,
+					"duration": null
+				},
+				{
+					"cid": 5019487,
+					"page": 4,
+					"title": "P4",
+					"aid": 3185439,
+					"duration": null
+				},
+				{
+					"cid": 5019488,
+					"page": 5,
+					"title": "P5",
+					"aid": 3185439,
+					"duration": null
+				},
+				{
+					"cid": 5019489,
+					"page": 6,
+					"title": "P6",
+					"aid": 3185439,
+					"duration": null
+				},
+				{
+					"cid": 5019490,
+					"page": 7,
+					"title": "P7",
+					"aid": 3185439,
+					"duration": null
+				},
+				{
+					"cid": 5019491,
+					"page": 8,
+					"title": "P8",
+					"aid": 3185439,
+					"duration": null
+				},
+				{
+					"cid": 5019492,
+					"page": 9,
+					"title": "P9",
+					"aid": 3185439,
+					"duration": null
+				},
+				{
+					"cid": 5019493,
+					"page": 10,
+					"title": "P10",
+					"aid": 3185439,
+					"duration": null
+				}
+			],
+			"tag": "萝莉,合集,720P,后宫,搞笑",
+			"description": "http://www.mengwubaike.com/thread-44304-1-1.html 720p高清转载",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1446826900,
+			"created_at": "2015-11-07 21:40",
+			"author": "オタク无日不漫",
+			"mid": 13674022,
+			"play": 8,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 3519879,
+			"title": "[1280X720]  我的脑内恋碍选项（合集）（补档）",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 5598289,
+					"page": 1,
+					"title": "1",
+					"aid": 3519879,
+					"duration": null
+				},
+				{
+					"cid": 5598290,
+					"page": 2,
+					"title": "2",
+					"aid": 3519879,
+					"duration": null
+				},
+				{
+					"cid": 5598291,
+					"page": 3,
+					"title": "3",
+					"aid": 3519879,
+					"duration": null
+				},
+				{
+					"cid": 5598292,
+					"page": 4,
+					"title": "4",
+					"aid": 3519879,
+					"duration": null
+				},
+				{
+					"cid": 5598293,
+					"page": 5,
+					"title": "5",
+					"aid": 3519879,
+					"duration": null
+				},
+				{
+					"cid": 5598294,
+					"page": 6,
+					"title": "6",
+					"aid": 3519879,
+					"duration": null
+				},
+				{
+					"cid": 5598295,
+					"page": 7,
+					"title": "7",
+					"aid": 3519879,
+					"duration": null
+				},
+				{
+					"cid": 5598296,
+					"page": 8,
+					"title": "8",
+					"aid": 3519879,
+					"duration": null
+				},
+				{
+					"cid": 5598297,
+					"page": 9,
+					"title": "9",
+					"aid": 3519879,
+					"duration": null
+				},
+				{
+					"cid": 5598298,
+					"page": 10,
+					"title": "10",
+					"aid": 3519879,
+					"duration": null
+				},
+				{
+					"cid": 5598299,
+					"page": 11,
+					"title": "ova",
+					"aid": 3519879,
+					"duration": null
+				}
+			],
+			"tag": "TV动画",
+			"description": "http://www.letv.com/ptv/vplay/2138325.html?ref=baiduletv 乐视源只有1,2两集可以看了，我希望能在b站有弹幕看，希望通过吧！",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1451923987,
+			"created_at": "2016-01-05 13:07",
+			"author": "江南一叶",
+			"mid": 780495,
+			"play": 7,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 3600475,
+			"title": "【720P】我的脑内恋碍选项10+ova",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 5749479,
+					"page": 1,
+					"title": "P1",
+					"aid": 3600475,
+					"duration": null
+				},
+				{
+					"cid": 5749480,
+					"page": 2,
+					"title": "秘技！用猪笑话让我笑翻",
+					"aid": 3600475,
+					"duration": null
+				},
+				{
+					"cid": 5749481,
+					"page": 3,
+					"title": "少女与走光",
+					"aid": 3600475,
+					"duration": null
+				},
+				{
+					"cid": 5749482,
+					"page": 4,
+					"title": "后宫太美妙了",
+					"aid": 3600475,
+					"duration": null
+				},
+				{
+					"cid": 5749483,
+					"page": 5,
+					"title": "P5",
+					"aid": 3600475,
+					"duration": null
+				},
+				{
+					"cid": 5749484,
+					"page": 6,
+					"title": "虎虎虎",
+					"aid": 3600475,
+					"duration": null
+				},
+				{
+					"cid": 5749485,
+					"page": 7,
+					"title": "清罗出击",
+					"aid": 3600475,
+					"duration": null
+				},
+				{
+					"cid": 5749486,
+					"page": 8,
+					"title": "心跳！全是美少女的游泳大赛",
+					"aid": 3600475,
+					"duration": null
+				},
+				{
+					"cid": 5749487,
+					"page": 9,
+					"title": "人生是选择的继续",
+					"aid": 3600475,
+					"duration": null
+				},
+				{
+					"cid": 5749488,
+					"page": 10,
+					"title": "ova",
+					"aid": 3600475,
+					"duration": null
+				}
+			],
+			"tag": "搞笑、后宫,校园",
+			"description": "sm乐视 新人君一枚,下次是寻找遗失的未来，还有p8有鬼请见谅",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1452960884,
+			"created_at": "2016-01-17 14:44",
+			"author": "凌XE",
+			"mid": 13343596,
+			"play": 3,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 3738117,
+			"title": "[720p][我的脑内恋碍选项]10集全[中日语双字幕]",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 5993213,
+					"page": 1,
+					"title": "第一集",
+					"aid": 3738117,
+					"duration": null
+				},
+				{
+					"cid": 5993214,
+					"page": 2,
+					"title": "第二集",
+					"aid": 3738117,
+					"duration": null
+				},
+				{
+					"cid": 5993215,
+					"page": 3,
+					"title": "第三集",
+					"aid": 3738117,
+					"duration": null
+				},
+				{
+					"cid": 5993216,
+					"page": 4,
+					"title": "第四集",
+					"aid": 3738117,
+					"duration": null
+				},
+				{
+					"cid": 5993217,
+					"page": 5,
+					"title": "第五集",
+					"aid": 3738117,
+					"duration": null
+				},
+				{
+					"cid": 5993218,
+					"page": 6,
+					"title": "第六集",
+					"aid": 3738117,
+					"duration": null
+				},
+				{
+					"cid": 5993219,
+					"page": 7,
+					"title": "第七集",
+					"aid": 3738117,
+					"duration": null
+				},
+				{
+					"cid": 5993220,
+					"page": 8,
+					"title": "第八集",
+					"aid": 3738117,
+					"duration": null
+				},
+				{
+					"cid": 5993221,
+					"page": 9,
+					"title": "第九集",
+					"aid": 3738117,
+					"duration": null
+				},
+				{
+					"cid": 5993222,
+					"page": 10,
+					"title": "第十集",
+					"aid": 3738117,
+					"duration": null
+				}
+			],
+			"tag": "TV动画,720P,合集,搞笑",
+			"description": "樱律字幕组 讲述男主人公甘草奏受到名为“绝对选项”的诅咒，会在脑中冒出美少女游戏一样的选择选项，至此展开的故事。",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1454428904,
+			"created_at": "2016-02-03 01:44",
+			"author": "梦梦戴比鲁克",
+			"mid": 7775771,
+			"play": 10,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 3750023,
+			"title": "【补番】【720P】我的脑内恋碍选项【01-10话】【恶魔岛】【GB】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 6014519,
+					"page": 1,
+					"title": "P1",
+					"aid": 3750023,
+					"duration": null
+				},
+				{
+					"cid": 6014520,
+					"page": 2,
+					"title": "P2",
+					"aid": 3750023,
+					"duration": null
+				},
+				{
+					"cid": 6014521,
+					"page": 3,
+					"title": "P3",
+					"aid": 3750023,
+					"duration": null
+				},
+				{
+					"cid": 6014522,
+					"page": 4,
+					"title": "P4",
+					"aid": 3750023,
+					"duration": null
+				},
+				{
+					"cid": 6014523,
+					"page": 5,
+					"title": "P5",
+					"aid": 3750023,
+					"duration": null
+				},
+				{
+					"cid": 6014524,
+					"page": 6,
+					"title": "P6",
+					"aid": 3750023,
+					"duration": null
+				},
+				{
+					"cid": 6014525,
+					"page": 7,
+					"title": "P7",
+					"aid": 3750023,
+					"duration": null
+				},
+				{
+					"cid": 6014526,
+					"page": 8,
+					"title": "P8",
+					"aid": 3750023,
+					"duration": null
+				},
+				{
+					"cid": 6014527,
+					"page": 9,
+					"title": "P9",
+					"aid": 3750023,
+					"duration": null
+				},
+				{
+					"cid": 6014528,
+					"page": 10,
+					"title": "P10",
+					"aid": 3750023,
+					"duration": null
+				}
+			],
+			"tag": "TV动画,720P,良心作,后宫,搞笑,合集",
+			"description": "http://www.kisssub.org/search.php?keyword=%E6%81%B6%E9%AD%94%E5%B2%9B%E5%AD%97%E5%B9%95%E7%BB%84 我，甘草奏的“绝对选项”是一种会突然出现脑中，不选就不消失的悲惨诅咒；\r\n通常人要是被迫做这么变态的选择，无论如何都会有所抵抗，而我起初也不例外....\r\n...(略)\r\nPS： 希望大家看了男主的悲惨人生后会感到愉快。谢谢。",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1454516011,
+			"created_at": "2016-02-04 13:31",
+			"author": "Krfwill",
+			"mid": 18987753,
+			"play": 7,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 3820662,
+			"title": "【熟肉】我的脑内恋碍选项11【TV未放送】[480p]",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 6136804,
+					"page": 1,
+					"title": "",
+					"aid": 3820662,
+					"duration": null
+				}
+			],
+			"tag": "剧场版,TV动画,合集",
+			"description": "日本福利社提供 转载啦，望B站大爷给过，给大家一个乐头看",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1455207787,
+			"created_at": "2016-02-12 23:07",
+			"author": "晨阳超帅",
+			"mid": 21609622,
+			"play": 2,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 3882452,
+			"title": "【720P】我脑内的恋碍选项",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 6243132,
+					"page": 1,
+					"title": "P1",
+					"aid": 3882452,
+					"duration": null
+				},
+				{
+					"cid": 6243133,
+					"page": 2,
+					"title": "P2",
+					"aid": 3882452,
+					"duration": null
+				},
+				{
+					"cid": 6243134,
+					"page": 3,
+					"title": "P3",
+					"aid": 3882452,
+					"duration": null
+				},
+				{
+					"cid": 6243135,
+					"page": 4,
+					"title": "P4",
+					"aid": 3882452,
+					"duration": null
+				},
+				{
+					"cid": 6243136,
+					"page": 5,
+					"title": "P5",
+					"aid": 3882452,
+					"duration": null
+				},
+				{
+					"cid": 6243137,
+					"page": 6,
+					"title": "P6",
+					"aid": 3882452,
+					"duration": null
+				},
+				{
+					"cid": 6243138,
+					"page": 7,
+					"title": "P7",
+					"aid": 3882452,
+					"duration": null
+				},
+				{
+					"cid": 6243139,
+					"page": 8,
+					"title": "P8",
+					"aid": 3882452,
+					"duration": null
+				},
+				{
+					"cid": 6243140,
+					"page": 9,
+					"title": "P9",
+					"aid": 3882452,
+					"duration": null
+				},
+				{
+					"cid": 6243141,
+					"page": 10,
+					"title": "P10",
+					"aid": 3882452,
+					"duration": null
+				}
+			],
+			"tag": "TV动画,720P",
+			"description": "自家下载 新人第一次上传，虽然不是自制，就不要乱点啦~~",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1455726170,
+			"created_at": "2016-02-18 22:50",
+			"author": "为什么我修改不了昵称",
+			"mid": 17812206,
+			"play": 3,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 3903078,
+			"title": "【720P】我的脑内恋碍选项01【中文字幕】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 6278349,
+					"page": 1,
+					"title": "",
+					"aid": 3903078,
+					"duration": null
+				}
+			],
+			"tag": "合集,720P,后宫",
+			"description": "乐视转载 转载自乐视",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1455898911,
+			"created_at": "2016-02-20 21:51",
+			"author": "吴子月月鸟",
+			"mid": 15349021,
+			"play": 4,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 4021167,
+			"title": "【720P】我的脑内恋碍选项[01-10]【恶魔岛字幕组】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 6484235,
+					"page": 1,
+					"title": "甘草奏的苦日常",
+					"aid": 4021167,
+					"duration": null
+				},
+				{
+					"cid": 6484236,
+					"page": 2,
+					"title": "秘技！用猪笑话让我笑翻",
+					"aid": 4021167,
+					"duration": null
+				},
+				{
+					"cid": 6484237,
+					"page": 3,
+					"title": "女孩 &amp;amp; 走光",
+					"aid": 4021167,
+					"duration": null
+				},
+				{
+					"cid": 6484238,
+					"page": 4,
+					"title": "后宫棒极了",
+					"aid": 4021167,
+					"duration": null
+				},
+				{
+					"cid": 6484239,
+					"page": 5,
+					"title": "妹妹，出现了",
+					"aid": 4021167,
+					"duration": null
+				},
+				{
+					"cid": 6484240,
+					"page": 6,
+					"title": "虎虎虎！",
+					"aid": 4021167,
+					"duration": null
+				},
+				{
+					"cid": 6484241,
+					"page": 7,
+					"title": "清罗出击！",
+					"aid": 4021167,
+					"duration": null
+				},
+				{
+					"cid": 6484242,
+					"page": 8,
+					"title": "我家的食客哪有可能这么贤慧！？",
+					"aid": 4021167,
+					"duration": null
+				},
+				{
+					"cid": 6484243,
+					"page": 9,
+					"title": "心跳！全是美少女的泳装大会",
+					"aid": 4021167,
+					"duration": null
+				},
+				{
+					"cid": 6484244,
+					"page": 10,
+					"title": "人生是选项的连续",
+					"aid": 4021167,
+					"duration": null
+				}
+			],
+			"tag": "TV动画,720P,后宫,搞笑,合集",
+			"description": "恶魔岛字幕组 个人非常喜欢的动漫，但是B站的看不了。所以自己从网上找了重新上传，希望大家喜欢..",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1457108273,
+			"created_at": "2016-03-05 17:53",
+			"author": "天宇伤痕",
+			"mid": 6991859,
+			"play": 0,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 4427006,
+			"title": "【720p】我的脑内恋碍选项 第一季【樱律字幕组】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 7171825,
+					"page": 1,
+					"title": "01",
+					"aid": 4427006,
+					"duration": null
+				},
+				{
+					"cid": 7171826,
+					"page": 2,
+					"title": "02",
+					"aid": 4427006,
+					"duration": null
+				},
+				{
+					"cid": 7171827,
+					"page": 3,
+					"title": "03",
+					"aid": 4427006,
+					"duration": null
+				},
+				{
+					"cid": 7171828,
+					"page": 4,
+					"title": "04",
+					"aid": 4427006,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋碍选项,后宫,喜剧,没节操",
+			"description": "http://dmhy.dandanplay.com/topics/view/332035_1-10_720P_MP4.html 我的脑内恋碍选项，B站以前看的好像在5话以后就挂了，所以上传一份。",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1461168919,
+			"created_at": "2016-04-21 15:19",
+			"author": "晓言123",
+			"mid": 601825,
+			"play": 0,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 4640885,
+			"title": "【720p】我的脑内恋碍选项 04【樱律中日双语字幕组】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 7529244,
+					"page": 1,
+					"title": "",
+					"aid": 4640885,
+					"duration": null
+				}
+			],
+			"tag": "TV动画",
+			"description": "樱律字幕组 我的脑内恋障选项",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1463070008,
+			"created_at": "2016-05-13 20:08",
+			"author": "我好奇tkc",
+			"mid": 29326388,
+			"play": 0,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 4735154,
+			"title": "【720P】我的脑内恋爱选项 全集 【恶魔岛】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 7681825,
+					"page": 1,
+					"title": "P1",
+					"aid": 4735154,
+					"duration": null
+				},
+				{
+					"cid": 7681826,
+					"page": 2,
+					"title": "P2",
+					"aid": 4735154,
+					"duration": null
+				},
+				{
+					"cid": 7681827,
+					"page": 3,
+					"title": "P3",
+					"aid": 4735154,
+					"duration": null
+				},
+				{
+					"cid": 7681828,
+					"page": 4,
+					"title": "P4",
+					"aid": 4735154,
+					"duration": null
+				},
+				{
+					"cid": 7681829,
+					"page": 5,
+					"title": "P5",
+					"aid": 4735154,
+					"duration": null
+				},
+				{
+					"cid": 7681830,
+					"page": 6,
+					"title": "P6",
+					"aid": 4735154,
+					"duration": null
+				},
+				{
+					"cid": 7681831,
+					"page": 7,
+					"title": "P7",
+					"aid": 4735154,
+					"duration": null
+				},
+				{
+					"cid": 7681832,
+					"page": 8,
+					"title": "P8",
+					"aid": 4735154,
+					"duration": null
+				},
+				{
+					"cid": 7681833,
+					"page": 9,
+					"title": "P9",
+					"aid": 4735154,
+					"duration": null
+				},
+				{
+					"cid": 7681834,
+					"page": 10,
+					"title": "P10",
+					"aid": 4735154,
+					"duration": null
+				}
+			],
+			"tag": "后宫,恋爱,深井病,校园",
+			"description": "乐视 b站的番剧看不了，所以找了资源方便大家看。",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1463847516,
+			"created_at": "2016-05-22 18:36",
+			"author": "落幕丶蓝月",
+			"mid": 9172799,
+			"play": 0,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 4752576,
+			"title": "【1080P/Rip】我的脑内恋碍选项1-10【熟肉】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [],
+			"tag": "TV动画,经典,BDRIP,720P,旧番",
+			"description": "百度云 原来的好像挂了于是分享一下",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1464020250,
+			"created_at": "2016-05-24 17:30",
+			"author": "次元的魔王真祖",
+			"mid": 10795073,
+			"play": 0,
+			"coins": 0,
+			"review": 0,
+			"favorites": 1
+		},
+		{
+			"aid": 6156653,
+			"title": "【720】我的脑中恋爱选项【不知道字幕组】",
+			"video_review": 0,
+			"duration": null,
+			"lpartinfo": [
+				{
+					"cid": 9997575,
+					"page": 1,
+					"title": "",
+					"aid": 6156653,
+					"duration": null
+				}
+			],
+			"tag": "我的脑内恋爱选项",
+			"description": "来自我的脑中恋爱选项吧 我的脑中恋爱选项第七集，随便传一下的",
+			"tid": 32,
+			"typename": "完结动画",
+			"created": 1472919465,
+			"created_at": "2016-09-04 17:45",
+			"author": "二次元的小耗子",
+			"mid": 8870264,
+			"play": 0,
+			"coins": 0,
+			"review": 0,
+			"favorites": 0
+		}
+	]
+}

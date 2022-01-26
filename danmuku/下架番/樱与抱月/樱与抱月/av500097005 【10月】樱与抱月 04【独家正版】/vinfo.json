@@ -1,0 +1,85 @@
+{
+	"aid": 500097005,
+	"videos": 1,
+	"tid": "33",
+	"tname": "连载动画",
+	"copyright": 2,
+	"pic": "http://i0.hdslb.com/bfs/archive/ec91f19a7b21232138f1036f4fba53a7308975c0.jpg",
+	"title": "【10月】樱与抱月 04【独家正版】",
+	"pubdate": 1604041201,
+	"ctime": 1604036779,
+	"desc": "#04",
+	"state": 0,
+	"duration": 1446,
+	"redirect_url": "https://www.bilibili.com/bangumi/play/ep341199",
+	"rights": {
+		"bp": 0,
+		"elec": 0,
+		"download": 0,
+		"movie": 0,
+		"pay": 1,
+		"hd5": 1,
+		"no_reprint": 0,
+		"autoplay": 0,
+		"ugc_pay": 0,
+		"is_cooperation": 0,
+		"ugc_pay_preview": 0,
+		"no_background": 0
+	},
+	"owner": {
+		"mid": 928123,
+		"name": "哔哩哔哩番剧",
+		"face": "http://i1.hdslb.com/bfs/face/7a8412cbacb9fd18f40ddbbf0ad183e45afc1365.jpg"
+	},
+	"stat": {
+		"aid": 500097005,
+		"view": 1,
+		"danmaku": 3,
+		"reply": 44,
+		"favorite": 0,
+		"coin": 10,
+		"share": 0,
+		"now_rank": 0,
+		"his_rank": 0,
+		"like": 117,
+		"dislike": 0
+	},
+	"dynamic": "",
+	"cid": 250862806,
+	"dimension": {
+		"width": 1920,
+		"height": 1080,
+		"rotate": 0
+	},
+	"bvid": "BV1SK411A78G",
+	"pagelist": [
+		{
+			"cid": 250862806,
+			"page": 1,
+			"from": "vupload",
+			"part": "04",
+			"duration": 1446,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 1920,
+				"height": 1080,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 253261542,
+			"page": 1,
+			"from": "vupload",
+			"part": "04",
+			"duration": 1446,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 1920,
+				"height": 1080,
+				"rotate": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,86 @@
+{
+	"aid": 754933885,
+	"videos": 1,
+	"tid": "33",
+	"tname": "连载动画",
+	"copyright": 2,
+	"pic": "http://i1.hdslb.com/bfs/archive/3e77d8ceeabdca5c3d9d975650419a27b887a19e.jpg",
+	"title": "【10月】樱与抱月 01【独家正版】",
+	"pubdate": 1602226801,
+	"ctime": 1602218694,
+	"desc": "#01",
+	"state": 0,
+	"attribute": 76544,
+	"duration": 1446,
+	"redirect_url": "https://www.bilibili.com/bangumi/play/ep341196",
+	"rights": {
+		"bp": 0,
+		"elec": 0,
+		"download": 0,
+		"movie": 0,
+		"pay": 0,
+		"hd5": 1,
+		"no_reprint": 0,
+		"autoplay": 0,
+		"ugc_pay": 0,
+		"is_cooperation": 0,
+		"ugc_pay_preview": 0,
+		"no_background": 0
+	},
+	"owner": {
+		"mid": 928123,
+		"name": "哔哩哔哩番剧",
+		"face": "http://i1.hdslb.com/bfs/face/7a8412cbacb9fd18f40ddbbf0ad183e45afc1365.jpg"
+	},
+	"stat": {
+		"aid": 754933885,
+		"view": 1,
+		"danmaku": 10,
+		"reply": 113,
+		"favorite": 0,
+		"coin": 24,
+		"share": 0,
+		"now_rank": 0,
+		"his_rank": 0,
+		"like": 108,
+		"dislike": 0
+	},
+	"dynamic": "",
+	"cid": 243827090,
+	"dimension": {
+		"width": 1920,
+		"height": 1080,
+		"rotate": 0
+	},
+	"bvid": "BV1Dk4y1C75p",
+	"pagelist": [
+		{
+			"cid": 243827090,
+			"page": 1,
+			"from": "vupload",
+			"part": "01",
+			"duration": 1446,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 1920,
+				"height": 1080,
+				"rotate": 0
+			}
+		},
+		{
+			"cid": 245181867,
+			"page": 1,
+			"from": "vupload",
+			"part": "01",
+			"duration": 1446,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 1920,
+				"height": 1080,
+				"rotate": 0
+			}
+		}
+	]
+}

@@ -100,7 +100,7 @@
     animation-play-state: paused;
 }
 
-.danmuku.rolling{
+.rolling{
     animation: scrollTo linear forwards;
     animation-duration: var(--danmuku-duration);
 }
@@ -110,17 +110,25 @@
     to{transform: translateX(-1300px)}
 }
 
-.danmuku.top{
-    animation: scrollTo linear forwards;
+.ceiling{
+    animation: stayTop linear forwards;
     animation-duration: var(--danmuku-duration);
 }
 
-@keyframes scrollTo {
+@keyframes stayTop {
     from{}
     to{}
 }
 
+.floor{    
+    animation: stayBottom linear forwards;
+    animation-duration: var(--danmuku-duration);
+}
 
+@keyframes stayBottom {
+    from{}
+    to{}
+}
 
 
 
