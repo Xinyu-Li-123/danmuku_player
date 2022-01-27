@@ -57,10 +57,10 @@ Just open the webpage and you will know where to upload.
 By far, bilibili still has its api open to the public. I will introduce those I use in this project. The source of this section is [this blog](https://www.bilibili.com/read/cv5293665?from=search&spm_id_from=333.337.0.0).
 
 Belows are some types of ids that you will come across when using bilibili api 
--   cid / oid: the unique id that identify a video/article of bilibili
--   media id (md): identify a bangumi
--   season id (ss): identify a bangumi (I don't know the the diff between md and ss, probably some internal use)
--   episode id (ep): identify an episode of a bangumi
+-   cid / oid: chat id
+-   media id (md): one that identifies a bangumi
+-   season id (ss): one that identifies a bangumi (I don't know the the diff between md and ss, probably some internal use)
+-   episode id (ep): one that identifies an episode of a bangumi
 
 This is a list of usable api
 -   cid -> danmuku
@@ -127,7 +127,7 @@ This section lists some other source of historical danmuku.
 
 
 ## Some Exciting Finding
-
+### jijidown
 There is a powerful way to download danmuku xml file if you know the av / bv number of the video. The key is **bilibilijj**. or **jijidown** This is a website that previously allows you to download video, audio, and danmuku file on bilibili. To use this website, just add a **jj** after bilibili in the url and you will be redirected to the jijidown websitelike this:
 
 ```
@@ -141,3 +141,9 @@ What's most exciting about this website is that it allows you to download the da
 The video in the example above is *为美好的世界献上祝福！红传说* (KonoSuba: Legend of Crimson) a fantastic KonoSuba movie that is uploaded to bilibili silently on April 19, 2020, received a 9.9 rating, and removed by bilibili silently few month later. To me, it is the movie **combined with its danmuku** that makes my watching experience so fantastic, and the loss of those precious danmuku is tragic and outraging! **Danmuku is created by the users and should belong to the users!** 
 
 Luckily, I find out the BV number of this movie by accident, and it's the one in the example above. So, if you are a fan of KonoSuba like me, then please enjoy this precious treasure created jointly by **us**, by every fan of KonoSuba.
+
+### How to use cid
+cid is (probably) short for chat id, it identify the danmuku of a video. What's nice about cid is that, within one bangumi, the cid of each episode grows with the ordinal of the episode. That is, if we know the cid of one episode, we know the cid of each episode. For example, the cid of the 1st episode of 未来日记 is 578104, therefore the cid of the 3rd episode is 578104+2=578106. 
+
+
+
