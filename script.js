@@ -12,6 +12,7 @@ globalThis.video_container = document.getElementById("video-container");
 globalThis.cur_video = document.getElementById("b-video");
 globalThis.interval = 0;
 globalThis.top_count = 0;       // number of danmuku at the top
+globalThis.relative_speed = 1;
 // globalThis.video_width = container.style.width;
 // globalThis.video_height = container.style.height;
 // console.log(video_width, video_height, 12);
@@ -22,16 +23,26 @@ document.getElementById("is-verbose").onchange = function(){
 
 
 
+document.getElementById("danmuku-speed").innerText = 100;
+document.getElementById("danmuku-speed-slider").onchange = function(){
+    // adjust damuku speed according to user input
+    relative_speed = this.value/100;        
+    document.documentElement.style.setProperty("--danmuku-duration", 8/relative_speed+"s");
+    document.getElementById("danmuku-speed").innerText = this.value;
+    console.log("relative speed: "+relative_speed, document.documentElement.style.getPropertyValue('--danmuku-duration'));
+}
+
+
+
+
 document.getElementById("video-size").innerText = 100;
-
 document.getElementById("video-size-slider").onchange = function(){
-
-    document.documentElement.setAttribute("danmuku-duration", 16*900/this.value+"s");
-    document.documentElement.setAttribute("danmuku-size", 22*this.value/900+"px")
+    // adjust danmuku speed according to size of video
+    document.documentElement.style.setProperty("--danmuku-duration", 8*this.value/100/relative_speed+"s");
 
     document.getElementById("video-size").innerText = this.value;
     danmuku_container.style.width = this.value*0.98 + '%';
-    danmuku_container.style.height = this.value/16*9 + '%';
+    danmuku_container.style.height = this.value*(380/506) + '%';
     video_container.style.width = this.value + '%';
     video_container.style.height = this.value/16*9 + '%';
     
@@ -323,7 +334,7 @@ async function send_danmuku_from(start){
 
         d.addEventListener("animationend", function(){
             if (verbose){
-                console.log("danmuu deleted, content: " + d.innerText);
+                console.log("danmuku deleted, content: " + d.innerText);
             }
             d.remove();
         });

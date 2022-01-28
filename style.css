@@ -11,7 +11,7 @@
        danmuku-container-height = 0.5 * video-height */
     --danmuku-container-height: 350px;  
     --danmuku-size: 22px;
-    --danmuku-duration: 16s;
+    --danmuku-duration: 8s;
     /* overflow-y: scroll;
     overflow-x: hidden; */
 }
@@ -114,7 +114,7 @@
 
 .rolling{
     animation: scrollTo linear forwards;
-    animation-duration: 8s;
+    animation-duration: var(--danmuku-duration);
 }
 
 @keyframes scrollTo {
