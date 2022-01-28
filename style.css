@@ -12,8 +12,8 @@
     --danmuku-container-height: 350px;  
     --danmuku-size: 22px;
     --danmuku-duration: 16s;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
 }
 
 
@@ -124,7 +124,7 @@
         margin-left: 100%;
       }
       to {
-        margin-left: -20%;
+        margin-left: -40%;
       }
 }
 

@@ -22,24 +22,28 @@ document.getElementById("is-verbose").onchange = function(){
 
 
 
-// document.getElementById("video-size").innerText = 100;
+document.getElementById("video-size").innerText = 100;
 
-// document.getElementById("video-size-slider").onchange = function(){
-//     document.getElementById("video-size").innerText = this.value;
-//     danmuku_container.style.width = this.value*90 + '%';
-//     danmuku_container.style.height = this.value/16*9 + '%';
-//     video_container.style.width = this.value + '%';
-//     video_container.style.height = this.value/16*9 + '%';
+document.getElementById("video-size-slider").onchange = function(){
+
+    document.documentElement.setAttribute("danmuku-duration", 16*900/this.value+"s");
+    document.documentElement.setAttribute("danmuku-size", 22*this.value/900+"px")
+
+    document.getElementById("video-size").innerText = this.value;
+    danmuku_container.style.width = this.value*0.98 + '%';
+    danmuku_container.style.height = this.value/16*9 + '%';
+    video_container.style.width = this.value + '%';
+    video_container.style.height = this.value/16*9 + '%';
     
     
-//     if (verbose){
-//         console.log("size changed to: " + this.value);
-//         console.log(danmuku_container.style.width, 
-//                     danmuku_container.style.height, 
-//                     video_container.style.width,
-//                     video_container.style.height)
-//     }
-// }
+    if (verbose){
+        console.log("size changed to: " + this.value);
+        console.log(danmuku_container.style.width, 
+                    danmuku_container.style.height, 
+                    video_container.style.width,
+                    video_container.style.height)
+    }
+}
 
 
 
@@ -312,8 +316,8 @@ async function send_danmuku_from(start){
         // }
 
         d.className = "danmuku rolling";
-        d.style.top = Math.floor(Math.random()*10)*35 + "px";       // randomly placed at one row
-
+        d.style.top = Math.floor(Math.random()*10)*35*document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
+        d.style.fontSize = Math.ceil(22*Math.pow((document.getElementById("video-size-slider").value/100), 0.3)) + "px"
 
         d.style.color = danmuku_list[j].getAttribute('rgb');
 
