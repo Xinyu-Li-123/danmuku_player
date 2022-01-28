@@ -17,7 +17,7 @@
         <!-- <div class="danmuku">测试弹幕</div> -->
     </div>
 
-    <div class="video-container">
+    <div class="video-container" id="video-container">
         <!-- <video id="b-video" 
                controls="" 
                preload="auto" 
@@ -36,12 +36,22 @@
             src="https://1251316161.vod2.myqcloud.com/007a649dvodcq1251316161/7d5383555285890808309438826/iFi2r4Qjz8oA.mp4">
     </div>
 
-    <div class="prompt" id="status">current timestamp: <span id="video-status"></span>&nbsp;&nbsp;||&nbsp;&nbsp;latest danmuku timestamp: <span id="danmuku-status"></span>
-        <br/> danmuku offset = <span id="offset"></span>
-        <input type="range" id="offset-slider" min=-600 max=600 step=1>
+    <div class="prompt" id="status">Current Timestamp: <span id="video-status"></span>&nbsp;&nbsp;||&nbsp;&nbsp;Latest Danmuku Timestamp: <span id="danmuku-status"></span>
+        <br/>Show Danmuku?&nbsp;
+        <input type="checkbox" id="danmuku-switch" checked>
         
-        <br/> Display debugging detail?
+        <!-- <br/>Video Size:&nbsp;
+        <input type="range" id="video-size-slider" min="50" max="150" step="1" id="mySlider" value="100"/>
+        &nbsp;<span id="video-size"></span>% -->
+
+        <br/> Danmuku Offset:&nbsp;
+        <input type="range" id="offset-slider" min=-600 max=600 step=1>
+        &nbsp;<span id="offset"></span>
+        
+        <br/> Display Debugging detail?
         <input type="checkbox" id="is-verbose">
+
+
 
         <!-- <br/> Block by keywords
         <input type="" id="is-verbose"> -->
