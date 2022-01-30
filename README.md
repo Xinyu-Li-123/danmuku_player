@@ -26,36 +26,26 @@ Besides fixing these bugs, here are some other functionality I want to implement
 -   blocked list
 
 ## User Guide 
-Below is the workflow to properly play a bangumi with danmuku in edge explorer:
-1.  Get Danmuku
--   get media id of bangumi
-    - search for bangumi on bilibili
-    
-    - open the bangumi page
+To use this player, you can either go to [this webpage](https://xinyu-li-123.github.io/danmuku_player/) or clone this repo and open the [index.html](./index.html).
 
-    - copy the number in url that starts with "md"
-    
-      example:
-    
-      ```
-      https://www.bilibili.com/bangumi/media/md28228414/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1			// md28228414 (w/o md) is the media_id
-      ```
-    
--   set `media_id`, `ep_num` variable in `get_danmumu.py` and run it (my version of python is 3.7.9)
-    this will produce a `danmuku.xml` file in the subfolder `./danmuku/`.
-    
--   open the index.html in Microsoft Edge, upload the danmuku xml file and play the video.
-    
+Below is the workflow to properly play a video with danmuku in edge explorer:
+
+1. Get Danmuku
+
+   The danmuku of a video is stored in an xml file. To get the xml file, you can either use the bilibili api or search for the video directly from [biliplus](https://www.biliplus.com/) or [jijidown](https://www.jijidown.com/). Either way, you should have an xml file of danmuku.
+
 2. Get video
    
-   八仙过海，各显神通.
+   Well... this part is up to you 😐. You can either upload a local video file or an url to a video.
 
 3. Upload Danmuku and Video
 
-Just open the webpage and you will know where to upload.
+   The webpage is quite self-explanatory, open the [webpage]() and youhttps://xinyu-li-123.github.io/danmuku_player/ will know where to upload.
 
 ## More on Bilibili Api
-By far, bilibili still has its api open to the public. I will introduce those I use in this project. The source of this section is [this blog](https://www.bilibili.com/read/cv5293665?from=search&spm_id_from=333.337.0.0).
+This is an optional section. You should read it **if  you want to download a huge number of danmuku files**, otherwise [biliplus](https://www.biliplus.com/) or [jijidown](https://www.jijidown.com/) would suffice.
+
+By far, bilibili still has its api open to the public. I will introduce those I used. The source of this section is [this blog](https://www.bilibili.com/read/cv5293665?from=search&spm_id_from=333.337.0.0).
 
 Belows are some types of ids that you will come across when using bilibili api 
 -   cid / oid: chat id
@@ -91,7 +81,7 @@ This is a list of usable api
     ```
 
 ## More on the danmuku file
-Bilibili api will return an xml file that contains all danmukus of a video. Below is an example
+Bilibili api can return an xml file that contains all danmukus of a video. Below is an example
 ```xml
 <i>
     <!-- ... -->
@@ -115,36 +105,32 @@ A `<d>` element represents a danmuku. Its text content is the content of the dan
           ">This is a friendly danmuku.</d>
 </i>
 ```
-I reformat each `<d>` element into a more digestable style and sort it according to its timestamp. The code is in the [`get_danmuku.py`](./get_danmuku.py) file.Below is an example of the reformatted `<d>` element.
-```xml
-<d mode="1" 
-   rgb="rgb(255, 255, 255)" 
-   timestamp="0.0">我不敢相信我看到了甚麼 這部居然出現在B站</d>
+In the [script.js](./script.js), I reformat each `<d>` element into an object with four attributes. This object represents all the information we need to send one danmuku. I then sort these objects according to their timestamps. Below is an example of such an object
+```js
+danmuku_example = {
+    timestamp=783.55800,
+    mode= 1,
+    rgb="rgb(60,168,225)",
+    textContent="This is a friendly danmuku."
+}
 ```
 
 ## Related Work
 This section lists some other source of historical danmuku.
-* [biliplus](https://www.biliplus.com/html/bangumi_history_william9933.htm)
+* [a blog about bangumi history](https://www.biliplus.com/html/bangumi_history_william9933.htm) on biliplus
+* [jijidown](https://www.jijidown.com/)
 
 
-## Some Exciting Finding
-### jijidown
-There is a powerful way to download danmuku xml file if you know the av / bv number of the video. The key is **bilibilijj**. or **jijidown** This is a website that previously allows you to download video, audio, and danmuku file on bilibili. To use this website, just add a **jj** after bilibili in the url and you will be redirected to the jijidown websitelike this:
+## Some Exciting Findings
+### Danmuku of a Deleted Video
+You may find **danmuku of a deleted video** on these two websites: **biliplus** and **jijidown**. These two websites doesn't provides any video or audio sources, they only provides statistics of bilibili videos like video title, view count, and most importantly, danmuku file. It seems that they store the danmuku on their servers, thus it's possible to find the danmuku file of a deleted bilibili video.
 
-```
-https://www.bilibili.com/video/BV1ix411E7AE			
-->
-https://www.bilibilijj.com/video/BV1ix411E7AE
-```
+In my case, the video I found is a movie called *为美好的世界献上祝福！红传说* (*KonoSuba: Legend of Crimson*). It was uploaded to bilibili silently on April 19, 2020, received a 9.9 rating, and removed by bilibili silently few month later for reasons known to no one. To me, it is the movie **combined with its danmuku** that makes my watching experience so fantastic, and the loss of those precious danmuku is tragic and outraging! **Danmuku is created by the users and should belong to the users!** 
 
-What's most exciting about this website is that it allows you to download the danmuku file **even if the corresponding video is removed by bilibili**! I guess this is probably some kind of loophole, because to my best understanding, I haven't find a single way to obtain danmuku file of a removed video. 
+Luckily, I find out the BV number of this movie by accident (BV1ix411E7AE). So, if you are a fan of KonoSuba like me, then please enjoy this precious treasure created jointly by **us**,  fans of KonoSuba.
 
-The video in the example above is *为美好的世界献上祝福！红传说* (KonoSuba: Legend of Crimson) a fantastic KonoSuba movie that is uploaded to bilibili silently on April 19, 2020, received a 9.9 rating, and removed by bilibili silently few month later. To me, it is the movie **combined with its danmuku** that makes my watching experience so fantastic, and the loss of those precious danmuku is tragic and outraging! **Danmuku is created by the users and should belong to the users!** 
-
-Luckily, I find out the BV number of this movie by accident, and it's the one in the example above. So, if you are a fan of KonoSuba like me, then please enjoy this precious treasure created jointly by **us**, by every fan of KonoSuba.
-
-### How to use cid
-cid is (probably) short for chat id, it identify the danmuku of a video. What's nice about cid is that, within one bangumi, the cid of each episode grows with the ordinal of the episode. That is, if we know the cid of one episode, we know the cid of each episode. For example, the cid of the 1st episode of 未来日记 is 578104, therefore the cid of the 3rd episode is 578104+2=578106. 
+### Cid's of a bangumi (a series of videos)
+cid is (probably) short for chat id, it identifies the danmuku of a video. What's nice about cid is that, within one bangumi, the cid of each episode grows with the ordinal of the episode. That is, if we know the cid of one episode, we know the cid of each episode. For example, the cid of the 1st episode of *未来日记*  is 578104, therefore the cid of the 3rd episode is 578104+2=578106. 
 
 
 
