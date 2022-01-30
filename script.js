@@ -1,4 +1,4 @@
-globalThis.verbose = true;          // debug option
+globalThis.verbose = false;          // debug option
 globalThis.is_danmuku_on = true;  // hide all danmuku
 
 // globalThis.pauseTimes = 20;      // pause all danmuku for 10 times in case some are missed
@@ -220,9 +220,9 @@ async function reload_danmuku(){
     send_danmuku_from(n); 
 }
 
+// this is the js_xml branch
+
 function reformat_danmuku(d){
-
-
 
     let p = d.getAttribute('p').split(",");
 
