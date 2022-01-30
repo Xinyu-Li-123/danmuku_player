@@ -23,6 +23,7 @@ This is just an alpha version. To use this version, you should be aware of the f
 Besides fixing these bugs, here are some other functionality I want to implement:
 -   find an efficient way that guarantees to stop all danmukus.
 -   resizable video player window
+-   blocked list
 
 ## User Guide 
 Below is the workflow to properly play a bangumi with danmuku in edge explorer:
