@@ -186,13 +186,13 @@ def main():
     # md = 28228414      # manually set media id
     # ep_num = 4         # manually set episode number
     # get_danmuku_via_md(md, ep_num)
-    md = 1270
+    md = 28234626
     ss = 2574
     av = 170001
     bv = "1H4411F7Ud"
     ep_start = 1
-    ep_end = 26
-    folder_name = "md1270_濑户的花嫁"
+    ep_end = 39
+    folder_name = "md28234626_异世界迷宫黑心企业"
     
     try:
         os.mkdir("danmuku")
