@@ -53,7 +53,6 @@ document.onkeydown = function(e){
     }
 }
 
-
 // danmuku player setting
 document.getElementById("danmuku-speed").innerText = 100;
 document.getElementById("danmuku-speed-slider").onchange = function(){
@@ -122,7 +121,6 @@ let danmukuInput = document.getElementById('danmukuInput');
 const danmukuReader = new FileReader();
 
 danmukuInput.addEventListener('change', function(e){
-
     document.getElementById("danmuku-switch").onchange = function(){
         is_danmuku_on = this.checked;
         if (verbose){
@@ -211,12 +209,38 @@ async function reload_danmuku(){
             break;
         }
     }
+    n += 1;
+    
     if (verbose){
+        console.log(n, danmuku_list[n]);
         console.log("current timestamp: " + cur_video.currentTime
-                    + ", jump to " + n + "th danmuku with tiimestamp: " + danmuku_list[n].getAttribute("timestamp")
+                    + ", jump to " + n + "th danmuku with tiimestamp: " + danmuku_list[n].timestamp
                     + ", offset = " + offset);
     }
     send_danmuku_from(n); 
+}
+
+function reformat_danmuku(d){
+
+
+
+    let p = d.getAttribute('p').split(",");
+
+    function numberToColour(number) {
+        const r = (number & 0xff0000) >> 16;
+        const g = (number & 0x00ff00) >> 8;
+        const b = (number & 0x0000ff);
+       
+        //return [b, g, r];
+        return `rgb(${b},${g},${r})`;
+    }
+
+    return {
+        timestamp: parseFloat(p[0]),
+        mode: parseInt(p[1]),
+        color: numberToColour(p[3]),
+        textContent: d.textContent,
+    };
 }
 
 async function send_danmuku(xml_txt) {
@@ -225,16 +249,37 @@ async function send_danmuku(xml_txt) {
     let parser = new DOMParser();
     let xmlDoc = parser.parseFromString(xml_txt, 'text/xml');
 
-    globalThis.danmuku_list = xmlDoc.getElementsByTagName('d');
+    globalThis.raw_danmuku_list = xmlDoc.getElementsByTagName('d');
+    
 
-    if (verbose){ 
-        console.log(danmuku_list.length + " danmukus are coming...");
-    }
+    // if (verbose){ 
+    //     console.log(danmuku_list.length + " danmukus are coming...");
+    // }
 
+    globalThis.danmuku_list = [];
     globalThis.danmuku_schedule = [];
-    for (let i=0; i<danmuku_list.length; i++){
-        danmuku_schedule.push(danmuku_list[i].getAttribute('timestamp'));
+
+    console.log(raw_danmuku_list.length);
+    // parse property
+    for (let i=0; i<raw_danmuku_list.length; i++){
+        danmuku_list.push(reformat_danmuku(raw_danmuku_list[i]))
+        // danmuku_schedule.push(danmuku_list[i].getAttribute('timestamp'));
     };
+    
+    // sort danmuku list
+    danmuku_list.sort(function(d1, d2){
+        return parseFloat(d1.timestamp) - parseFloat(d2.timestamp);
+    });
+
+    // set up schedule (an array of timestamps)
+    for (let i=0; i<danmuku_list.length; i++){
+        danmuku_schedule.push(danmuku_list[i].timestamp);
+    };
+
+    if (verbose){
+        console.log(danmuku_schedule);
+        console.log(danmuku_list[0], danmuku_list[1], danmuku_list[2]);
+    }
 
     // display video timestamp
     cur_video.ontimeupdate = function(){
@@ -328,13 +373,14 @@ async function send_danmuku_from(start){
             d.innerText += "  " + Math.floor(danmuku_schedule[j]/60)%60 + ": " + Math.floor(danmuku_schedule[j])%60;
         };
 
-        // d.style.top = Math.floor(Math.random()*10)*(danmuku_container_height/trackNum) + "px";
-        // d.style.top = Math.floor(Math.random()*10)*35 + "px";
 
-        // if (danmuku_list[j].getAttribute('mode')==1){
-        //     d.className = "danmuku rolling";
-        //     d.style.top = Math.floor(Math.random()*10)*35 + "px";       // randomly placed at one row
-        // }
+        if (danmuku_list[j].mode==1){
+            d.className = "danmuku rolling";
+            d.style.top = Math.floor(Math.random()*10)*35*document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
+        }
+        else if (danmuku_list[j].mode==5){
+            d.className = "danmuku rolling"; 
+        }
         // else if (danmuku_list[j].getAttribute('mode')==5){
         //     d.className = "danmuku top";
         //     d.style.top = (top_count%10)*35 + "px";          // place the danmuku at top;
@@ -344,11 +390,10 @@ async function send_danmuku_from(start){
         //     top_count += 1;
         // }
 
-        d.className = "danmuku rolling";
-        d.style.top = Math.floor(Math.random()*10)*35*document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
+        
         d.style.fontSize = Math.ceil(22*Math.pow((document.getElementById("video-size-slider").value/100), 0.3)) + "px"
 
-        d.style.color = danmuku_list[j].getAttribute('rgb');
+        d.style.color = danmuku_list[j].color;
 
         d.addEventListener("animationend", function(){
             if (verbose){
