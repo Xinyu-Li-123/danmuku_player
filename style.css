@@ -9,7 +9,7 @@
     --video-height: 506px; 
     /* danmuku-container-width = video-width
        danmuku-container-height = 0.5 * video-height */
-    --danmuku-container-height: 350px;  
+    --danmuku-container-height: 506px;  
     --danmuku-size: 22px;
     --danmuku-duration: 8s;
     /* overflow-y: scroll;

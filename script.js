@@ -22,7 +22,39 @@ document.getElementById("is-verbose").onchange = function(){
 };
 
 
+// video player setting
+danmuku_container.onclick = function(e){
+    // if (this.width)
 
+    if (verbose){
+        console.log("video is clicked", e.clientX, e.clientY);
+    }
+    if (cur_video.paused){
+        cur_video.play();
+    }
+    else{
+        cur_video.pause();
+    }
+};
+
+document.onkeydown = function(e){
+    // bind "pressing SPACE" to "pausing video"
+    if (e.key == " "){
+        e.preventDefault();
+        if (verbose){
+            console.log("space is clicked");
+        }
+        if (cur_video.paused){
+            cur_video.play();
+        }
+        else{
+            cur_video.pause();
+        }
+    }
+}
+
+
+// danmuku player setting
 document.getElementById("danmuku-speed").innerText = 100;
 document.getElementById("danmuku-speed-slider").onchange = function(){
     // adjust damuku speed according to user input
@@ -42,7 +74,7 @@ document.getElementById("video-size-slider").onchange = function(){
 
     document.getElementById("video-size").innerText = this.value;
     danmuku_container.style.width = this.value*0.98 + '%';
-    danmuku_container.style.height = this.value*(380/506) + '%';
+    danmuku_container.style.height = this.value + '%';
     video_container.style.width = this.value + '%';
     video_container.style.height = this.value/16*9 + '%';
     
@@ -122,7 +154,7 @@ danmukuInput.addEventListener('change', function(e){
     };
 });
 
-
+// load video based on video input
 let videoInput = document.getElementById('videoInput')
 const videoReader = new FileReader();
 
@@ -147,6 +179,7 @@ videoInput.addEventListener('change', function(e1){
 
 });
 
+// load video based on url input
 let urlInput = document.getElementById('videoUrlInput');
 let urlInputButton = document.getElementById('videoUrlInputSubmit');
 urlInputButton.onclick = function(e){
@@ -155,13 +188,12 @@ urlInputButton.onclick = function(e){
     urlInput.value = "";
 };
 
-
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function reload_danmuku(){
-    // reload danmuku based on current time
+    // reload danmuku based on current timestamp of the video
 
     // find starting danmuku (the nth danmuku should be the starting one)
     let el = cur_video.currentTime + offset;
@@ -184,17 +216,12 @@ async function reload_danmuku(){
                     + ", jump to " + n + "th danmuku with tiimestamp: " + danmuku_list[n].getAttribute("timestamp")
                     + ", offset = " + offset);
     }
-    // await sleep(100);
-    // await sleep((danmuku_schedule[n]-cur_video.currentTime)*1000);
     send_danmuku_from(n); 
 }
 
 async function send_danmuku(xml_txt) {
-    // await sleep(5000);
-
-
-
-    // get danmuku
+    // parse xml file and send danmuku
+    
     let parser = new DOMParser();
     let xmlDoc = parser.parseFromString(xml_txt, 'text/xml');
 
@@ -203,7 +230,6 @@ async function send_danmuku(xml_txt) {
     if (verbose){ 
         console.log(danmuku_list.length + " danmukus are coming...");
     }
-
 
     globalThis.danmuku_schedule = [];
     for (let i=0; i<danmuku_list.length; i++){
@@ -221,15 +247,6 @@ async function send_danmuku(xml_txt) {
         if (verbose){
             console.log("The video is paused.");
         }
-        // for (let i=0; i<pauseTimes; i++){
-        //     await sleep(pauseDuration/pauseTimes);
-        //     if (verbose){
-        //         console.log("pause for " + i + " times");
-        //     }
-        //     cur_danmuku_list.forEach(function(d){
-        //         d.style.animationPlayState = "paused";      // there should be a more economical way to do this
-        //     });
-        // };
     });
 
     // play all danmuku
@@ -239,7 +256,6 @@ async function send_danmuku(xml_txt) {
         for (let i=document.getElementById("danmuku-container").getElementsByClassName("danmuku").length-1; i>-1; i--){
             document.getElementById("danmuku-container").getElementsByClassName("danmuku")[i].style.animationPlayState = "running";
         }
-
         console.log("Continue to play the video.");
     });
 
@@ -252,11 +268,12 @@ async function send_danmuku(xml_txt) {
 
     cur_video.onseeked = function(){
         reload_danmuku();
-
     };
 
     await sleep(danmuku_schedule[0]*1000);
-        send_danmuku_from(0);
+
+    // start danmuku (equivalent to reload danmuku from 0:00, thus no need for an extra function)
+    reload_danmuku();
     };
 
 function addAnimation(body) {
@@ -267,8 +284,9 @@ function addAnimation(body) {
     }
       
 
-
 async function send_danmuku_from(start){
+    // send danmukus from the nth danmku (start = n)
+
     globalThis.j = start;
     globalThis.cur_time = danmuku_schedule[j];
     // globalThis.cur_danmuku_list = [];
