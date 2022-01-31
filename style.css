@@ -128,26 +128,20 @@
       }
 }
 
-.ceiling{
-    animation: stayTop linear forwards;
+.top{
+    animation: stay linear forwards;
     animation-duration: var(--danmuku-duration);
 }
 
-@keyframes stayTop {
-    from{}
-    to{}
-}
-
-.floor{    
-    animation: stayBottom linear forwards;
+.bottom{    
+    animation: stay linear forwards;
     animation-duration: var(--danmuku-duration);
 }
 
-@keyframes stayBottom {
+@keyframes stay{
     from{}
     to{}
 }
-
 
 
 

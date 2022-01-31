@@ -1,5 +1,6 @@
 globalThis.verbose = false;          // debug option
 globalThis.is_danmuku_on = true;  // hide all danmuku
+globalThis.is_danmuku_player_init = false;
 
 // globalThis.pauseTimes = 20;      // pause all danmuku for 10 times in case some are missed
 // globalThis.pauseDuration = 50;      // pause all danmuku for 10 times in case some are missed
@@ -38,6 +39,10 @@ danmuku_container.onclick = function(e){
 };
 
 document.onkeydown = function(e){
+    if (verbose){
+        console.log("presss key: "+e.key);
+    }
+
     // bind "pressing SPACE" to "pausing video"
     if (e.key == " "){
         e.preventDefault();
@@ -51,6 +56,27 @@ document.onkeydown = function(e){
             cur_video.pause();
         }
     }
+    else if (e.key == "ArrowLeft"){
+        if (is_danmuku_player_init){
+            e.preventDefault();
+            cur_video.currentTime -= 10;
+            reload_danmuku();
+            if (verbose){
+                console.log("backward 10s");
+            }
+        }
+    }
+    else if (e.key == "ArrowRight"){
+        if (is_danmuku_player_init){
+            e.preventDefault();
+            cur_video.currentTime += 10;
+            reload_danmuku();
+            if (verbose){
+                console.log("forward 10s");
+            }
+        }
+    }
+
 }
 
 // danmuku player setting
@@ -177,14 +203,14 @@ videoInput.addEventListener('change', function(e1){
 
 });
 
-// load video based on url input
-let urlInput = document.getElementById('videoUrlInput');
-let urlInputButton = document.getElementById('videoUrlInputSubmit');
-urlInputButton.onclick = function(e){
-    danmuku_container.innerHTML = '';        // clear current danmuku
-    document.getElementById('b-video').src = urlInput.value;
-    urlInput.value = "";
-};
+// // load video based on url input
+// let videoUrlInput = document.getElementById('videoUrlInput');
+// let videoUrlInputButton = document.getElementById('videoUrlInputSubmit');
+// videoUrlInputButton.onclick = function(e){
+//     danmuku_container.innerHTML = '';        // clear current danmuku
+//     document.getElementById('b-video').src = videoUrlInput.value;
+//     videoUrlInput.value = "";
+// };
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -245,7 +271,8 @@ function reformat_danmuku(d){
 
 async function send_danmuku(xml_txt) {
     // parse xml file and send danmuku
-    
+    is_danmuku_player_init = true;
+
     let parser = new DOMParser();
     let xmlDoc = parser.parseFromString(xml_txt, 'text/xml');
 
@@ -259,7 +286,7 @@ async function send_danmuku(xml_txt) {
     globalThis.danmuku_list = [];
     globalThis.danmuku_schedule = [];
 
-    console.log(raw_danmuku_list.length);
+    console.log(`${raw_danmuku_list.length} danmukus are coming...`);
     // parse property
     for (let i=0; i<raw_danmuku_list.length; i++){
         danmuku_list.push(reformat_danmuku(raw_danmuku_list[i]))
@@ -301,7 +328,9 @@ async function send_danmuku(xml_txt) {
         for (let i=document.getElementById("danmuku-container").getElementsByClassName("danmuku").length-1; i>-1; i--){
             document.getElementById("danmuku-container").getElementsByClassName("danmuku")[i].style.animationPlayState = "running";
         }
-        console.log("Continue to play the video.");
+        if (verbose){
+            console.log("Continue to play the video.");
+        }
     });
 
     cur_video.onseeking = function(e){
@@ -373,14 +402,6 @@ async function send_danmuku_from(start){
             d.innerText += "  " + Math.floor(danmuku_schedule[j]/60)%60 + ": " + Math.floor(danmuku_schedule[j])%60;
         };
 
-
-        if (danmuku_list[j].mode==1){
-            d.className = "danmuku rolling";
-            d.style.top = Math.floor(Math.random()*10)*35*document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
-        }
-        else if (danmuku_list[j].mode==5){
-            d.className = "danmuku rolling"; 
-        }
         // else if (danmuku_list[j].getAttribute('mode')==5){
         //     d.className = "danmuku top";
         //     d.style.top = (top_count%10)*35 + "px";          // place the danmuku at top;
@@ -395,9 +416,28 @@ async function send_danmuku_from(start){
 
         d.style.color = danmuku_list[j].color;
 
+        if (danmuku_list[j].mode==1){
+            d.className = "danmuku rolling";
+            d.style.top = Math.floor(Math.random()*10)*35*document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
+        }
+
+        else if (danmuku_list[j].mode==5){
+            d.className = "danmuku top"; 
+            d.style.top = top_count%10*35*document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
+            d.style.left = Math.floor((document.getElementById("video-size-slider").value/100*900 - parseInt(d.style.fontSize)*d.textContent.length)/2) + "px";
+            // console.log(d.style.top, d.style.left)
+            // console.log(`d.style.left = (${document.getElementById("video-size-slider").value/100}*506 - ${parseInt(d.style.fontSize)}*${d.textContent.length})/2`);
+            top_count += 1;
+        }
+
+
+
         d.addEventListener("animationend", function(){
             if (verbose){
                 console.log("danmuku deleted, content: " + d.innerText);
+            }
+            if (d.className == "danmuku top"){
+                top_count -= 1;
             }
             d.remove();
         });
