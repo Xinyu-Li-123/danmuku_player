@@ -5,7 +5,7 @@ globalThis.is_danmuku_player_init = false;
 // globalThis.pauseTimes = 20;      // pause all danmuku for 10 times in case some are missed
 // globalThis.pauseDuration = 50;      // pause all danmuku for 10 times in case some are missed
 globalThis.offset = 0;
-globalThis.video_size = "100%";
+// globalThis.video_size = 100;
 globalThis.danmuku_container = document.getElementById("danmuku-container");
 globalThis.video_container = document.getElementById("video-container");
 
@@ -14,9 +14,15 @@ globalThis.cur_video = document.getElementById("b-video");
 globalThis.interval = 0;
 globalThis.top_count = 0;       // number of danmuku at the top
 globalThis.relative_speed = 1;
-// globalThis.video_width = container.style.width;
-// globalThis.video_height = container.style.height;
-// console.log(video_width, video_height, 12);
+globalThis.key_pressed = {
+    " ": false,
+    "ArrowLeft": false,
+    "ArrowRight": false,
+    "ArrowUp": false,
+    "ArrowDown": false,
+    "Control": false,
+    "Shift": false,
+};
 
 document.getElementById("is-verbose").onchange = function(){
     verbose = document.getElementById("is-verbose").checked
@@ -38,17 +44,18 @@ danmuku_container.onclick = function(e){
     }
 };
 
+document.onkeyup = function(e){
+    key_pressed[e.key] = false;
+}
+
 document.onkeydown = function(e){
     if (verbose){
-        console.log("presss key: "+e.key);
+        console.log("press key: "+e.key);
     }
-
+    key_pressed[e.key] = true;
     // bind "pressing SPACE" to "pausing video"
-    if (e.key == " "){
+    if (key_pressed[" "]){
         e.preventDefault();
-        if (verbose){
-            console.log("space is clicked");
-        }
         if (cur_video.paused){
             cur_video.play();
         }
@@ -56,28 +63,91 @@ document.onkeydown = function(e){
             cur_video.pause();
         }
     }
-    else if (e.key == "ArrowLeft"){
+    else if (key_pressed["ArrowLeft"]){
+        e.preventDefault();
+        cur_video.currentTime -= 10;
         if (is_danmuku_player_init){
-            e.preventDefault();
-            cur_video.currentTime -= 10;
             reload_danmuku();
-            if (verbose){
-                console.log("backward 10s");
-            }
+        }
+        if (verbose){
+            console.log("backward 10s");
         }
     }
-    else if (e.key == "ArrowRight"){
+    else if (key_pressed["ArrowRight"]){   
+        e.preventDefault();
+        cur_video.currentTime += 10;
         if (is_danmuku_player_init){
-            e.preventDefault();
-            cur_video.currentTime += 10;
             reload_danmuku();
-            if (verbose){
-                console.log("forward 10s");
-            }
+        }       
+        if (verbose){
+            console.log("forward 10s");
         }
     }
+    else if (key_pressed["ArrowUp"]){
+        e.preventDefault();
+        if (key_pressed["Control"]){
+            document.getElementById("video-size-slider").value -= -1;
+            let video_size = document.getElementById("video-size-slider").value
+            document.documentElement.style.setProperty("--danmuku-duration", 8*video_size/100/relative_speed+"s");
 
+            document.getElementById("video-size").innerText = video_size;
+            danmuku_container.style.width = video_size*0.98 + '%';
+            danmuku_container.style.height = video_size + '%';
+            video_container.style.width = video_size + '%';
+            video_container.style.height = video_size/16*9 + '%';
+            
+            if (verbose){
+                console.log("size changed to: " + video_size);
+                console.log(danmuku_container.style.width, 
+                            danmuku_container.style.height, 
+                            video_container.style.width,
+                            video_container.style.height)
+                }
+            }
+        else{
+            if (cur_video.volume + 0.05 > 1){
+                cur_video.volume = 1;
+                }
+            else{
+                cur_video.volume += 0.05;
+                }
+            }
+        
+    }
+    else if (key_pressed["ArrowDown"]){
+        e.preventDefault();
+        if (key_pressed["Control"]){
+            document.getElementById("video-size-slider").value -= 1;
+            let video_size = document.getElementById("video-size-slider").value
+            document.documentElement.style.setProperty("--danmuku-duration", 8*video_size/100/relative_speed+"s");
+
+            document.getElementById("video-size").innerText = video_size;
+            danmuku_container.style.width = video_size*0.98 + '%';
+            danmuku_container.style.height = video_size + '%';
+            video_container.style.width = video_size + '%';
+            video_container.style.height = video_size/16*9 + '%';
+            
+            
+            if (verbose){
+                console.log("size changed to: " + video_size);
+                console.log(danmuku_container.style.width, 
+                            danmuku_container.style.height, 
+                            video_container.style.width,
+                            video_container.style.height)
+            }
+        }
+        else{
+            if (cur_video.volume - 0.05 < 0){
+                cur_video.volume = 0;
+                }
+            else{
+                cur_video.volume -= 0.05;
+                }
+            }
+    }
 }
+
+
 
 // danmuku player setting
 document.getElementById("danmuku-speed").innerText = 100;
@@ -203,14 +273,14 @@ videoInput.addEventListener('change', function(e1){
 
 });
 
-// // load video based on url input
-// let videoUrlInput = document.getElementById('videoUrlInput');
-// let videoUrlInputButton = document.getElementById('videoUrlInputSubmit');
-// videoUrlInputButton.onclick = function(e){
-//     danmuku_container.innerHTML = '';        // clear current danmuku
-//     document.getElementById('b-video').src = videoUrlInput.value;
-//     videoUrlInput.value = "";
-// };
+// load video based on url input
+let videoUrlInput = document.getElementById('videoUrlInput');
+let videoUrlInputButton = document.getElementById('videoUrlInputSubmit');
+videoUrlInputButton.onclick = function(e){
+    danmuku_container.innerHTML = '';        // clear current danmuku
+    document.getElementById('b-video').src = videoUrlInput.value;
+    videoUrlInput.value = "";
+};
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -277,12 +347,7 @@ async function send_danmuku(xml_txt) {
     let xmlDoc = parser.parseFromString(xml_txt, 'text/xml');
 
     globalThis.raw_danmuku_list = xmlDoc.getElementsByTagName('d');
-    
-
-    // if (verbose){ 
-    //     console.log(danmuku_list.length + " danmukus are coming...");
-    // }
-
+  
     globalThis.danmuku_list = [];
     globalThis.danmuku_schedule = [];
 
@@ -402,15 +467,6 @@ async function send_danmuku_from(start){
             d.innerText += "  " + Math.floor(danmuku_schedule[j]/60)%60 + ": " + Math.floor(danmuku_schedule[j])%60;
         };
 
-        // else if (danmuku_list[j].getAttribute('mode')==5){
-        //     d.className = "danmuku top";
-        //     d.style.top = (top_count%10)*35 + "px";          // place the danmuku at top;
-            
-        //     d.style.left = (900 - 22*d.innerText.length)/2 + "px"
-        //     console.log("A top danmuku has been placed at: " + d.style.top + " ," + d.style.left + " " + container.style.width + container.style.height);
-        //     top_count += 1;
-        // }
-
         
         d.style.fontSize = Math.ceil(22*Math.pow((document.getElementById("video-size-slider").value/100), 0.3)) + "px"
 
@@ -425,8 +481,6 @@ async function send_danmuku_from(start){
             d.className = "danmuku top"; 
             d.style.top = top_count%10*35*document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
             d.style.left = Math.floor((document.getElementById("video-size-slider").value/100*900 - parseInt(d.style.fontSize)*d.textContent.length)/2) + "px";
-            // console.log(d.style.top, d.style.left)
-            // console.log(`d.style.left = (${document.getElementById("video-size-slider").value/100}*506 - ${parseInt(d.style.fontSize)}*${d.textContent.length})/2`);
             top_count += 1;
         }
 
