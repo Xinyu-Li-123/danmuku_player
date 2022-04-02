@@ -17,7 +17,8 @@ This is just an alpha version. To use this version, you should be aware of the f
 -   you have to manually
     -   get the media id of anime 
     -   get the source of anime
-    besides all these problems, enjoy!
+    
+besides all these problems, enjoy!
 
 ## To-do List
 Besides fixing these bugs, here are some other functionality I want to implement:
