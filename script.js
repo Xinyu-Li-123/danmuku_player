@@ -307,8 +307,32 @@ let videoUrlInput = document.getElementById('videoUrlInput');
 let videoUrlInputButton = document.getElementById('videoUrlInputSubmit');
 videoUrlInputButton.onclick = function(e){
     danmuku_container.innerHTML = '';        // clear current danmuku
-    document.getElementById('b-video').src = videoUrlInput.value;
+    let videoSrc = videoUrlInput.value;
     videoUrlInput.value = "";
+    
+    videoFormat = videoSrc.split(".").pop()
+    if(videoFormat == "mp4"){
+        cur_video.src = videoUrlInput.value;
+    }
+    
+    else if(videoFormat == "m3u8"){
+        if (Hls.isSupported()) {
+            console.log("Hls is supported. " + videoSrc)
+            let hls = new Hls({
+              debug: true,
+            });
+          //   hls.loadSource('https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8');
+            hls.loadSource(videoSrc)
+            hls.attachMedia(cur_video);
+            // hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+            //   cur_video.play();
+            // });
+          }
+          
+    }
+
+    
+    
 };
 
 function sleep(ms) {

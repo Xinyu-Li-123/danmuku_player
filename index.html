@@ -7,6 +7,7 @@
     <title>Danmuku test w/ m3u8</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.14.5/hls.min.js"></script>
 </head>
 
 <body>
@@ -36,28 +37,35 @@
             src="https://1251316161.vod2.myqcloud.com/007a649dvodcq1251316161/7d5383555285890808309438826/iFi2r4Qjz8oA.mp4">
     </div>
 
-    <div class="prompt" id="status">Current Timestamp: <span id="video-status"></span>&nbsp;&nbsp;||&nbsp;&nbsp;Latest Danmuku Timestamp: <span id="danmuku-status"></span>
-        <br/>Show Danmuku?&nbsp;
-        <input type="checkbox" id="danmuku-switch" checked>
 
-        <br/>Danmuku Speed:&nbsp;
-        <input type="range" id="danmuku-speed-slider" min="25" max="200" step="25" value="100"/>
+    <div class="prompt" id="status">Current Timestamp: <span id="video-status"></span>&nbsp;&nbsp;||&nbsp;&nbsp;Latest Danmuku Timestamp: <span id="danmuku-status"></span>
+        
+        <br/>
+        <label>Show Danmuku? <input type="checkbox" id="danmuku-switch" checked>
+        </label>
+
+        <br/>
+        <label>Danmuku Speed: <input type="range" id="danmuku-speed-slider" min="25" max="200" step="25" value="100"/></label>
         &nbsp;<span id="danmuku-speed"></span>%
         
-        <br/>Video Size:&nbsp;
-        <input type="range" id="video-size-slider" min="50" max="150" step="1" value="100"/>
+        <br/>
+        <label>Video Size:&nbsp;
+        <input type="range" id="video-size-slider" min="50" max="150" step="1" value="100"/></label>
         &nbsp;<span id="video-size"></span>%&nbsp&nbsp&nbsp(ctrl + ↑/↓)
 
-        <br/> Danmuku Opacity:&nbsp;
-        <input type="range" id="danmuku-opacity-slider" min=0 max=1 step=0.1 value=0.7>
+        <br/>
+        <label>Danmuku Opacity:&nbsp;
+        <input type="range" id="danmuku-opacity-slider" min=0 max=1 step=0.1 value=0.7></label>
         &nbsp;<span id="danmuku-opacity"></span>
 
-        <br/> Danmuku Offset:&nbsp;
-        <input type="range" id="offset-slider" min=-600 max=600 step=1>
+        <br/> 
+        <label>Danmuku Offset:&nbsp;
+        <input type="range" id="offset-slider" min=-600 max=600 step=1></label>
         &nbsp;<span id="offset"></span>
         
-        <br/> Display Debugging detail?
-        <input type="checkbox" id="is-verbose">
+        <br/> 
+        <label>Display Debugging detail?
+        <input type="checkbox" id="is-verbose"></label>
         <!-- <br/> Block by keywords
         <input type="" id="is-verbose"> -->
     </div>
@@ -65,20 +73,15 @@
     
     <div class="prompt" id="video-input">
         <p>=================================================</p>
-        Upload video here: 
-        <input type="file" id="videoInput"> 
-        OR Enter url here:
-        <input type="text" id="videoUrlInput" placeholder="Enter url">
-        <input type="submit" id="videoUrlInputSubmit">
+         
+        <label>Upload video here:&nbsp;&nbsp;<input type="file" id="videoInput"></label>
+        <label>OR Enter url here:&nbsp;&nbsp;<input type="text" id="videoUrlInput" placeholder="Enter url"></label>
+        <label><input type="submit" id="videoUrlInputSubmit"></label>
     </div>
 
     <div class="prompt" id="danmuku-input">
         <p>=================================================</p>
-        Upload danmuku xml file here: 
-        <input type="file" id="danmukuInput"> 
-        <!-- OR Enter url here:
-        <input type="text" id="danmukuUrlInput" placeholder="Enter url">
-        <input type="submit" id="danmukuUrlInputSubmit"> -->
+        <label>Upload danmuku xml file here:&nbsp;&nbsp;<input type="file" id="danmukuInput"><label>
     </div>
 
     
