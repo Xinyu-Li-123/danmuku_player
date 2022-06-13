@@ -364,6 +364,20 @@ async function send_danmuku(xml_txt) {
         }
     });
 
+    // pause when the video is buffering
+    cur_video.addEventListener('waiting', async function(){
+        cur_video.pause();
+        console.log("video is loading");
+        setTimeout(function(){cur_video.play()}, 1000);
+    })
+
+
+    // play when the video is loaded
+    cur_video.addEventListener('buffered', function(){
+        cur_video.play();
+        console.log("video is loaded")
+    })
+
     cur_video.onseeking = function(e){
         danmuku_container.innerHTML = "";
         if (verbose){
@@ -399,6 +413,7 @@ async function send_danmuku_from(start){
                 danmuku_container.getElementsByClassName("danmuku")[i].style.animationPlayState = "paused";
             }
             await sleep(200);
+            console.log("danmuku is paused")
             continue;
 
         };
