@@ -132,5 +132,64 @@ Luckily, I find out the BV number of this movie by accident (BV1ix411E7AE). So, 
 ### Cid's of a bangumi (a series of videos)
 cid is (probably) short for chat id, it identifies the danmuku of a video. What's nice about cid is that, within one bangumi, the cid of each episode grows with the ordinal of the episode. That is, if we know the cid of one episode, we know the cid of each episode. For example, the cid of the 1st episode of *未来日记*  is 578104, therefore the cid of the 3rd episode is 578104+2=578106. 
 
+### async, await | promise, then
+```javascript
+// Given a function that returns a promise
+function foo3(){
+    let myPromise = new Promise(function(myResolve, myReject) {
+        let flag = 0;
 
+        wait_for_user_input_that_may_change_flag(flag)
+
+        if (flag == 0) {
+            myResolve("OK");
+        } else {
+            myReject("Error");
+        }
+    })
+}
+
+async function foo(){
+// an async function allows await operation
+    foo1();
+    foo2();
+    await foo3();
+    // wait until foo3() is completed, then execute foo4()
+    // without await, foo4 that depends on foo3 will malfunction
+    foo4();
+}
+
+// "async + await" IS THE SAME AS "promise + then"
+
+function foo(){
+    foo1();
+    foo2();
+    foo3().then(
+        foo4();
+    );
+}
+```
+
+### Future Plan: Chrome Extension
+
+The ultimate goal is to make an extension that can display danmuku on a video **inside the website of the video**.
+
+A chrome extension consists of three parts that are not necessarily dependent:
+content script, pop up, and background page.
+
+* Content Script
+
+A script that injects html codes into the current page before/when/after it's loaded.
+
+You can add an icon in the web page that display the functionality of your extension.
+
+Note that the domain of this script is the same as the current page, so it's hard to requests for content from another domain. (e.g. retrieve a json file from quora when the content script is running in reddit)
+
+* Pop Up
+
+A pop up is a seperate html page (on the top right of the chrome browser).
+
+* Background Page
+
+A background page is a script that keeps running on the background.
 

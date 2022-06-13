@@ -46,9 +46,6 @@ def reformat_xml_and_save(xml_str: str, path=None):
     -   sort xml by timestamp
     """
 
-
-
-
     root = ET.fromstring(xml_str)
     j = 0
     total = len(list(root.iter('d')))
@@ -84,7 +81,7 @@ def reformat_xml_and_save(xml_str: str, path=None):
     raw_path = path[:-4]+"raw.xml"
     with open(raw_path, 'w', encoding="utf8") as file:
         file.write(xml_str)
-        print(f"{path} is reformatted, there are {total} danmukus in total")
+        print(f"{path}(raw) is downloaded, there are {total} danmukus in total")
 
     with open(path, "wb") as file:
         file.write(ET.tostring(root, encoding='utf8'))
@@ -143,14 +140,25 @@ def get_danmuku_via_ss(ss: int, ep_num: int, path=None):
         
 
 #todo: untested
-def get_danmuku_via_av(av: int, path=None):
+def get_danmuku_via_av(av: int, ep_num=None, path=None):
     if not isinstance(av, int):     # a common mistake
         raise TypeError(f"av id must be a int, not {type(av)}!")
     
     x = requests.get(av2cid + str(av)).json()
+    # if x['code'] == 0:
+    #     cid = x['data']['cid']
+    # get_danmuku_via_cid(cid, path)
+
     if x['code'] == 0:
-        cid = x['data']['cid']
-    get_danmuku_via_cid(cid, path)
+        if ep_num is not None:
+            print("downloading one video among a list of videos")
+            cid = x['data'][ep_num-1]['cid']
+            get_danmuku_via_cid(cid, path)
+        else:
+            print("downloading one video")
+    else:
+        print(f"Request fail: {x['code']}")
+
 
 
 #todo: untested
@@ -186,13 +194,14 @@ def main():
     # md = 28228414      # manually set media id
     # ep_num = 4         # manually set episode number
     # get_danmuku_via_md(md, ep_num)
-    md = 28234626
-    ss = 2574
-    av = 170001
+    md = 28229876
+    ss = 34558
+    av = 51829
     bv = "1H4411F7Ud"
+    cid = 924396
     ep_start = 1
-    ep_end = 39
-    folder_name = "md28234626_异世界迷宫黑心企业"
+    ep_end = 26
+    folder_name = "av51829_惊爆草莓"
     
     try:
         os.mkdir("danmuku")
@@ -208,10 +217,12 @@ def main():
 
     for ep_num in range(ep_start, ep_end+1):
 
-        get_danmuku_via_md(md = md, ep_num = ep_num, path = f"./{folder_name}/{str(ep_num).zfill(2)}.xml")
+        # get_danmuku_via_md(md = md, ep_num = ep_num, path = f"./{folder_name}/{str(ep_num).zfill(2)}.xml")
         # get_danmuku_via_ss(ss = ss, ep_num = ep_num, path = f"./{folder_name}/{str(ep_num).zfill(2)}.xml")
+        get_danmuku_via_av(av = av, ep_num = ep_num, path = f"./{folder_name}/{str(ep_num).zfill(2)}.xml")
         # get_danmuku_via_bv(bv = bv, ep_num = ep_num, path = f"./{folder_name}/{str(ep_num).zfill(2)}.xml")
-        
+        # get_danmuku_via_cid(cid = cid + ep_num - 1, path = f"./{folder_name}/{str(ep_num).zfill(2)}.xml")
+
 
 
 

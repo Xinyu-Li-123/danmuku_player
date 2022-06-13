@@ -14,6 +14,8 @@ globalThis.cur_video = document.getElementById("b-video");
 globalThis.interval = 0;
 globalThis.top_count = 0;       // number of danmuku at the top
 globalThis.relative_speed = 1;
+globalThis.relative_video_size = 1;
+globalThis.opacity = 0.7;
 globalThis.key_pressed = {
     " ": false,
     "ArrowLeft": false,
@@ -86,9 +88,17 @@ document.onkeydown = function(e){
     else if (key_pressed["ArrowUp"]){
         e.preventDefault();
         if (key_pressed["Control"]){
+            danmuku_container.innerHTML = "";
             document.getElementById("video-size-slider").value -= -1;
-            let video_size = document.getElementById("video-size-slider").value
-            document.documentElement.style.setProperty("--danmuku-duration", 8*video_size/100/relative_speed+"s");
+            let video_size = document.getElementById("video-size-slider").value;
+            relative_video_size = video_size/100
+            let cur_duration = parseFloat(document.documentElement.style.getPropertyValue("--danmuku-duration"));
+           
+
+            console.log(relative_video_size, cur_duration*relative_video_size/relative_speed, relative_speed);
+            
+
+            document.documentElement.style.setProperty("--danmuku-duration", cur_duration*relative_video_size/relative_speed+"s");
 
             document.getElementById("video-size").innerText = video_size;
             danmuku_container.style.width = video_size*0.98 + '%';
@@ -117,9 +127,19 @@ document.onkeydown = function(e){
     else if (key_pressed["ArrowDown"]){
         e.preventDefault();
         if (key_pressed["Control"]){
+            danmuku_container.innerHTML = "";
             document.getElementById("video-size-slider").value -= 1;
-            let video_size = document.getElementById("video-size-slider").value
-            document.documentElement.style.setProperty("--danmuku-duration", 8*video_size/100/relative_speed+"s");
+            let video_size = document.getElementById("video-size-slider").value;
+            relative_video_size = video_size/100;
+            let cur_duration = parseFloat(document.documentElement.style.getPropertyValue("--danmuku-duration"));
+            
+            
+            console.log(relative_video_size, cur_duration*relative_video_size/relative_speed, relative_speed);
+            
+            
+            
+            // document.documentElement.style.setProperty("--danmuku-duration", cur_duration*video_size/100/relative_speed+"s");
+            document.documentElement.style.setProperty("--danmuku-duration", 8*relative_video_size/relative_speed+"s");
 
             document.getElementById("video-size").innerText = video_size;
             danmuku_container.style.width = video_size*0.98 + '%';
@@ -148,24 +168,12 @@ document.onkeydown = function(e){
 }
 
 
-
-// danmuku player setting
-document.getElementById("danmuku-speed").innerText = 100;
-document.getElementById("danmuku-speed-slider").onchange = function(){
-    // adjust damuku speed according to user input
-    relative_speed = this.value/100;        
-    document.documentElement.style.setProperty("--danmuku-duration", 8/relative_speed+"s");
-    document.getElementById("danmuku-speed").innerText = this.value;
-    console.log("relative speed: "+relative_speed, document.documentElement.style.getPropertyValue('--danmuku-duration'));
-}
-
-
-
-
 document.getElementById("video-size").innerText = 100;
 document.getElementById("video-size-slider").onchange = function(){
     // adjust danmuku speed according to size of video
-    document.documentElement.style.setProperty("--danmuku-duration", 8*this.value/100/relative_speed+"s");
+    let cur_duration = parseFloat(document.documentElement.style.getPropertyValue("--danmuku-duration"))
+            
+    document.documentElement.style.setProperty("--danmuku-duration", cur_duration*this.value/100/relative_speed+"s");
 
     document.getElementById("video-size").innerText = this.value;
     danmuku_container.style.width = this.value*0.98 + '%';
@@ -183,6 +191,27 @@ document.getElementById("video-size-slider").onchange = function(){
     }
 }
 
+
+
+// danmuku player setting
+document.getElementById("danmuku-speed").innerText = 100;
+
+document.documentElement.style.setProperty("--danmuku-duration", 8+"s");
+
+document.getElementById("danmuku-speed-slider").onchange = function(){
+    // adjust damuku speed according to user input
+    relative_speed = this.value/100;
+    let cur_duration = parseFloat(document.documentElement.style.getPropertyValue("--danmuku-duration"))        
+    document.documentElement.style.setProperty("--danmuku-duration", cur_duration/relative_speed+"s");
+    document.getElementById("danmuku-speed").innerText = this.value;
+    console.log("relative speed: "+relative_speed, document.documentElement.style.getPropertyValue('--danmuku-duration'));
+}
+
+document.getElementById("danmuku-opacity").innerText = 0.7;
+document.getElementById("danmuku-opacity-slider").onchange = function(){
+    document.getElementById("danmuku-opacity").innerText = this.value;
+    opacity = this.value;
+}
 
 
 document.getElementById("offset").innerText = offset;
@@ -469,7 +498,7 @@ async function send_danmuku_from(start){
 
         
         d.style.fontSize = Math.ceil(22*Math.pow((document.getElementById("video-size-slider").value/100), 0.3)) + "px"
-
+        d.style.opacity = opacity;
         d.style.color = danmuku_list[j].color;
 
         if (danmuku_list[j].mode==1){
@@ -481,6 +510,7 @@ async function send_danmuku_from(start){
             d.className = "danmuku top"; 
             d.style.top = top_count%10*35*document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
             d.style.left = Math.floor((document.getElementById("video-size-slider").value/100*900 - parseInt(d.style.fontSize)*d.textContent.length)/2) + "px";
+            
             top_count += 1;
         }
 

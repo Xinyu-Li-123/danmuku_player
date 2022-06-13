@@ -11,7 +11,10 @@
        danmuku-container-height = 0.5 * video-height */
     --danmuku-container-height: 506px;  
     --danmuku-size: 22px;
+    --danmuku-opacity: 0.7;
     --danmuku-duration: 8s;
+    
+
     /* overflow-y: scroll;
     overflow-x: hidden; */
 }
@@ -74,7 +77,7 @@
         
     user-adjustable properties:
     -   font-size
-    -   oppacity
+    -   opacity
     -   censorship
     -   speed
             */
@@ -84,7 +87,7 @@
     /* background-color: antiquewhite;  */
     font-family: SimHei, 'Microsoft JhengHei', Arial, Helvetica, sans-serif; 
     font-weight: bold; 
-    opacity: 0.77; 
+    opacity: var(--danmuku-opacity); 
     text-shadow: rgb(0, 0, 0) 1px 0px 1px, 
                 rgb(0, 0, 0) 0px 1px 1px, 
                 rgb(0, 0, 0) 0px -1px 1px, 
