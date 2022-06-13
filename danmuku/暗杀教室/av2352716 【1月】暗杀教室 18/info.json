@@ -1,0 +1,34 @@
+{
+	"videoinfo": {
+		"aid": 2352716,
+		"title": "【1月】暗杀教室 18",
+		"video_review": 12156,
+		"duration": null,
+		"lpartinfo": [
+			{
+				"cid": 3676784,
+				"page": 1,
+				"title": "腾讯",
+				"aid": 2352716,
+				"duration": null,
+				"video_review": 12156
+			}
+		],
+		"tag": "暗杀教室,TV动画,千速射击组,看我刷出了什么,新OP的完全体,ED后正片,章鱼博士,杀老师,暗杀",
+		"description": "第18话 执行的时间",
+		"tid": 33,
+		"typename": "连载动画",
+		"created": 1432326600,
+		"created_at": "2015-05-23 04:30",
+		"author": "搬",
+		"mid": 928123,
+		"play": 1329357,
+		"coins": 420,
+		"review": 2048,
+		"favorites": 2492,
+		"synctime": 1568348969.2742803
+	},
+	"partlist": null,
+	"source": "bpd",
+	"page": null
+}

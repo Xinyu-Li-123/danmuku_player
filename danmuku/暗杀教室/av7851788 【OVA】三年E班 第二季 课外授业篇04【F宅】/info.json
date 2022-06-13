@@ -1,0 +1,42 @@
+{
+	"videoinfo": {
+		"aid": 7851788,
+		"title": "【OVA】三年E班 第二季 课外授业篇04【F宅】",
+		"video_review": 359,
+		"duration": null,
+		"lpartinfo": [
+			{
+				"cid": 12883517,
+				"page": 1,
+				"title": "暗杀4",
+				"aid": 7851788,
+				"duration": null,
+				"video_review": null
+			},
+			{
+				"cid": 12920038,
+				"page": 1,
+				"title": "【OVA】暗杀教室第二季 课间授业04",
+				"aid": 7851788,
+				"duration": null,
+				"video_review": 359
+			}
+		],
+		"tag": "日本动画",
+		"description": "直传 杀老师大好评，可惜现实中没有这样的老师。这个动画是dtv原来独播的，最近刚好以BD的形式销售，嘛，看到这样的杀老师好幸福啊",
+		"tid": 33,
+		"typename": "连载动画",
+		"created": 1483527827,
+		"created_at": "2017-01-04 19:03",
+		"author": "空灵雨迹",
+		"mid": 223902,
+		"play": 6425,
+		"coins": 46,
+		"review": 0,
+		"favorites": 214,
+		"synctime": 1568320671.6882656
+	},
+	"partlist": null,
+	"source": "bpd",
+	"page": null
+}

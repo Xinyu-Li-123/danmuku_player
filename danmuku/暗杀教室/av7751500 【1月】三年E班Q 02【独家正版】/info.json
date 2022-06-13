@@ -1,0 +1,34 @@
+{
+	"videoinfo": {
+		"aid": 7751500,
+		"title": "【1月】三年E班Q 02【独家正版】",
+		"video_review": 9926,
+		"duration": null,
+		"lpartinfo": [
+			{
+				"cid": 12708355,
+				"page": 1,
+				"title": "ACQ_02",
+				"aid": 7751500,
+				"duration": null,
+				"video_review": 9926
+			}
+		],
+		"tag": "TV动画,BILIBILI正版",
+		"description": "#02",
+		"tid": 33,
+		"typename": "连载动画",
+		"created": 1483029600,
+		"created_at": "2016/12/30 00:40",
+		"author": "哔哩哔哩番剧",
+		"mid": 928123,
+		"play": 1215728,
+		"coins": 2703,
+		"review": 2025,
+		"favorites": 406,
+		"synctime": 1568352120.367437
+	},
+	"partlist": null,
+	"source": "bpd",
+	"page": null
+}
