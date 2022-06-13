@@ -17,7 +17,8 @@ This is just an alpha version. To use this version, you should be aware of the f
 -   you have to manually
     -   get the media id of anime 
     -   get the source of anime
-    besides all these problems, enjoy!
+    
+besides all these problems, enjoy!
 
 ## To-do List
 Besides fixing these bugs, here are some other functionality I want to implement:
@@ -40,7 +41,7 @@ Below is the workflow to properly play a video with danmuku in edge explorer:
 
 3. Upload Danmuku and Video
 
-   The webpage is quite self-explanatory, open the [webpage]() and youhttps://xinyu-li-123.github.io/danmuku_player/ will know where to upload.
+   The webpage is quite self-explanatory, open the [webpage](https://xinyu-li-123.github.io/danmuku_player/) and you will know where to upload.
 
 ## More on Bilibili Api
 This is an optional section. You should read it **if  you want to download a huge number of danmuku files**, otherwise [biliplus](https://www.biliplus.com/) or [jijidown](https://www.jijidown.com/) would suffice.
