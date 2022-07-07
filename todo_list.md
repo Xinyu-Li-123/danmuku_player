@@ -1,0 +1,14 @@
+Todo list
+-   rewrite the whole project usign ReactJS
+-   more refined player boarder
+-   smarter danmuku sending mechanism
+    -   correct positioning
+    -   pause when video is paused
+    -   pause when video is buffering
+    -   jump when video is jumped to certain timestamp
+    -   adjust font size based on video size
+    -   adjust speed based on video size
+    -   danmuku buffer for better pause
+    -   smarter hotkey binding
+    -   refresh danmuku player when video source or danmuku source is changed
+    -   input danmuku by entering BV / AV number

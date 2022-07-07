@@ -1,6 +1,7 @@
 globalThis.verbose = false;          // debug option
 globalThis.is_danmuku_on = true;  // hide all danmuku
 globalThis.is_danmuku_player_init = false;
+globalThis.is_danmuku_paused = false;
 
 // globalThis.pauseTimes = 20;      // pause all danmuku for 10 times in case some are missed
 // globalThis.pauseDuration = 50;      // pause all danmuku for 10 times in case some are missed
@@ -366,6 +367,9 @@ async function send_danmuku(xml_txt) {
 
     // pause when the video is buffering
     cur_video.addEventListener('waiting', async function(){
+
+        
+
         cur_video.pause();
         console.log("video is loading");
         setTimeout(function(){cur_video.play()}, 1000);
@@ -412,6 +416,7 @@ async function send_danmuku_from(start){
             for (let i=danmuku_container.getElementsByClassName("danmuku").length-1; i>-1; i--){
                 danmuku_container.getElementsByClassName("danmuku")[i].style.animationPlayState = "paused";
             }
+            is_danmuku_paused = true;
             await sleep(200);
             console.log("danmuku is paused")
             continue;
