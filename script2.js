@@ -31,6 +31,9 @@ globalThis.key_pressed = {
     " ": false,
     "ArrowLeft": false,
     "ArrowRight": false,
+
+
+
     // "ArrowUp": false,
     // "ArrowDown": false,
     // "Control": false,
@@ -77,6 +80,7 @@ cur_video.oncanplay = function(e){
 
 cur_video.ontimeupdate = function(e){
     cur_time_label.innerText = format_time(cur_video.currentTime);
+    seek_bar.value = cur_video.currentTime;
     document.getElementById("video-status").innerText = cur_video.currentTime;
 }
 
@@ -124,17 +128,17 @@ document.getElementById("full-screen").onclick = function(e){
     if(cur_video != null){
         if(is_fullscreen) {
             // browser is fullscreen
-            if(dplayer.exitFullscreen) {
-                dplayer.exitFullscreen();
+            if(document.exitFullscreen) {
+                document.exitFullscreen();
             }
-            else if(dplayer.webkitExitFullscreen) {
-                dplayer.webkitExitFullscreen();
+            else if(document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
             }
-            else if(dplayer.mozCancelFullScreen) {
-                dplayer.mozCancelFullScreen();
+            else if(document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
             }
-            else if(dplayer.msExitFullscreen) {
-                dplayer.msExitFullscreen();
+            else if(document.msExitFullscreen) {
+                document.msExitFullscreen();
             }
             is_fullscreen = false;
         }
@@ -235,6 +239,9 @@ document.onkeydown = function(e){
         }
     }
     
+    else if (e.key == "f") {
+        document.getElementById("full-screen").onclick()
+    }
 }
 
 
