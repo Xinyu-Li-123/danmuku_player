@@ -1,4 +1,4 @@
-globalThis.verbose = true;          // debug option
+globalThis.verbose = false;          // debug option
 globalThis.is_danmuku_on = true;  // hide all danmuku
 globalThis.is_danmuku_player_init = false;
 globalThis.is_danmuku_paused = false;
