@@ -81,18 +81,23 @@
         <p>=================================================</p>
          
         <label>Upload video here:&nbsp;&nbsp;<input type="file" id="videoInput"></label>
-        <label>OR Enter url here:&nbsp;&nbsp;<input type="text" id="videoUrlInput" placeholder="Enter url"></label>
-        <label><input type="submit" id="videoUrlInputSubmit"></label>
+        <label>OR Enter url here:&nbsp;&nbsp;
+            <input type="text" id="videoUrlInput" placeholder="Enter url">
+            <button id="videoUrlInputButton">Submit</button>
+        </label>
+        
     </div>
 
     <div class="prompt" id="danmuku-input">
         <p>=================================================</p>
         <label>Upload danmuku xml file here:&nbsp;&nbsp;<input type="file" id="danmukuInput"><label>
+        <label>OR Upload danmuku xml text from clipboard:&nbsp;&nbsp;    
+        <button id="danmukuInputFromClipboard">load xml text from clipboard</button>
     </div>
 
     
 
-    <script src="./script2.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 </html>

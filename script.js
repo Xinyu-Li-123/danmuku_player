@@ -1,15 +1,24 @@
-globalThis.verbose = false;          // debug option
+globalThis.verbose = true;          // debug option
 globalThis.is_danmuku_on = true;  // hide all danmuku
 globalThis.is_danmuku_player_init = false;
 globalThis.is_danmuku_paused = false;
+globalThis.is_video_waiting = true;
+globalThis.is_fullscreen = false;
+
+globalThis.seek_bar = document.getElementById("seek-bar")
+globalThis.cur_time_label = document.getElementById("cur-time");
+globalThis.full_time_label = document.getElementById("full-time");
+globalThis.dplayer = document.getElementById("danmuku-player");
+
+
+globalThis.whileloop_count = 0;
 
 // globalThis.pauseTimes = 20;      // pause all danmuku for 10 times in case some are missed
 // globalThis.pauseDuration = 50;      // pause all danmuku for 10 times in case some are missed
 globalThis.offset = 0;
 // globalThis.video_size = 100;
 globalThis.danmuku_container = document.getElementById("danmuku-container");
-globalThis.video_container = document.getElementById("video-container");
-
+globalThis.danmuku_screen = {};
 // get video
 globalThis.cur_video = document.getElementById("b-video");
 globalThis.interval = 0;
@@ -22,6 +31,9 @@ globalThis.key_pressed = {
     " ": false,
     "ArrowLeft": false,
     "ArrowRight": false,
+
+
+
     // "ArrowUp": false,
     // "ArrowDown": false,
     // "Control": false,
@@ -31,6 +43,126 @@ globalThis.key_pressed = {
 document.getElementById("is-verbose").onchange = function(){
     verbose = document.getElementById("is-verbose").checked
 };
+
+function format_time(time){
+    var hour = Math.floor(time / 3600);
+    var minute = Math.floor((time % 3600) / 60);
+    var second = Math.floor(time % 60);
+    if(hour == 0){
+        return (minute < 10 ? "0" + minute : minute) + ":" + (second < 10 ? "0" + second : second);
+    }
+    return (hour < 10 ? "0" + hour : hour) + ":" + (minute < 10 ? "0" + minute : minute) + ":" + (second < 10 ? "0" + second : second);
+}
+
+// fired when the video is loaded or the buffering ends
+cur_video.oncanplay = function(e){
+    // document.getElementById("danmuku-container").style.width = cur_video.clientWidth + "px";
+    // document.getElementById("danmuku-container").style.height = cur_video.clientHeight + "px";
+    
+    console.log("The video is ready to play")
+    seek_bar.max = cur_video.duration;
+    document.getElementById("seek-stage").innerText = "loaded";
+    full_time_label.innerText = format_time(cur_video.duration);
+
+    if(!cur_video.paused){
+        if (is_video_waiting) {
+            console.log("The video finished buffering");
+            reload_danmuku();
+        }
+        else if(is_danmuku_paused){
+            for (id in danmuku_screen) {
+                danmuku_screen[id].style.animationPlayState = "running";
+            }
+            console.log("oncanplay is fired not by buffering finished")
+        }
+    }
+    is_video_waiting = false;
+}
+
+cur_video.ontimeupdate = function(e){
+    cur_time_label.innerText = format_time(cur_video.currentTime);
+    seek_bar.value = cur_video.currentTime;
+    document.getElementById("video-status").innerText = cur_video.currentTime;
+}
+
+document.getElementById("play-pause").onclick = function(e){
+    if(cur_video != null){
+        if(cur_video.paused){
+            cur_video.play();
+            document.getElementById("play-pause").innerText = "Pause";
+        }
+        else{
+            cur_video.pause();
+            document.getElementById("play-pause").innerText = "Play";
+        }
+    }
+}
+
+
+seek_bar.onchange = async function(){
+    cur_video.currentTime = this.value;
+    danmuku_container.innerHTML = "";
+    danmuku_screen = {};
+}
+
+
+document.getElementById("mute").onclick = function(e){
+    if(cur_video != null){
+        if(cur_video.muted){
+            cur_video.muted = false;
+            document.getElementById("mute").innerText = "Mute";
+        }
+        else{
+            cur_video.muted = true;
+            document.getElementById("mute").innerText = "Unmute";
+        }
+    }
+}
+
+document.getElementById("volume-bar").onchange = function(){
+    if(cur_video != null){
+        cur_video.volume = this.value;
+    }
+}
+
+document.getElementById("full-screen").onclick = function(e){
+    if(cur_video != null){
+        if(is_fullscreen) {
+            // browser is fullscreen
+            if(document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+            else if(document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            }
+            else if(document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            }
+            else if(document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+            is_fullscreen = false;
+        }
+        else{
+            // browser is not fullscreen
+            if(dplayer.requestFullscreen){
+                dplayer.requestFullscreen();
+            }
+            else if(dplayer.webkitRequestFullscreen){
+                dplayer.webkitRequestFullscreen();
+            }
+            else if(dplayer.mozRequestFullScreen){
+                dplayer.mozRequestFullScreen();
+            }
+            else if(dplayer.msRequestFullscreen){
+                dplayer.msRequestFullscreen();
+            }
+            is_fullscreen = true;
+        }
+        
+    }
+}
+
 
 
 // video player setting
@@ -69,25 +201,48 @@ document.onkeydown = function(e){
     // }
     if (e.key == "ArrowLeft"){
         e.preventDefault();
-        cur_video.currentTime -= 10;
+        // cur_video.currentTime -= 5;
+        seek_bar.value = parseInt(seek_bar.value) - 5;
+        seek_bar.onchange();
         if (is_danmuku_player_init){
-            reload_danmuku();
+            // reload_danmuku();
+            danmuku_screen = {};
+            danmuku_container.innerHTML = "";
         }
         if (verbose){
-            console.log("backward 10s");
+            console.log("backward 5s");
         }
     }
     else if (e.key == "ArrowRight"){   
         e.preventDefault();
-        cur_video.currentTime += 10;
+        // cur_video.currentTime += 5;
+        seek_bar.value = parseInt(seek_bar.value) + 5;
+        seek_bar.onchange();
         if (is_danmuku_player_init){
-            reload_danmuku();
+            // reload_danmuku();
+            danmuku_screen = {};
+            danmuku_container.innerHTML = "";
         }       
         if (verbose){
-            console.log("forward 10s");
+            console.log("forward 5s");
+        }
+    }
+
+    else if (e.key == " ") {
+        e.preventDefault();
+        if (cur_video.paused){
+            cur_video.play();
+            document.getElementById("play-pause").innerText = "Pause";
+        }
+        else{
+            cur_video.pause();
+            document.getElementById("play-pause").innerText = "Play";
         }
     }
     
+    else if (e.key == "f") {
+        document.getElementById("full-screen").onclick()
+    }
 }
 
 
@@ -98,20 +253,20 @@ document.getElementById("video-size-slider").onchange = function(){
             
     // document.documentElement.style.setProperty("--danmuku-duration", default_danmuku_duration*this.value/100+"s");
 
-    document.getElementById("video-size").innerText = this.value;
-    danmuku_container.style.width = this.value + '%';
-    danmuku_container.style.height = this.value + '%';
-    video_container.style.width = this.value + '%';
-    video_container.style.height = this.value + '%';
+    // document.getElementById("video-size").innerText = this.value;
+    // danmuku_container.style.width = this.value + '%';
+    // danmuku_container.style.height = this.value + '%';
+    // dplayer.style.width = this.value + '%';
+    // dplayer.style.height = this.value + '%';
     
     
-    if (verbose){
-        console.log("size changed to: " + this.value);
-        console.log(danmuku_container.style.width, 
-                    danmuku_container.style.height, 
-                    video_container.style.width,
-                    video_container.style.height)
-    }
+    // if (verbose){
+    //     console.log("size changed to: " + this.value);
+    //     console.log(danmuku_container.style.width, 
+    //                 danmuku_container.style.height, 
+    //                 dplayer.style.width,
+    //                 dplayer.style.height)
+    // }
 }
 
 
@@ -145,7 +300,6 @@ document.getElementById("offset-slider").onchange = function(){
     offset = parseFloat(this.value);
     document.getElementById("offset").innerText = offset;
     danmuku_container.innerHTML = "";
-    // cur_danmuku_list = [];
     
     if (verbose){
         console.log("set offset to: " + offset);
@@ -158,25 +312,24 @@ document.getElementById("offset-slider").onchange = function(){
 };
 
 
-// upload danmuku.xml
+document.getElementById("danmuku-switch").onchange = function(){
+    is_danmuku_on = this.checked;
+    if (verbose){
+        console.log("Show Danmuku? " + is_danmuku_on);
+    }
+    if (is_danmuku_on){
+        reload_danmuku();        // clear current danmuku
+    }
+    else if (!is_danmuku_on){
+        danmuku_container.innerHTML = '';        // clear current danmuku
+    }
+}
 
-let xml_txt = '';
+
+// upload danmuku.xml file
 let danmukuInput = document.getElementById('danmukuInput');
 const danmukuReader = new FileReader();
-
 danmukuInput.addEventListener('change', function(e){
-    document.getElementById("danmuku-switch").onchange = function(){
-        is_danmuku_on = this.checked;
-        if (verbose){
-            console.log("Show Danmuku? " + is_danmuku_on);
-        }
-        if (is_danmuku_on){
-            reload_danmuku();        // clear current danmuku
-        }
-        else if (!is_danmuku_on){
-            danmuku_container.innerHTML = '';        // clear current danmuku
-        }
-    }
 
     danmuku_container.innerHTML = '';        // clear current danmuku
     if (verbose){
@@ -187,13 +340,44 @@ danmukuInput.addEventListener('change', function(e){
 
     danmukuReader.readAsText(file);
     danmukuReader.onloadend = () => {
-        xml_txt  = danmukuReader.result;
+        let xml_txt  = danmukuReader.result;
         if (verbose){
             console.log(xml_txt);
         }
         send_danmuku(xml_txt);
     };
 });
+
+let danmukuInputFromClipboard = document.getElementById("danmukuInputFromClipboard");
+danmukuInputFromClipboard.onclick =  () => {
+    navigator.clipboard.readText()
+      .then(text => {
+        alert(text)
+        danmuku_container.innerHTML = '';        // clear current danmuku
+        if (verbose){
+            console.log("danmuku clear");
+            console.log(text);
+        }
+        send_danmuku(text);
+      })
+      .catch(err => {
+        alert("error: " + err)
+      });
+}
+
+
+// // upload danmuku url
+// let danmukuUrlInput = document.getElementById('danmukuUrlInput');
+// let danmukuUrlInputButton = document.getElementById('danmukuUrlInputSubmit');
+// danmukuUrlInputButton.onclick = function(e){
+//     let danmukuSrc = danmukuUrlInput.value;
+//     danmukuUrlInput = "";
+
+
+
+// }
+
+
 
 // load video based on video input
 let videoInput = document.getElementById('videoInput')
@@ -222,11 +406,13 @@ videoInput.addEventListener('change', function(e1){
 
 // load video based on url input
 let videoUrlInput = document.getElementById('videoUrlInput');
-let videoUrlInputButton = document.getElementById('videoUrlInputSubmit');
+let videoUrlInputButton = document.getElementById('videoUrlInputButton');
+console.log(videoUrlInputButton)
 videoUrlInputButton.onclick = function(e){
     danmuku_container.innerHTML = '';        // clear current danmuku
     let videoSrc = videoUrlInput.value;
     videoUrlInput.value = "";
+    document.getElementById("seek-stage").innerText = "loading";
     
     videoFormat = videoSrc.split(".").pop()
     if(videoFormat == "mp4"){
@@ -246,18 +432,23 @@ videoUrlInputButton.onclick = function(e){
             //   cur_video.play();
             // });
           }
-          
     }  
+    else {
+        alert("Unsupported video format" + videoFormat + ". Please upload a mp4 or m3u8 video file.")
+    }
 };
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function reload_danmuku(){
+function reload_danmuku(){
     // reload danmuku based on current timestamp of the video
 
     // binary search for the starting danmuku (the nth danmuku should be the starting one)
+    danmuku_screen = {};
+    danmuku_container.innerHTML = "";
+
     let el = cur_video.currentTime + offset;
 
     let m = 0;
@@ -276,10 +467,15 @@ async function reload_danmuku(){
     n += 1;
     
     if (verbose){
-        console.log(n, danmuku_list[n]);
-        console.log("current timestamp: " + cur_video.currentTime
-                    + ", jump to " + n + "th danmuku with tiimestamp: " + danmuku_list[n].timestamp
-                    + ", offset = " + offset);
+        if(n == danmuku_list.length){
+            console.log("no danmuku at video timestamp: " + cur_video.currentTime + " with offset: " + offset);
+        }
+        else{
+            console.log(n, danmuku_list[n]);
+            console.log("current timestamp: " + cur_video.currentTime
+                        + ", jump to " + n + "th danmuku with tiimestamp: " + danmuku_list[n].timestamp
+                        + ", offset = " + offset);
+        }
     }
     send_danmuku_from(n); 
 }
@@ -299,6 +495,7 @@ function reformat_danmuku(d){
     }
 
     return {
+        id: parseInt(p[7]),
         timestamp: parseFloat(p[0]),
         mode: parseInt(p[1]),
         color: numberToColour(p[3]),
@@ -311,9 +508,10 @@ async function send_danmuku(xml_txt) {
     is_danmuku_player_init = true;
 
     let parser = new DOMParser();
-    let xmlDoc = parser.parseFromString(xml_txt, 'text/xml');
+    let xmlDoc = parser.parseFromString(xml_txt, 'text/xml')
 
     globalThis.raw_danmuku_list = xmlDoc.getElementsByTagName('d');
+    alert(raw_danmuku_list[0].innerHTML)
   
     globalThis.danmuku_list = [];
     globalThis.danmuku_schedule = [];
@@ -340,11 +538,6 @@ async function send_danmuku(xml_txt) {
         console.log(danmuku_list[0], danmuku_list[1], danmuku_list[2]);
     }
 
-    // display video timestamp
-    cur_video.ontimeupdate = function(){
-        document.getElementById("video-status").innerText = cur_video.currentTime;
-    };
-
     // pause all danmuku
     cur_video.addEventListener("pause", async function(){
         await sleep(200);
@@ -355,10 +548,11 @@ async function send_danmuku(xml_txt) {
 
     // play all danmuku
     cur_video.addEventListener('play', function(){
-        // cur_danmuku_list.forEach(function(d){
-
-        for (let i=document.getElementById("danmuku-container").getElementsByClassName("danmuku").length-1; i>-1; i--){
-            document.getElementById("danmuku-container").getElementsByClassName("danmuku")[i].style.animationPlayState = "running";
+        if(is_danmuku_paused){
+            for (id in danmuku_screen) {
+                danmuku_screen[id].style.animationPlayState = "running";
+            }
+            is_danmuku_paused = false;
         }
         if (verbose){
             console.log("Continue to play the video.");
@@ -366,32 +560,44 @@ async function send_danmuku(xml_txt) {
     });
 
     // pause when the video is buffering
-    cur_video.addEventListener('waiting', async function(){
-
-        
-
-        cur_video.pause();
+    cur_video.onwaiting = function(){
+        is_video_waiting = true;
         console.log("video is loading");
-        setTimeout(function(){cur_video.play()}, 1000);
-    })
+        if(Object.keys(danmuku_screen).length > 0 && !is_danmuku_paused) {
+            for(id in danmuku_screen){
+                danmuku_screen[id].style.animationPlayState = "paused";
+            }
+            is_danmuku_paused = true;
+            console.log("danmukus on screen are paused due to waiting")
+        }
+        document.getElementById("seek-stage").innerText = "loading";
+    }
+
+    cur_video.onplaying = function(){
+        if(is_danmuku_paused){
+            for (id in danmuku_screen) {
+                danmuku_screen[id].style.animationPlayState = "running";
+            }
+            is_danmuku_paused = false;
+        }
+        document.getElementById("seek-stage").innerText = "loaded";
+    }
 
 
-    // play when the video is loaded
-    cur_video.addEventListener('buffered', function(){
-        cur_video.play();
-        console.log("video is loaded")
-    })
+    // // play when the video is loaded
+    // cur_video.addEventListener('buffered', function(){
+    //     setTimeout(function(){cur_video.play()}, 100);
+    //     console.log("video is loaded");
+    // })
 
-    cur_video.onseeking = function(e){
-        danmuku_container.innerHTML = "";
-        if (verbose){
-            console.log("seeking starts, clear danmuku-container");
-        }    
-    };
+    // cur_video.onseeking = function(e){
+    //     danmuku_container.innerHTML = "";
+    //     console.log("seeking starts, clear danmuku-container");   
+    // };
 
-    cur_video.onseeked = function(){
-        reload_danmuku();
-    };
+    // cur_video.onseeked = function(){
+    //     reload_danmuku();
+    // };
 
     await sleep(danmuku_schedule[0]*1000);
 
@@ -408,52 +614,62 @@ function addAnimation(body) {
       
 async function send_danmuku_from(start){
     // send danmukus from the nth danmku (start = n)
+    let cur_index = start;
+    danmuku_screen = {};
+    whileloop_count += 1;
+    let this_count = whileloop_count;
+    while (this_count == whileloop_count && cur_index < danmuku_list.length){
+    // while (cur_index < danmuku_list.length){
 
-    globalThis.j = start;
-    globalThis.cur_time = danmuku_schedule[j];
-    while (j < danmuku_list.length){
-        if (cur_video.paused){            
-            for (let i=danmuku_container.getElementsByClassName("danmuku").length-1; i>-1; i--){
-                danmuku_container.getElementsByClassName("danmuku")[i].style.animationPlayState = "paused";
-            }
-            is_danmuku_paused = true;
-            await sleep(200);
-            console.log("danmuku is paused")
-            continue;
-
-        };
+        console.log("is_video_waiting: " + is_video_waiting);
 
         if (!is_danmuku_on){
-            danmuku_container.innerHTML = '';        // clear current danmuku
+            if (Object.keys(danmuku_screen).length > 0){
+                danmuku_container.innerHTML = '';        // clear current danmuku
+                danmuku_screen = {};
+            }
             await sleep(200);
             continue;
         }
 
-        cur_time = danmuku_schedule[j];
-        // mode = danmuku_list[j].getAttribute('mode');
+        if (cur_video.paused || is_video_waiting){
+            // if the latest danmuku is not paused, pause all danmuku
+            if(Object.keys(danmuku_screen).length > 0 && !is_danmuku_paused) {
+                for(id in danmuku_screen){
+                    danmuku_screen[id].style.animationPlayState = "paused";
+                }
+                is_danmuku_paused = true;
+                console.log("danmukus on screen are paused")
+            }
+            await sleep(200);
+            continue;
+        };
+
+        cur_danmuku_time = danmuku_schedule[cur_index];
+        // mode = danmuku_list[cur_index].getAttribute('mode');
 
         let d = document.createElement("div");
 
-
-        d.innerText = danmuku_list[j].textContent;
+        d.innerText = danmuku_list[cur_index].textContent;
+        d.id = danmuku_list[cur_index].id;
         if (verbose){ 
-            d.innerText += "  " + Math.floor(danmuku_schedule[j]/60)%60 + ": " + Math.floor(danmuku_schedule[j])%60;
+            d.innerText += "  " + Math.floor(danmuku_schedule[cur_index]/60)%60 + ": " + Math.floor(danmuku_schedule[cur_index])%60;
         };
 
         d.style.fontSize = Math.ceil(30*Math.pow((document.getElementById("video-size-slider").value/100), 0.3)) + "px"
         d.style.opacity = opacity;
-        d.style.color = danmuku_list[j].color;
+        d.style.color = danmuku_list[cur_index].color;
 
         // rolling danmuku
-        if (danmuku_list[j].mode==1){
+        if (danmuku_list[cur_index].mode==1){
             d.className = "danmuku rolling";
             d.style.top = Math.floor(Math.random()*10)*35*document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
         }
 
         
-        else if (danmuku_list[j].mode==5){
+        else if (danmuku_list[cur_index].mode==5){
             d.className = "danmuku top"; 
-            d.style.top = top_count%10*35*document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
+            d.style.top = (top_count%10) * 35 * document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
             // use clientWidth to calculate danmuku position dynamically (as the user resize the video / window)
             d.style.left = Math.floor(danmuku_container.clientWidth/2
                             - parseInt(d.style.fontSize)*d.textContent.length/2) + "px";
@@ -468,22 +684,35 @@ async function send_danmuku_from(start){
                 top_count -= 1;
             }
             d.remove();
+            delete danmuku_screen[d.id];
         });
 
         cur_time_w_offset = cur_video.currentTime + offset;
         if (cur_time_w_offset < 0){
             cur_time_w_offset = 0;
         }
-        await sleep((cur_time-cur_time_w_offset)*1000);
-        if (verbose){
-            console.log(j + "th:　cur: " + cur_time + " with offset: " + offset
-                          + "  ||  video: " + cur_video.currentTime
-                          + " || gap: " + (cur_time - (cur_video.currentTime + offset)));
-        }     
-        document.getElementById("danmuku-status").innerText= cur_time;
-        danmuku_container.appendChild(d);
 
-        j += 1;
+        // TODO: 
+        // Problem: cur_danmuku_time and cur_video.currentTime don't match up after video seeking (excluding forward / backward)
+        // Reason: currentTime is not changed when reloading the danmuku
+        // 
+        await sleep((cur_danmuku_time - cur_time_w_offset)*1000);
+        if (verbose){
+            let d = new Date(); // for now
+            d.getHours(); // => 9
+            d.getMinutes(); // =>  30
+            d.getSeconds(); // => 51
+            console.log(cur_index + "th:　cur: " + cur_danmuku_time + " with offset: " + offset
+                          + "  ||  video: " + cur_video.currentTime
+                          + " || gap: " + (cur_danmuku_time - (cur_video.currentTime + offset))
+                          + "sent at" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + "." + d.getMilliseconds()
+                          );
+        }     
+        document.getElementById("danmuku-status").innerText= cur_danmuku_time;
+        danmuku_container.appendChild(d);
+        danmuku_screen[d.id] = d;
+
+        cur_index += 1;
     };
 
 }
@@ -505,7 +734,7 @@ async function send_danmuku_from(start){
 //         }
 //     };
 //     if (verbose){
-//         console.log("Danmuku is refreshed to timestamp: " + "  " + Math.floor(danmuku_schedule[j]/60)%60 + ": " + Math.floor(danmuku_schedule[j])%60);
+//         console.log("Danmuku is refreshed to timestamp: " + "  " + Math.floor(danmuku_schedule[cur_index]/60)%60 + ": " + Math.floor(danmuku_schedule[cur_index])%60);
 //     }
 //     send_danmuku_from(n);
 // }
