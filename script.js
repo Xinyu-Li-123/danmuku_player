@@ -5,11 +5,14 @@ globalThis.is_danmuku_paused = false;
 globalThis.is_video_waiting = true;
 globalThis.is_fullscreen = false;
 
+
 globalThis.seek_bar = document.getElementById("seek-bar")
 globalThis.cur_time_label = document.getElementById("cur-time");
 globalThis.full_time_label = document.getElementById("full-time");
 globalThis.dplayer = document.getElementById("danmuku-player");
-
+globalThis.player_wrapper = document.getElementById("player-wrapper");
+globalThis.videoControls = document.getElementById("video-controls");
+globalThis.hideControlsHandle = null;
 
 globalThis.whileloop_count = 0;
 
@@ -21,6 +24,10 @@ globalThis.danmuku_container = document.getElementById("danmuku-container");
 globalThis.danmuku_screen = {};
 // get video
 globalThis.cur_video = document.getElementById("b-video");
+
+// danmuku_container.style.width = cur_video.clientWidth + "px";
+// danmuku_container.style.height = cur_video.clientHeight + "px";
+
 globalThis.interval = 0;
 globalThis.top_count = 0;       // number of danmuku at the top
 globalThis.default_danmuku_duration = 10;
@@ -31,8 +38,6 @@ globalThis.key_pressed = {
     " ": false,
     "ArrowLeft": false,
     "ArrowRight": false,
-
-
 
     // "ArrowUp": false,
     // "ArrowDown": false,
@@ -64,6 +69,11 @@ cur_video.oncanplay = function(e){
     document.getElementById("seek-stage").innerText = "loaded";
     full_time_label.innerText = format_time(cur_video.duration);
 
+
+    player_wrapper.style.width = cur_video.clientWidth + "px";
+    player_wrapper.style.height = cur_video.clientHeight + "px";
+    // alert(cur_video.clientWidth + "px" + ", " + cur_video.clientHeight + "px");
+
     if(!cur_video.paused){
         if (is_video_waiting) {
             console.log("The video finished buffering");
@@ -85,6 +95,19 @@ cur_video.ontimeupdate = function(e){
     document.getElementById("video-status").innerText = cur_video.currentTime;
 }
 
+// vhide ideo controls if mouse stay still for 6 seconds
+function hidePlayer(){
+    videoControls.style.animation = "out 0.2s linear forwards";
+}
+document.onmousemove = async function(e){
+    await sleep(100)
+    videoControls.style.animation = "in linear forwards";
+    if(hideControlsHandle == null){
+        clearTimeout(hideControlsHandle);
+    }
+    hideControlsHandle = setTimeout(hidePlayer, 5000);
+}
+
 document.getElementById("play-pause").onclick = function(e){
     if(cur_video != null){
         if(cur_video.paused){
@@ -95,6 +118,12 @@ document.getElementById("play-pause").onclick = function(e){
             cur_video.pause();
             document.getElementById("play-pause").innerText = "Play";
         }
+    }
+}
+
+player_wrapper.onclick = function(e){
+    if(e.clientY / cur_video.clientHeight < 0.9){
+        document.getElementById("play-pause").onclick();
     }
 }
 
@@ -511,7 +540,7 @@ async function send_danmuku(xml_txt) {
     let xmlDoc = parser.parseFromString(xml_txt, 'text/xml')
 
     globalThis.raw_danmuku_list = xmlDoc.getElementsByTagName('d');
-    alert(raw_danmuku_list[0].innerHTML)
+    // alert(raw_danmuku_list[0].innerHTML)
   
     globalThis.danmuku_list = [];
     globalThis.danmuku_schedule = [];
@@ -633,7 +662,7 @@ async function send_danmuku_from(start){
         }
 
         if (cur_video.paused || is_video_waiting){
-            // if the latest danmuku is not paused, pause all danmuku
+            // if there exists at least one danmuku and is_danmuku_paused is false, pause all danmuku
             if(Object.keys(danmuku_screen).length > 0 && !is_danmuku_paused) {
                 for(id in danmuku_screen){
                     danmuku_screen[id].style.animationPlayState = "paused";
@@ -672,7 +701,7 @@ async function send_danmuku_from(start){
             d.style.top = (top_count%10) * 35 * document.getElementById("video-size-slider").value/100 + "px";       // randomly placed at one row
             // use clientWidth to calculate danmuku position dynamically (as the user resize the video / window)
             d.style.left = Math.floor(danmuku_container.clientWidth/2
-                            - parseInt(d.style.fontSize)*d.textContent.length/2) + "px";
+                            - parseInt(d.style.fontSize)*(d.textContent.length/2-1)) + "px";
             top_count += 1;
         }
 
