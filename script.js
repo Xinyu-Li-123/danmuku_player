@@ -105,7 +105,7 @@ document.onmousemove = async function(e){
     if(hideControlsHandle == null){
         clearTimeout(hideControlsHandle);
     }
-    // hideControlsHandle = setTimeout(hidePlayer, 5000);
+    hideControlsHandle = setTimeout(hidePlayer, 5000);
 }
 
 videoControls.onmouseover = async function(e){

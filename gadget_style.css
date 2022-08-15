@@ -1,7 +1,7 @@
 .seek-bar {
     -webkit-appearance: none;
     width: 97%;
-    height: 10%;
+    height: 5px;
     position: relative;
     bottom: 85%;
     left: 1%;
@@ -14,7 +14,8 @@
   }
   
   .seek-bar:hover {
-    opacity: 1;
+    height: 10px;
+    bottom: 80%;
   }
   
   .seek-bar::-webkit-slider-thumb {
@@ -22,7 +23,9 @@
     appearance: none;
     width: 15px;
     height: 15px;
-    background: #2c3833;
+    /* circle shape */
+    border-radius: 50%;
+    background: rgb(160, 28, 28);
     cursor: pointer;
   }
   
