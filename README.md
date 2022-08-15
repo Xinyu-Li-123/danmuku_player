@@ -29,13 +29,13 @@ besides all these problems, enjoy!
 
 Besides fixing these bugs, here are some other functionality I want to implement:
 
-- [x]  find an efficient way that guarantees to stop all danmukus. 
+- [x] find an efficient way that guarantees to stop all danmukus. 
   
   I done so by writing my own player control for better control of the states. Then I define a state variable `is_danmuku_paused` and check its value every 200ms when the video is paused / waiting. Only when it's `false` will I pause all danmuku, so that it perform the costly O(n) `pause all danmuku` operaton only once.
 
-- [x]  resizable video player window
+- [x] resizable video player window
 
-- [ ]  blocked list
+- [ ] blocked list
 
 ## User Guide
 
@@ -54,6 +54,17 @@ Below is the workflow to properly play a video with danmuku in edge explorer:
 3. Upload Danmuku and Video
    
    The webpage is quite self-explanatory, open the [webpage](https://xinyu-li-123.github.io/danmuku_player/) and you will know where to upload.
+
+The recommanded way to interact with this player is through hotkeys. Below is a list of common hotkeys:
+
+| Hotkey   | Functionality   |
+| --- | --- |
+| `f`   | Enter / Exit full screen  |
+| `Right Arrow`    | Fast Forward 5 seconds |
+| `Left Arrow`  | Rewind 5 seconds    |
+| `Space` | Play / Pause the video    |
+
+ 
 
 ## More on Bilibili Api
 
