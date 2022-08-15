@@ -1,0 +1,73 @@
+.seek-bar {
+    -webkit-appearance: none;
+    width: 97%;
+    height: 10%;
+    position: relative;
+    bottom: 85%;
+    left: 1%;
+    right: 1%;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .seek-bar:hover {
+    opacity: 1;
+  }
+  
+  .seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #2c3833;
+    cursor: pointer;
+  }
+  
+  .seek-bar::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    background: #2c3833;
+    cursor: pointer;
+  }
+
+  #play-pause {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    left: 1%;
+    bottom: 3%;
+    /* background-image: url(./images/play.png) */
+  }
+
+  #seek-stage {
+    position: relative;
+    left: 1.5%;
+  }
+
+  #video-time {
+    position: relative;
+    left: 2.5%;
+  }
+
+  #mute {
+    width: 60px;
+    height: 25px;
+    position: relative;
+    left: 4%;
+    bottom: 3%;
+  }
+
+  #volume-bar {
+    position: relative;
+    left: 5%;    
+  }
+
+  #full-screen {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    right: 20px;
+  }

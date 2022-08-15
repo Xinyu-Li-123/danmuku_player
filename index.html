@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danmuku test w/ new danmuku player</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./player_style.css">
+    <link rel="stylesheet" href="./gadget_style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.14.5/hls.min.js"></script>
 </head>
@@ -27,8 +28,9 @@
                     <div class="prompt" id="video-controls">
                         <label>
                             <button type="button" id="play-pause">Play</button>
-                            <input type="range" id="seek-bar" value="0" min="0">
                             <span id="seek-stage">loaded</span>
+                        </label>
+                        <label id="video-time">
                             <span id="cur-time">00:00</span>/<span id="full-time">00:00</span>
                         </label>
                         <label>
@@ -36,7 +38,10 @@
                             <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
                         </label>
                         <label>
-                            <button type="button" id="full-screen">[&nbsp;-&nbsp;]</button>
+                            <button type="button" id="full-screen">[&nbsp;o&nbsp;]</button>
+                        </label>
+                        <label>
+                            <input type="range" id="seek-bar" value="0" min="0" class="seek-bar">
                         </label>
                     <!-- </div> -->
                 </div>

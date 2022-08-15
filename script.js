@@ -105,7 +105,13 @@ document.onmousemove = async function(e){
     if(hideControlsHandle == null){
         clearTimeout(hideControlsHandle);
     }
-    hideControlsHandle = setTimeout(hidePlayer, 5000);
+    // hideControlsHandle = setTimeout(hidePlayer, 5000);
+}
+
+videoControls.onmouseover = async function(e){
+    await sleep(100)
+    clearTimeout(hideControlsHandle);
+    videoControls.style.animation = "in linear forwards";
 }
 
 document.getElementById("play-pause").onclick = function(e){
@@ -121,7 +127,7 @@ document.getElementById("play-pause").onclick = function(e){
     }
 }
 
-player_wrapper.onclick = function(e){
+danmuku_container.onclick = function(e){
     if(e.clientY / cur_video.clientHeight < 0.9){
         document.getElementById("play-pause").onclick();
     }
