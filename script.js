@@ -516,10 +516,8 @@ function reload_danmuku(){
 }
 
 // reformat a danmuku into an eaiser-to-use object
+dummpyID = -1;
 function reformat_danmuku(d){
-
-    let p = d.getAttribute('p').split(",");
-
     function numberToColour(number) {
         const r = (number & 0xff0000) >> 16;
         const g = (number & 0x00ff00) >> 8;
@@ -527,15 +525,28 @@ function reformat_danmuku(d){
        
         //return [b, g, r];
         return `rgb(${b},${g},${r})`;
+    }    
+    
+    if (d.getAttribute('p') == null) {
+        dummpyID -= 1;
+        return {
+            id: dummpyID,
+            timestamp: parseFloat(d.getAttribute('timestamp')),
+            mode: parseInt(d.getAttribute('mode')),
+            color: d.getAttribute('color'),
+            textContent: d.textContent,
+        };
     }
-
-    return {
-        id: parseInt(p[7]),
-        timestamp: parseFloat(p[0]),
-        mode: parseInt(p[1]),
-        color: numberToColour(p[3]),
-        textContent: d.textContent,
-    };
+    else{    
+    let p = d.getAttribute('p').split(",");
+        return {
+            id: parseInt(p[7]),
+            timestamp: parseFloat(p[0]),
+            mode: parseInt(p[1]),
+            color: numberToColour(p[3]),
+            textContent: d.textContent,
+        };
+    }
 }
 
 async function send_danmuku(xml_txt) {
