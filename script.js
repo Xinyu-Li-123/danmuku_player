@@ -533,7 +533,7 @@ function reformat_danmuku(d){
             id: dummpyID,
             timestamp: parseFloat(d.getAttribute('timestamp')),
             mode: parseInt(d.getAttribute('mode')),
-            color: d.getAttribute('color'),
+            color: "rgb(255,255,255)",
             textContent: d.textContent,
         };
     }
